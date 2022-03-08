@@ -43,6 +43,7 @@ export default {
     navigation: [
       { name: "Ресурсы", href: "/" },
       { name: "Добавить", href: "/add" },
+      { name: "Обмен валют", href: "/exchange" },
     ],
   }),
 };
