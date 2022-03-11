@@ -43,8 +43,9 @@ export default {
     navigation: [
       { name: "Ссылки", href: "/" },
       { name: "Добавить ссылку", href: "/add" },
-      { name: "Есть идея!", href: "/suggest" },
       { name: "Обмен валют", href: "/exchange" },
+      { name: "Есть идея!", href: "/suggest" },
+      { name: "Запись в волонтеры", href: "/get-involved" },
       { name: "О проекте", href: "/about" },
     ],
   }),
