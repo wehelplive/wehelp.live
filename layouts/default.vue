@@ -45,6 +45,7 @@ export default {
       { name: "Добавить ссылку", href: "/add" },
       { name: "Есть идея!", href: "/suggest" },
       { name: "Обмен валют", href: "/exchange" },
+      { name: "О проекте", href: "/about" },
     ],
   }),
 };
