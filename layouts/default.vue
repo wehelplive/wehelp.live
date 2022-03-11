@@ -41,8 +41,9 @@
 export default {
   data: () => ({
     navigation: [
-      { name: "Ресурсы", href: "/" },
-      { name: "Добавить", href: "/add" },
+      { name: "Ссылки", href: "/" },
+      { name: "Добавить ссылку", href: "/add" },
+      { name: "Есть идея!", href: "/suggest" },
       { name: "Обмен валют", href: "/exchange" },
     ],
   }),
