@@ -29,7 +29,7 @@
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a
-            href="mailto:wehelpvip@razbakov.com"
+            href="mailto:hello@wehelp.vip"
             class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
           >
             Contact us
@@ -100,7 +100,7 @@
             </div>
             <div>
               <a
-                href="mailto:wehelpvip@razbakov.com"
+                href="mailto:hello@wehelp.vip"
                 class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Contact us

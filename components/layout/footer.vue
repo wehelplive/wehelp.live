@@ -110,7 +110,7 @@ import { defineComponent, h } from 'vue'
 
 const navigation = {
   solutions: [{ name: 'Currency Exchange', href: '/exchange' }],
-  support: [{ name: 'Contact', href: 'mailto:wehelpvip@razbakov.com' }],
+  support: [{ name: 'Contact', href: 'mailto:hello@wehelp.vip' }],
   company: [
     {
       name: 'About',
