@@ -67,36 +67,17 @@
                 </PopoverButton>
               </div>
             </div>
-            <div class="mt-6">
-              <nav class="grid gap-y-8">
-                <a
-                  v-for="item in solutions"
-                  :key="item.name"
-                  :href="item.href"
-                  class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                >
-                  <component
-                    :is="item.icon"
-                    class="flex-shrink-0 h-6 w-6 text-indigo-600"
-                    aria-hidden="true"
-                  />
-                  <span class="ml-3 text-base font-medium text-gray-900">
-                    {{ item.name }}
-                  </span>
-                </a>
-              </nav>
-            </div>
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a
+              <NuxtLink
                 v-for="item in navigation"
                 :key="item.name"
-                :href="item.href"
+                :to="item.to"
                 class="text-base font-medium text-gray-900 hover:text-gray-700"
               >
                 {{ item.name }}
-              </a>
+              </NuxtLink>
             </div>
             <div>
               <a
