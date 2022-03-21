@@ -120,7 +120,7 @@ import { ChevronDownIcon } from '@heroicons/vue/solid'
 const navigation = [
   { name: 'UAH Exchange', to: '/exchange' },
   { name: 'Add service', to: '/add' },
-  { name: 'Report problem', to: '/suggest' },
+  { name: 'Report problem', to: '/request' },
 ]
 
 export default {
