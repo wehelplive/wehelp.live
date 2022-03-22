@@ -34,13 +34,12 @@ export default defineNuxtConfig({
       {
         hid: 'hubspot',
         id: 'hs-script-loader',
-        src: '//js-eu1.hs-scripts.com/25686834.js',
+        src: 'https://js-eu1.hs-scripts.com/25686834.js',
         defer: true,
         async: true,
       },
       {
         hid: 'gtag',
-        id: 'hs-script-loader',
         src: 'https://www.googletagmanager.com/gtag/js?id=G-TVX1HJNMVX',
         async: true,
       },
