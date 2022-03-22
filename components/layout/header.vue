@@ -121,6 +121,7 @@ const navigation = [
   { name: 'UAH Exchange', to: '/exchange' },
   { name: 'Add service', to: '/add' },
   { name: 'Report problem', to: '/suggest' },
+  { name: 'Cars', to: '/cars' }
 ]
 
 export default {
