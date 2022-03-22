@@ -38,11 +38,6 @@ export default defineNuxtConfig({
         defer: true,
         async: true,
       },
-      {
-        hid: 'gtag',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-TVX1HJNMVX',
-        async: true,
-      },
     ],
   },
   build: {
