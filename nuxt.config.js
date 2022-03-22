@@ -32,9 +32,17 @@ export default defineNuxtConfig({
     ],
     script: [
       {
-        hid: 'airtable',
-        src: 'https://static.airtable.com/js/embed/embed_snippet_v1.js',
+        hid: 'hubspot',
+        id: 'hs-script-loader',
+        src: '//js-eu1.hs-scripts.com/25686834.js',
         defer: true,
+        async: true,
+      },
+      {
+        hid: 'gtag',
+        id: 'hs-script-loader',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-TVX1HJNMVX',
+        async: true,
       },
     ],
   },
