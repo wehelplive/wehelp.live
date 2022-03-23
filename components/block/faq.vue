@@ -30,16 +30,21 @@
             <DisclosurePanel as="dd" class="mt-2 pr-12 prose">
               <ul>
                 <li>
-                  Our work is transparent and based on
-                  <a href="https://sociocracy30.org/" target="_blank"
-                    >Sociocracy 3.0</a
+                  We use
+                  <a
+                    target="_blank"
+                    href="https://patterns.sociocracy30.org/principles.html"
+                    >7 principles</a
                   >
+                  that shape the organizational culture: Performance, Consent,
+                  Empiricism, Continuous Development, Equivalence, Transparency,
+                  Responsibility.
                 </li>
                 <li>
-                  We find solutions faster with
+                  We
                   <a
                     href="https://designsprintkit.withgoogle.com/methodology/overview"
-                    >Design Sprint</a
+                    >solve big problems in 5 days</a
                   >
                 </li>
                 <li>
@@ -47,37 +52,6 @@
                   families in Ukraine
                 </li>
               </ul>
-            </DisclosurePanel>
-          </Disclosure>
-          <Disclosure as="div" class="pt-6" v-slot="{ open }">
-            <dt class="text-lg">
-              <DisclosureButton
-                class="text-left w-full flex justify-between items-start text-gray-400"
-              >
-                <span class="font-medium text-gray-900"> Why Sociocracy? </span>
-                <span class="ml-6 h-7 flex items-center">
-                  <ChevronDownIcon
-                    :class="[
-                      open ? '-rotate-180' : 'rotate-0',
-                      'h-6 w-6 transform',
-                    ]"
-                    aria-hidden="true"
-                  />
-                </span>
-              </DisclosureButton>
-            </dt>
-            <DisclosurePanel as="dd" class="mt-2 pr-12 prose">
-              <p>
-                Sociocracy is simple and built just on
-                <a
-                  target="_blank"
-                  href="https://patterns.sociocracy30.org/principles.html"
-                  >7 principles</a
-                >
-                that shape the organizational culture: Performance, Consent,
-                Empiricism, Continuous Development, Equivalence, Transparency,
-                Responsibility.
-              </p>
             </DisclosurePanel>
           </Disclosure>
         </dl>
