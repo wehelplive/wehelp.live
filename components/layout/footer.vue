@@ -116,6 +116,10 @@ const navigation = {
       name: 'About',
       href: 'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
     },
+    {
+      name: 'Calendar',
+      href: '/calendar',
+    },
   ],
   legal: [
     {
