@@ -30,6 +30,10 @@
             <DisclosurePanel as="dd" class="mt-2 pr-12 prose">
               <ul>
                 <li>
+                  We feel pain of Ukrainians, because we or our friends have
+                  families in Ukraine
+                </li>
+                <li>
                   We use
                   <a
                     target="_blank"
@@ -46,10 +50,6 @@
                     href="https://designsprintkit.withgoogle.com/methodology/overview"
                     >solve big problems in 5 days</a
                   >
-                </li>
-                <li>
-                  We feel pain of Ukrainians, because we or our friends have
-                  families in Ukraine
                 </li>
               </ul>
             </DisclosurePanel>
