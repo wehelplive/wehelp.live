@@ -125,6 +125,10 @@ const navigation = {
       href: 'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
     },
     {
+      name: 'Teams',
+      href: '/teams',
+    },
+    {
       name: 'Calendar',
       href: '/calendar',
     },
