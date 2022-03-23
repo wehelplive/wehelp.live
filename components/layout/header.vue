@@ -29,7 +29,7 @@
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a
-            href="mailto:hello@wehelp.vip"
+            href="/request"
             class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
           >
             Contact us
@@ -81,10 +81,10 @@
             </div>
             <div>
               <a
-                href="mailto:hello@wehelp.vip"
+                href="/request"
                 class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
-                Contact us
+                Need help?
               </a>
             </div>
           </div>
@@ -118,9 +118,9 @@ import {
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 
 const navigation = [
+  { name: 'Find Accomodation', to: '/guest' },
   { name: 'UAH Exchange', to: '/exchange' },
-  { name: 'Add service', to: '/add' },
-  { name: 'Report problem', to: '/request' },
+  { name: 'Recommend', to: '/add' },
 ]
 
 export default {

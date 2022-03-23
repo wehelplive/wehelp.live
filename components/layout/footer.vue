@@ -6,8 +6,8 @@
         <div class="space-y-8 xl:col-span-1">
           <BrandLogo class="h-24 w-24" />
           <p class="text-gray-500 text-base">
-            We offer a step-by-step evacuation plan from anywhere in Ukraine to
-            anywhere in Europe.
+            We help to solve complex problems in the Ukrainian refugee crisis in
+            Europe
           </p>
           <div class="flex space-x-6">
             <a
@@ -27,7 +27,7 @@
               <h3
                 class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
               >
-                Solutions
+                Initiatives
               </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li v-for="item in navigation.solutions" :key="item.name">
@@ -109,8 +109,16 @@
 import { defineComponent, h } from 'vue'
 
 const navigation = {
-  solutions: [{ name: 'Currency Exchange', href: '/exchange' }],
-  support: [{ name: 'Contact', href: 'mailto:hello@wehelp.vip' }],
+  solutions: [
+    { name: 'Evacuation Planner', href: '/services' },
+    { name: 'Find Accomodation', href: '/guest' },
+    { name: 'UAH Exchange', href: '/exchange' },
+    { name: 'Recommend Link', href: '/add' },
+  ],
+  support: [
+    { name: 'Report Problem', href: '/request' },
+    { name: 'Contact Us', href: 'mailto:hello@wehelp.vip' },
+  ],
   company: [
     {
       name: 'About',
@@ -120,8 +128,16 @@ const navigation = {
       name: 'Calendar',
       href: '/calendar',
     },
+    {
+      name: 'Jobs',
+      href: '/get-involved',
+    },
   ],
   legal: [
+    {
+      name: 'Imprint',
+      href: 'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
+    },
     {
       name: 'Terms',
       href: 'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
