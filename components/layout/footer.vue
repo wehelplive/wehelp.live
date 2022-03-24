@@ -7,7 +7,7 @@
           <BrandLogo class="h-24 w-24" />
           <p class="text-gray-500 text-base">
             We help to solve complex problems in the Ukrainian refugee crisis in
-            Europe
+            EU
           </p>
           <div class="flex space-x-6">
             <a
