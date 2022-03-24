@@ -114,6 +114,7 @@ const navigation = {
     { name: 'Find Accomodation', href: '/guest' },
     { name: 'UAH Exchange', href: '/exchange' },
     { name: 'Recommend Link', href: '/add' },
+    { name: 'Find a Car', href: '/cars' },
   ],
   support: [
     { name: 'Report Problem', href: '/request' },
