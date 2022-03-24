@@ -22,6 +22,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "^1.0.5",
+    "airtable": "^0.11.2",
     "lodash": "^4.17.21"
   }
 }
