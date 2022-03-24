@@ -112,6 +112,7 @@ const navigation = {
   solutions: [
     { name: 'Evacuation Planner', href: '/services' },
     { name: 'Find Accomodation', href: '/guest' },
+    { name: 'Offer Accomodation', href: '/host' },
     { name: 'UAH Exchange', href: '/exchange' },
     { name: 'Recommend Link', href: '/add' },
   ],
