@@ -150,7 +150,7 @@ const navigation = {
   social: [
     {
       name: 'Telegram',
-      href: 'https://t.me/wehelpvip',
+      href: 'https://t.me/wehelplive',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -164,7 +164,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: 'https://instagram.com/wehelpvip',
+      href: 'https://instagram.com/wehelplive',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -178,7 +178,7 @@ const navigation = {
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/wehelpvip',
+      href: 'https://twitter.com/wehelplive',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -190,7 +190,7 @@ const navigation = {
     },
     {
       name: 'GitHub',
-      href: 'https://github.com/wehelpvip',
+      href: 'https://github.com/wehelplive',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
