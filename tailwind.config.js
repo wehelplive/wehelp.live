@@ -11,7 +11,11 @@ module.exports = {
     ],
   },
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(400px, 1fr))',
+      },
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
