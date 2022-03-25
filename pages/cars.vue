@@ -1,10 +1,10 @@
 <template>
-    <div class="list">
-        <div v-for="car in cars" :key="car.id" :style="{'background-color': car.fields.Color ? `${car.fields.Color}` : 'black'}" class="list-item">
-            <div class="name">
+    <div class="grid w-screen h-screen gap-y-2 border-2 border-white rounded-md">
+        <div v-for="car in cars" :key="car.id" :style="{'background-color': car.fields.Color ? `${car.fields.Color}` : 'black'}" class="grid grid-cols-auto-fit items-center justify-items-center">
+            <div class="flex text-3xl text-white">
                 {{ car.fields.Name }}
             </div>
-                <div class="year">
+                <div class="flex text-3xl text-white">
                 {{ car.fields.Year }}
             </div>
         </div>
@@ -27,26 +27,4 @@ export default {
     },
 }
 </script>
-<style scoped>
-.list {
-    display: grid;
-    row-gap: 1em;
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
 
-.list-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.name, .year {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    color: white;
-}
-</style>
