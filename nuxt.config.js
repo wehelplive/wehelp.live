@@ -74,4 +74,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  buildModules: ['@intlify/nuxt3'],
+  intlify: {
+    localeDir: 'locales',
+    vueI18n: {},
+  },
 })
