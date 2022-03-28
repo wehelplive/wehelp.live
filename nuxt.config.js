@@ -40,6 +40,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+
+  // modules: ['@nuxtjs/axios'],
+
   build: {
     transpile: ['@heroicons/vue', '@headlessui/vue'],
     postcss: {
