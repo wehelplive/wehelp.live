@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'jit',
+  plugins: [require('@tailwindcss/aspect-ratio')],
   content: {
     files: [
       './components/**/*.{vue,js}',
