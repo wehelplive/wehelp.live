@@ -1,12 +1,11 @@
 <template>
-  <client-only>
-    <div>
+  <div>
+    <client-only>
       <div>Cars</div>
 
       <Suspense>
         <template #default>
           <pre>
-            
             <div class="bg-white">
                 <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                     <div class="space-y-12">
@@ -16,7 +15,6 @@
                             <div class="aspect-w-3 aspect-h-2">
                             <img class="object-cover shadow-lg rounded-lg" v-bind:src='record.fields.Attachments[0].url' alt="">
                             </div>
-
                             <div class="space-y-1">
                                 <div class="text-lg leading-6 font-medium space-y-1">
                                     <h3>{{record.fields.Name}}</h3>
@@ -29,13 +27,12 @@
                     </ul>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </pre>
         </template>
       </Suspense>
-    </div>
-  </client-only>
+    </client-only>
+  </div>
 </template>
 
 <script>
