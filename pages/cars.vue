@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <div>Cars</div>
+  <client-only>
+    <div>
+      <div>Cars</div>
 
-    <Suspense>
-      <template #default>
-        <pre>
+      <Suspense>
+        <template #default>
+          <pre>
+            
             <div class="bg-white">
                 <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                     <div class="space-y-12">
@@ -28,17 +30,15 @@
                     </div>
                 </div>
             </div>
+            
         </pre>
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
-  </div>
+        </template>
+      </Suspense>
+    </div>
+  </client-only>
 </template>
 
 <script>
-// TBD: Use environment variables.
 export default {
   async setup() {
     const config = useRuntimeConfig()
