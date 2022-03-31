@@ -4,7 +4,7 @@
 
     <Suspense>
       <template #default>
-        <pre>{{ cars }}
+        <pre>
             <div class="bg-white">
                 <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                     <div class="space-y-12">
@@ -41,12 +41,9 @@
 // TBD: Use environment variables.
 export default {
   async setup() {
-    // const Airtable = require('airtable').base('appcCvlO2K4dtAons')
-
-    const base = process.env.BASE_ID
-
+    const config = useRuntimeConfig()
     const cars = await $fetch(
-      `https://api.airtable.com/v0/${base}/Cars?api_key=${process.env.API_KEY}`
+      `https://api.airtable.com/v0/${config.BASE_ID}/Cars?api_key=${config.API_KEY}`
     )
     return { cars }
   },

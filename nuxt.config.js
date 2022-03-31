@@ -4,6 +4,7 @@ import { defineNuxtConfig } from 'nuxt3'
 export default defineNuxtConfig({
   css: ['tailwindcss/tailwind.css'],
   watch: ['~/tailwind.config.js'],
+
   meta: {
     title: 'WeHelp – Evacuation to Europe',
     description:
@@ -40,9 +41,10 @@ export default defineNuxtConfig({
       },
     ],
   },
-
- 
-
+  publicRuntimeConfig: {
+    BASE_ID: process.env.BASE_ID,
+    API_KEY: process.env.API_KEY,
+  },
   build: {
     transpile: ['@heroicons/vue', '@headlessui/vue'],
     postcss: {
