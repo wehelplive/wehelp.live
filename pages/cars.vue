@@ -30,7 +30,7 @@ export default {
     const data = await $fetch(
       'https://api.airtable.com/v0/appv6M4U4ckXcHzhU/Cars?api_key=keyQ54SEzABIZEm9F'
     )
-    console.log(data.records)
+
     return {
       list: data.records,
     }
