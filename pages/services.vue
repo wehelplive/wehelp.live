@@ -1,6 +1,6 @@
 <template>
   <iframe
-    class="airtable-embed h-full min-h-screen"
+    class="w-full h-full min-h-screen"
     src="https://airtable.com/embed/shra12KjCQJwrnu8l?backgroundColor=gray&layout=card&viewControls=on"
     frameborder="0"
     onmousewheel=""
