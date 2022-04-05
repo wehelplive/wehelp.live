@@ -1,11 +1,37 @@
 <template>
-  <iframe
-    class="w-full h-full min-h-screen"
-    src="https://airtable.com/embed/shra12KjCQJwrnu8l?backgroundColor=gray&layout=card&viewControls=on"
-    frameborder="0"
-    onmousewheel=""
-    width="100%"
-    height="100%"
-    style="background: transparent; border: 0px solid #ccc"
-  ></iframe>
+  <div class="bg-transparent overflow-hidden sm:rounded-md h-full min-h-screen">
+    <ul
+      v-for="service in services"
+      :key="service.id"
+      role="list"
+      class="divide-y divide-gray-200"
+    >
+      <TServiceListItem
+        :field-id="service.id"
+        :name="service.fields.Name"
+        :description="service.fields.Description"
+        :url="service.fields.URL"
+        :location="service.fields.Location"
+        :type="service.fields.Type"
+      />
+    </ul>
+  </div>
 </template>
+<script>
+import TServiceListItem from '../components/TServiceListItem.vue'
+import { getServices } from '../airtable.js'
+
+export default {
+  name: 'Services',
+  components: {
+    TServiceListItem,
+  },
+  data: () => ({
+    services: [],
+  }),
+  async mounted() {
+    const result = await getServices()
+    this.services = result
+  },
+}
+</script>
