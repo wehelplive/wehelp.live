@@ -124,7 +124,6 @@
               >
                 <option>United States</option>
                 <option>Canada</option>
-                <option>Mexico</option>
               </select>
             </div>
           </div>
