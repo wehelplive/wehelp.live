@@ -91,7 +91,7 @@
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
-                type="link"
+                type="text"
                 name="linkedin"
                 id="linkedin"
                 autocomplete="linkedin"
@@ -113,12 +113,12 @@
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
-                type="link"
+                type="text"
                 name="instagram"
                 id="instagram"
                 placeholder="https://www.instagram.com/john_doe"
                 v-model="instagram"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
             </div>
           </div>
@@ -134,12 +134,12 @@
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
-                type="link"
+                type="text"
                 name="facebook"
                 id="facebook"
                 placeholder="https://www.facebook.com/john.doe"
                 v-model="facebook"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
             </div>
           </div>
@@ -154,12 +154,12 @@
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
-                type="link"
+                type="text"
                 name="telegram"
                 id="telegram"
                 v-model="telegram"
                 placeholder="https://t.me/john_doe"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
             </div>
           </div>
@@ -190,7 +190,8 @@
               for="about"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              How can you help? <span>which skills do you have?</span>
+              How can you help?<br />
+              <span class="text-xs">which skills do you have?</span>
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <textarea
@@ -210,7 +211,9 @@
               for="languages"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Languages
+              Languages<br /><span class="text-xs"
+                >Which languages do you speak?</span
+              >
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <fieldset class="space-y-5">
@@ -293,6 +296,16 @@
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
               Choose a team
+              <br />
+              <span class="text-xs">
+                select one team from the list in which you would like to join.
+                See list on
+                <a href="https://wehelp.live/teams"
+                  ><i
+                    ><span class="text-sky-500"> wehelp.live/teams</span></i
+                  ></a
+                ></span
+              >
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <select
@@ -328,7 +341,7 @@
             for="hours"
             class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
           >
-            Choose a team
+            Availability
           </label>
           <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
             <select
@@ -368,23 +381,8 @@
   </form>
 </template>
 <script>
-// import { createApp } from 'vue'
-// var firstName = ''
-// var lastName = ''
-// var email = ''
-
-// var reasonOfJoining = ''
-// var city = ''
-// var state = ''
-// var zipCode = ''
-// var country = ''
-// const myObject = new createApp({
-//   el: '.container',
-//   data: { firstName: 'xyz' },
-// })
-// myObject.mount('.container')
 import Airtable from 'airtable'
-var base = new Airtable({ apiKey: 'keyQ54SEzABIZEm9F' }).base(
+const base = new Airtable({ apiKey: 'keyQ54SEzABIZEm9F' }).base(
   'appv6M4U4ckXcHzhU'
 )
 export default {
@@ -406,14 +404,33 @@ export default {
   methods: {
     submit() {
       console.warn('values : ', this.name)
+      base('Volunteers').create(
+        [
+          {
+            fields: {
+              Name: this.name,
+              Phone: this.phone,
+              Email: this.email,
+              LinkedIn: this.linkedin,
+              Instagram: this.instagram,
+              Facebook: this.facebook,
+              Telegram: this.telegram,
+              Reason_of_joining: this.reasonOfJoining,
+              Detail_of_help: this.detailOfHelp,
+            },
+          },
+        ],
+        function (err, records) {
+          if (err) {
+            console.error(err)
+            return
+          }
+          records.forEach(function (record) {
+            console.log(record.getId())
+          })
+        }
+      )
     },
   },
 }
 </script>
-
-<style>
-/* .container {
-  max-width: 960px;
-  margin: 0 auto;
-} */
-</style>
