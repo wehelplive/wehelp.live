@@ -83,7 +83,7 @@
               for="last-name"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Linked In
+              LinkedIn
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
