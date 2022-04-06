@@ -16,6 +16,7 @@
 
           <div
             class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+            id="name"
           >
             <label
               for="first-name"
@@ -29,7 +30,8 @@
                 name="first-name"
                 id="first-name"
                 autocomplete="given-name"
-                v-model="Name"
+                v-model="name"
+                placeholder="John Doe"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -50,6 +52,7 @@
                 name="phone-number"
                 id="phone-number"
                 autocomplete="phone"
+                placeholder="+1 (123) 456-7890"
                 v-model="phone"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
@@ -71,6 +74,7 @@
                 name="email"
                 type="email"
                 autocomplete="email"
+                placeholder="johndoe@gmail.com"
                 v-model="email"
                 class="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
@@ -91,27 +95,8 @@
                 name="linkedin"
                 id="linkedin"
                 autocomplete="linkedin"
+                placeholder="https://www.linkedin.com/in/john-doe-12345"
                 v-model="linkedin"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-              />
-            </div>
-          </div>
-          <div
-            class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
-          >
-            <label
-              for="email"
-              class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
-            >
-              Email address
-            </label>
-            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                v-model="email"
                 class="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -131,6 +116,7 @@
                 type="link"
                 name="instagram"
                 id="instagram"
+                placeholder="https://www.instagram.com/john_doe"
                 v-model="instagram"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
@@ -151,6 +137,7 @@
                 type="link"
                 name="facebook"
                 id="facebook"
+                placeholder="https://www.facebook.com/john.doe"
                 v-model="facebook"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
@@ -171,6 +158,7 @@
                 name="telegram"
                 id="telegram"
                 v-model="telegram"
+                placeholder="https://t.me/john_doe"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -189,6 +177,7 @@
                 id="about"
                 name="about"
                 rows="3"
+                placeholder="I want to join because..."
                 v-model="reasonOfJoining"
                 class="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
               />
@@ -208,6 +197,7 @@
                 id="about"
                 name="about"
                 rows="3"
+                placeholder="I can help with..."
                 v-model="detailOfHelp"
                 class="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
               />
@@ -308,7 +298,6 @@
               <select
                 id="choose-team"
                 name="team"
-                v-model="team"
                 class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               >
                 <option>WeHelp</option>
@@ -332,10 +321,32 @@
             </div>
           </div>
         </div>
-        <div class="pt-8 space-y-6 sm:pt-10 sm:space-y-5">
-          <div class="space-y-6 sm:space-y-5"></div>
+        <div
+          class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+        >
+          <label
+            for="hours"
+            class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+          >
+            Choose a team
+          </label>
+          <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+            <select
+              id="choose-hours"
+              name="hours"
+              class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+            >
+              <option>1 hour per day</option>
+              <option>1-4 hours per day</option>
+              <option>more than 4 hours per day</option>
+            </select>
+          </div>
         </div>
       </div>
+      <div class="pt-8 space-y-6 sm:pt-10 sm:space-y-5">
+        <div class="space-y-6 sm:space-y-5"></div>
+      </div>
+
       <div class="pt-5">
         <div class="flex justify-end">
           <button
@@ -353,7 +364,6 @@
           </button>
         </div>
       </div>
-      {{ Name }}
     </div>
   </form>
 </template>
@@ -378,23 +388,24 @@ var base = new Airtable({ apiKey: 'keyQ54SEzABIZEm9F' }).base(
   'appv6M4U4ckXcHzhU'
 )
 export default {
+  name: 'formUI',
   data() {
     return {
-      Name: 'John Doe',
-      phone: '7894561230',
+      name: null,
+      phone: null,
 
-      email: 'johndoe@gmail.com',
-      linkedin: 'linkedin.com/johndoe',
-      instagram: 'instagram.com/johndoe',
-      facebook: 'facebook.com/johndoe',
-      telegram: 'telegram.com/johndoe',
-      reasonOfJoining: 'I want to join because...',
-      detailOfHelp: 'I can help with...',
+      email: null,
+      linkedin: null,
+      instagram: null,
+      facebook: null,
+      telegram: null,
+      reasonOfJoining: null,
+      detailOfHelp: null,
     }
   },
   methods: {
     submit() {
-      console.log(this.Name)
+      console.warn('values : ', this.name)
     },
   },
 }
