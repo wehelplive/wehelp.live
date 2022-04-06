@@ -1,15 +1,17 @@
 <template>
   <form class="space-y-8 divide-y divide-gray-200">
-    <div class="container">
+    <div class="mx-auto my-0 max-w-4xl">
       <div class="space-y-8 divide-y divide-gray-200 sm:space-y-10">
         <div>
           <div>
-            <h1 class="text-4xl mt-10 leading-6 font-medium text-gray-900">
+            <h1
+              class="text-4xl mt-10 leading-6 font-medium text-gray-900 items-center justify-center"
+            >
               Want to help? Get Involved!
             </h1>
-            <h6 class="text-sm mt-5">
+            <p class="text-md mb-5 mt-5 justify-center items-center">
               Submit your application by filling the form below:
-            </h6>
+            </p>
           </div>
 
           <div
@@ -19,7 +21,7 @@
               for="first-name"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              First name
+              Name
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
@@ -27,6 +29,7 @@
                 name="first-name"
                 id="first-name"
                 autocomplete="given-name"
+                v-model="Name"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -39,14 +42,15 @@
               for="last-name"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Last name
+              Phone Number
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
               <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autocomplete="family-name"
+                type="number"
+                name="phone-number"
+                id="phone-number"
+                autocomplete="phone"
+                v-model="phone"
                 class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -67,64 +71,108 @@
                 name="email"
                 type="email"
                 autocomplete="email"
+                v-model="email"
                 class="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
               />
-            </div>
-          </div>
-          <div class="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
-            <div
-              class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center sm:border-t sm:border-gray-200 sm:pt-5"
-            >
-              <label
-                for="photo"
-                class="block text-sm font-medium text-gray-700"
-              >
-                Photo
-              </label>
-              <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
-                <div class="flex items-center">
-                  <span
-                    class="h-12 w-12 rounded-full overflow-hidden bg-gray-100"
-                  >
-                    <svg
-                      class="h-full w-full text-gray-300"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"
-                      />
-                    </svg>
-                  </span>
-                  <button
-                    type="button"
-                    class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                  >
-                    Change
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
           <div
             class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
           >
             <label
-              for="country"
+              for="last-name"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Country
+              Linked In
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
-              <select
-                id="country"
-                name="country"
-                autocomplete="country-name"
-                class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-              >
-                <option>United States</option>
-                <option>Canada</option>
-              </select>
+              <input
+                type="link"
+                name="linkedin"
+                id="linkedin"
+                autocomplete="linkedin"
+                v-model="linkedin"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+          <div
+            class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+          >
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+            >
+              Email address
+            </label>
+            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                v-model="email"
+                class="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div
+            class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+          >
+            <label
+              for="last-name"
+              class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+            >
+              Instagram
+            </label>
+            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+              <input
+                type="link"
+                name="instagram"
+                id="instagram"
+                v-model="instagram"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div
+            class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+          >
+            <label
+              for="last-name"
+              class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+            >
+              Facebook
+            </label>
+            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+              <input
+                type="link"
+                name="facebook"
+                id="facebook"
+                v-model="facebook"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+          <div
+            class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
+          >
+            <label
+              for="last-name"
+              class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+            >
+              Telegram
+            </label>
+            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+              <input
+                type="link"
+                name="telegram"
+                id="telegram"
+                v-model="telegram"
+                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              />
             </div>
           </div>
           <div
@@ -141,68 +189,146 @@
                 id="about"
                 name="about"
                 rows="3"
+                v-model="reasonOfJoining"
                 class="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
               />
             </div>
           </div>
-
           <div
             class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
           >
             <label
-              for="city"
+              for="about"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              City
+              How can you help? <span>which skills do you have?</span>
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
-              <input
-                type="text"
-                name="city"
-                id="city"
-                autocomplete="address-level2"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              <textarea
+                id="about"
+                name="about"
+                rows="3"
+                v-model="detailOfHelp"
+                class="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
               />
             </div>
           </div>
-
           <div
             class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
           >
             <label
-              for="region"
+              for="languages"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              State / Province
+              Languages
             </label>
             <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
-              <input
-                type="text"
-                name="region"
-                id="region"
-                autocomplete="address-level1"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-              />
+              <fieldset class="space-y-5">
+                <legend class="sr-only">Notifications</legend>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="comments"
+                      aria-describedby="comments-description"
+                      name="comments"
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="comments" class="font-medium text-gray-700"
+                      >English</label
+                    >
+                  </div>
+                </div>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="candidates"
+                      aria-describedby="candidates-description"
+                      name="candidates"
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="candidates" class="font-medium text-gray-700"
+                      >German</label
+                    >
+                    <br />
+                  </div>
+                </div>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="offers"
+                      aria-describedby="offers-description"
+                      name="offers"
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="offers" class="font-medium text-gray-700"
+                      >Russian</label
+                    >
+                    <br />
+                  </div>
+                </div>
+                <div class="relative flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="offers"
+                      aria-describedby="offers-description"
+                      name="offers"
+                      type="checkbox"
+                      class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="offers" class="font-medium text-gray-700"
+                      >Other</label
+                    >
+                    <br />
+                  </div>
+                </div>
+              </fieldset>
             </div>
           </div>
-
           <div
             class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5"
           >
             <label
-              for="postal-code"
+              for="team"
               class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              ZIP / Postal code
+              Choose a team
             </label>
-            <div class="mt-1 sm:mt-0 sm:col-span-2">
-              <input
-                type="text"
-                name="postal-code"
-                id="postal-code"
-                autocomplete="postal-code"
-                class="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
-              />
+            <div class="mt-1 mb-5 sm:mt-0 sm:col-span-2">
+              <select
+                id="choose-team"
+                name="team"
+                v-model="team"
+                class="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+              >
+                <option>WeHelp</option>
+                <option>Coordination</option>
+                <option>Talents</option>
+                <option>Verification</option>
+                <option>Networking</option>
+                <option>Call center</option>
+                <option>Donations to Ukraine</option>
+                <option>Brainstorming</option>
+                <option>Communication</option>
+                <option>Website</option>
+                <option>Accomodations</option>
+                <option>Hackathon</option>
+                <option>Donate cars to Ukraine</option>
+                <option>Donate to volunteers in Ukraine</option>
+                <option>Donations in Europe</option>
+                <option>Work possibilities</option>
+                <option>Refugees group in Facebook</option>
+              </select>
             </div>
           </div>
         </div>
@@ -220,18 +346,63 @@
           </button>
           <button
             type="submit"
+            @click="submit"
             class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Save
           </button>
         </div>
       </div>
+      {{ Name }}
     </div>
   </form>
 </template>
+<script>
+// import { createApp } from 'vue'
+// var firstName = ''
+// var lastName = ''
+// var email = ''
+
+// var reasonOfJoining = ''
+// var city = ''
+// var state = ''
+// var zipCode = ''
+// var country = ''
+// const myObject = new createApp({
+//   el: '.container',
+//   data: { firstName: 'xyz' },
+// })
+// myObject.mount('.container')
+import Airtable from 'airtable'
+var base = new Airtable({ apiKey: 'keyQ54SEzABIZEm9F' }).base(
+  'appv6M4U4ckXcHzhU'
+)
+export default {
+  data() {
+    return {
+      Name: 'John Doe',
+      phone: '7894561230',
+
+      email: 'johndoe@gmail.com',
+      linkedin: 'linkedin.com/johndoe',
+      instagram: 'instagram.com/johndoe',
+      facebook: 'facebook.com/johndoe',
+      telegram: 'telegram.com/johndoe',
+      reasonOfJoining: 'I want to join because...',
+      detailOfHelp: 'I can help with...',
+    }
+  },
+  methods: {
+    submit() {
+      console.log(this.Name)
+    },
+  },
+}
+</script>
+
 <style>
-.container {
+/* .container {
   max-width: 960px;
   margin: 0 auto;
-}
+} */
 </style>
