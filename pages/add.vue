@@ -71,7 +71,7 @@ const base = new Airtable({ apiKey: 'keydEXl97LFVx03hM' }).base(
   'appBBi7Uoylg0ILTk'
 )
 export default {
-  name: 'Links',
+  name: 'Services',
   data() {
     return {
       fields: {
@@ -81,16 +81,17 @@ export default {
     }
   },
   methods: {
-    handleSubmit(e) {
+    async handleSubmit(e) {
       base('Services').create(
         [
           {
             fields: {
-              Name: fields.Name,
-              URL: fields.URL,
+              Name: this.fields.Name,
+              URL: this.fields.URL,
             },
           },
         ],
+        console.log(this.fields.Name),
         function (err, records) {
           if (err) {
             console.error(err)
