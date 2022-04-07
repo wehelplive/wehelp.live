@@ -1,10 +1,5 @@
 <template>
-  <form
-    class="space-y-8 divide-y divide-gray-200"
-    action=""
-    method="POST"
-    id="addLink"
-  >
+  <form class="space-y-8 divide-y divide-gray-200" action="" id="addLink">
     <div class="space-y-8 divide-y divide-gray-200">
       <div class="pt-8">
         <div>
@@ -81,7 +76,8 @@ export default {
     }
   },
   methods: {
-    async handleSubmit(e) {
+    handleSubmit(e) {
+      
       base('Services').create(
         [
           {
@@ -91,8 +87,8 @@ export default {
             },
           },
         ],
-        console.log(this.fields.Name),
         function (err, records) {
+          console.log("Response")
           if (err) {
             console.error(err)
             return
@@ -101,7 +97,9 @@ export default {
             console.log(record.getId())
           })
         }
-      )
+      );
+
+      e.preventDefault();
     },
   },
 }
