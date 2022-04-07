@@ -41,7 +41,7 @@
                 name="url-name"
                 id="url-name"
                 required
-                v-model="records[0].fields.Name"
+                v-model="fields.Name"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -57,7 +57,7 @@
                 name="url"
                 id="url"
                 required
-                v-model="records[0].fields.Url"
+                v-model="fields.URL"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -81,60 +81,98 @@
 </template>
 
 <script>
+import Airtable from 'airtable'
+
+const base = new Airtable({ apiKey: 'keydEXl97LFVx03hM' }).base(
+  'appBBi7Uoylg0ILTk'
+)
 export default {
-  name: 'PostComponent',
+  name: 'Links',
   data() {
     return {
-      records: [
-        {
-          fields: {
-            Name: '',
-            URL: '',
-          },
-        },
-      ],
+      fields: {
+        Name: '',
+        URL: '',
+      },
     }
   },
   methods: {
     handleSubmit(e) {
-      console.log(this.records[0])
-      e.preventDefault()
+      base('Services').create(
+        [
+          {
+            fields: {
+              Name: fields.Name,
+              URL: fields.URL,
+            },
+          },
+        ],
+        function (err, records) {
+          if (err) {
+            console.error(err)
+            return
+          }
+          records.forEach(function (record) {
+            console.log(record.getId())
+          })
+        }
+      )
     },
   },
-
-  // async setup() {
-  //   const testData = {
-  //     records: [
-  //       {
-  //         fields: {
-  //           Name: '',
-  //           URL: '',
-  //         },
-  //       },
-  //     ],
-  //   }
-  //   const config = useRuntimeConfig()
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: {
-  //       Authorization: `Bearer ${config.API_KEY}`,
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(testData),
-  //   }
-
-  //   const data = fetch(
-  //     `https://api.airtable.com/v0/appBBi7Uoylg0ILTk/Services`,
-  //     requestOptions
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data)
-  //     })
-  //     .catch(function (error) {
-  //       console.log('Request failed', error)
-  //     })
-
-  // },
 }
+// name: 'PostComponent',
+// data() {
+//   return {
+//     records: [
+//       {
+//         fields: {
+//           Name: '',
+//           URL: '',
+//         },
+//       },
+//     ],
+//   }
+// },
+// methods: {
+//   handleSubmit(e) {
+//     console.log(this.records[0])
+//     e.preventDefault()
+//   },
+// },
+
+//   async setup() {
+//     const testData = {
+//       records: [
+//         {
+//           fields: {
+//             Name: '',
+//             URL: '',
+//           },
+//         },
+//       ],
+//     }
+//     const config = useRuntimeConfig()
+//     const requestOptions = {
+//       method: 'POST',
+//       headers: {
+//         Authorization: `Bearer ${config.API_KEY}`,
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify(testData),
+//     }
+
+//     const data = fetch(
+//       `https://api.airtable.com/v0/appBBi7Uoylg0ILTk/Services`,
+//       requestOptions
+//     )
+//       .then((response) => response.json())
+//       .then((data) => {
+//         console.log(data)
+//       })
+//       .catch(function (error) {
+//         console.log('Request failed', error)
+//       })
+
+//   },
+// }
 </script>
