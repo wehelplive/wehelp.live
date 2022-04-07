@@ -15,7 +15,12 @@
   ```
 -->
 <template>
-  <form class="space-y-8 divide-y divide-gray-200">
+  <form
+    class="space-y-8 divide-y divide-gray-200"
+    action=""
+    method="POST"
+    id="addLink"
+  >
     <div class="space-y-8 divide-y divide-gray-200">
       <div class="pt-8">
         <div>
@@ -33,9 +38,10 @@
             <div class="mt-1">
               <input
                 type="text"
-                name="name"
-                id="street-address"
-                autocomplete="street-address"
+                name="url-name"
+                id="url-name"
+                required
+                v-model="records[0].fields.Name"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -49,8 +55,9 @@
               <input
                 type="text"
                 name="url"
-                id="street-address"
-                autocomplete="street-address"
+                id="url"
+                required
+                v-model="records[0].fields.Url"
                 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
               />
             </div>
@@ -63,6 +70,7 @@
       <div class="flex justify-center">
         <button
           type="submit"
+          @click="handleSubmit"
           class="ml-3 inline-flex justify-center py-2 px-10 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Save
@@ -74,35 +82,59 @@
 
 <script>
 export default {
-  async setup() {
-    const testData = {
+  name: 'PostComponent',
+  data() {
+    return {
       records: [
         {
           fields: {
-            Name: 'Test Url',
-            URL: 'https://google.com',
+            Name: '',
+            URL: '',
           },
         },
       ],
     }
-    const config = useRuntimeConfig()
-    const requestOptions = {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${config.API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(testData),
-    }
-
-    const data = fetch(
-      `https://api.airtable.com/v0/appBBi7Uoylg0ILTk/Services`,
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data)
-      })
   },
+  methods: {
+    handleSubmit(e) {
+      console.log(this.records[0])
+      e.preventDefault()
+    },
+  },
+
+  // async setup() {
+  //   const testData = {
+  //     records: [
+  //       {
+  //         fields: {
+  //           Name: '',
+  //           URL: '',
+  //         },
+  //       },
+  //     ],
+  //   }
+  //   const config = useRuntimeConfig()
+  //   const requestOptions = {
+  //     method: 'POST',
+  //     headers: {
+  //       Authorization: `Bearer ${config.API_KEY}`,
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(testData),
+  //   }
+
+  //   const data = fetch(
+  //     `https://api.airtable.com/v0/appBBi7Uoylg0ILTk/Services`,
+  //     requestOptions
+  //   )
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data)
+  //     })
+  //     .catch(function (error) {
+  //       console.log('Request failed', error)
+  //     })
+
+  // },
 }
 </script>
