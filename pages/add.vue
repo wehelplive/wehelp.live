@@ -109,6 +109,7 @@
             >
               Ваш отзыв</label
             >
+            <p class="mt-2 leading-6 text-gray-500">Чем помог этот ресурс?</p>
             <div class="mt-1">
               <textarea
                 id="description"
@@ -120,12 +121,15 @@
             </div>
           </div>
 
-          <div class="sm:col-span-2">
+          <!-- <div class="sm:col-span-2">
             <label
               for="location"
               class="block text-sm font-medium text-gray-700"
               >Город</label
             >
+               <p class="mt-2 leading-6 text-gray-500">
+             Для какого города или страны актуально? Или везде?
+            </p>
             <div class="mt-1">
               <input
                 id="location"
@@ -136,7 +140,7 @@
                 class="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
               />
             </div>
-          </div>
+          </div> -->
           <!-- <div class="sm:col-span-2">
             <label
               for="phone-number"
@@ -196,9 +200,7 @@ export default {
       fields: {
         URL: '',
         Name: '',
-        Type: '',
-        Location: '',
-        Description: '',
+        Location: [],
       },
     }
   },
