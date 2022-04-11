@@ -28,7 +28,7 @@
 export default {
   async setup() {
     const data = await $fetch(
-      'https://api.airtable.com/v0/appv6M4U4ckXcHzhU/Cars?api_key=keyQ54SEzABIZEm9F'
+      'https://api.airtable.com/v0/appv6M4U4ckXcHzhU/Cars?api_key=key8FBNM4uij29lZX'
     )
 
     return {
