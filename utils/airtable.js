@@ -4,7 +4,20 @@ const services = []
 
 const setRecords = (records) => {
   records.forEach((element) => {
-    services.push(element)
+    const cities = []
+    const locations = element.fields?.Location
+    if (locations) {
+      locations.forEach(async (location) => {
+        const result = await getCities(location)
+        cities.push(result)
+      })
+      services.push({
+        ...element,
+        fields: { ...element.fields, Location: cities },
+      })
+    } else {
+      services.push(element)
+    }
   })
 }
 
@@ -32,7 +45,7 @@ export const getServices = async () => {
   return services
 }
 
-export const getCities = async (location) => {
+const getCities = async (location) => {
   const config = useRuntimeConfig()
   const options = {
     headers: {

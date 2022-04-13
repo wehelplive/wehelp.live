@@ -16,13 +16,13 @@
                 {{ url }}
               </p>
               <p
-                v-if="cities.length > 0"
+                v-if="location.length > 0"
                 class="m-2 text-sm text-gray-500 w-52 truncate "
               >
                 <LocationMarkerIcon
                   class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                 />
-                {{ cities[0].fields.Name }}
+                {{ location[0].fields.Name }}
               </p>
               <p
                 v-if="description"
@@ -40,7 +40,6 @@
 </template>
 <script>
 import { ChatIcon, LocationMarkerIcon, LinkIcon } from '@heroicons/vue/solid'
-import { getCities } from '../airtable'
 
 export default {
   name: 'TServiceListItem',
@@ -75,9 +74,6 @@ export default {
       default: '',
     },
   },
-  data: () => ({
-    cities: [],
-  }),
   computed: {
     typeClass() {
       const style =
@@ -105,12 +101,6 @@ export default {
       }
       return style + color
     },
-  },
-  created() {
-    this.location.forEach(async (location) => {
-      const result = await getCities(location)
-      this.cities.push(result)
-    })
   },
 }
 </script>
