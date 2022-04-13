@@ -40,6 +40,10 @@ export default defineNuxtConfig({
       },
     ],
   },
+  publicRuntimeConfig: {
+    BASE_ID: process.env.BASE_ID,
+    API_KEY: process.env.API_KEY,
+  },
   build: {
     transpile: ['@heroicons/vue', '@headlessui/vue'],
     postcss: {
