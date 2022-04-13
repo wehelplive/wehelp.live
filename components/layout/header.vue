@@ -15,9 +15,9 @@
       </span>
     </div>
 
-    <div class="h-6 w-8">
-      <img src="/assets/images/menu.png" />
-    </div>
+    <MenuIcon class="h-6 w-8" />
+      
+    
   </div> -->
   <Popover class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -253,6 +253,8 @@
       leave-from-class="opacity-100 scale-100"
       leave-to-class="opacity-0 scale-95"
     >
+      <!-- Slide over panel 
+    -->
       <PopoverPanel
         focus
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
@@ -263,11 +265,9 @@
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                  alt="Workflow"
-                />
+                <NuxtLink to="/">
+                  <BrandLogo class="w-24 h-24" />
+                </NuxtLink>
               </div>
               <div class="-mr-2">
                 <PopoverButton
@@ -300,13 +300,6 @@
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a
-                href="#"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
-              >
-                Pricing
-              </a>
-
               <a
                 href="#"
                 class="text-base font-medium text-gray-900 hover:text-gray-700"
