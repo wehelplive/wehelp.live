@@ -11,7 +11,11 @@ module.exports = {
     ],
   },
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        favicon: "url( './favicon.png')",
+      }),
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
