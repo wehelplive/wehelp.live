@@ -9,6 +9,10 @@
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
+
+        <div class="flex justify-center">
+          <span class="font-medium text-gray-900">Hotline 24/7</span>
+        </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
