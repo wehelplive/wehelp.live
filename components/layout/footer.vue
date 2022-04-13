@@ -1,20 +1,21 @@
 <template>
   <footer class="bg-white" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <BrandLogo class="h-24 w-24" />
-          <p class="text-gray-500 text-base">
+          <p class="text-gray-600 text-base">
             We help to solve complex problems in the Ukrainian refugee crisis in
-            EU
+            Europe
           </p>
-          <div class="flex space-x-6">
+          <p class="text-gray-600 text-base">#WEHELPUKRAINE</p>
+          <div class="flex space-x-2">
             <a
               v-for="item in navigation.social"
               :key="item.name"
               :href="item.href"
-              class="text-gray-400 hover:text-gray-500"
+              class="text-black hover:text-gray-500"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
@@ -25,7 +26,7 @@
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3
-                class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                class="text-sm font-semibold text-black tracking-wider uppercase"
               >
                 Initiatives
               </h3>
@@ -33,7 +34,7 @@
                 <li v-for="item in navigation.solutions" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-base text-gray-600 hover:text-gray-900"
                   >
                     {{ item.name }}
                   </a>
@@ -42,7 +43,7 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h3
-                class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                class="text-sm font-semibold text-black tracking-wider uppercase"
               >
                 Support
               </h3>
@@ -50,7 +51,7 @@
                 <li v-for="item in navigation.support" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-base text-gray-600 hover:text-gray-900"
                   >
                     {{ item.name }}
                   </a>
@@ -61,7 +62,7 @@
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3
-                class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                class="text-sm font-semibold text-black tracking-wider uppercase"
               >
                 Company
               </h3>
@@ -69,7 +70,7 @@
                 <li v-for="item in navigation.company" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-base text-gray-600 hover:text-gray-900"
                   >
                     {{ item.name }}
                   </a>
@@ -78,7 +79,7 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h3
-                class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
+                class="text-sm font-semibold text-black tracking-wider uppercase"
               >
                 Legal
               </h3>
@@ -86,7 +87,7 @@
                 <li v-for="item in navigation.legal" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-500 hover:text-gray-900"
+                    class="text-base text-gray-600 hover:text-gray-900"
                   >
                     {{ item.name }}
                   </a>
@@ -97,11 +98,12 @@
         </div>
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-400 xl:text-center">
+        <p class="text-base text-gray-600 xl:text-center">
           &copy; 2022 WeHelp. All rights reserved.
         </p>
       </div>
     </div>
+    <div class="bg-no-repeat bg-top bg-favicon h-64 w-full"></div>
   </footer>
 </template>
 
