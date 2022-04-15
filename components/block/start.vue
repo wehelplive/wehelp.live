@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-no-repeat bg-top bg-favicon h-64 w-full"></div>
+        <div class="bg-no-repeat bg-top bg-favicon-transp h-64 w-full"></div>
       </main>
     </div>
   </div>
