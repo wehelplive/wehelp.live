@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="py-6 px-5 space-y-6">
-            <div class="flex flex-col float-right space-y-2">
+            <div class="flex flex-col float-right space-y-4">
               <NuxtLink
                 v-for="item in navigation"
                 :key="item.name"
@@ -78,17 +78,30 @@
               >
                 {{ item.name }}
               </NuxtLink>
+              <div class="m-6">
+                <select
+                  class="form-select appearance-none rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="language"
+                >
+                  <option selected>EN</option>
+                  <option>GER</option>
+                  <option>RUS</option>
+                  <option>UKR</option>
+                </select>
+              </div>
               <br />
+              <div class="h-20"></div>
               <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Icon icon="akar-icons:telegram-fill" />
-              <Icon icon="ant-design:instagram-filled" />
-              <Icon icon="bi:twitter" />
-              <Icon icon="bi:github" />
+              <div class="float-right m-8 space-y-2">
+                <Icon icon="akar-icons:telegram-fill" height="24" width="24" />
+                <Icon
+                  icon="ant-design:instagram-filled"
+                  height="24"
+                  width="24"
+                />
+                <Icon icon="bi:twitter" height="24" width="24" />
+                <Icon icon="bi:github" height="24" width="24" />
+              </div>
             </div>
           </div>
         </div>
@@ -121,9 +134,9 @@ import {
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 import { Icon } from '@iconify/vue'
 const navigation = [
-  { name: 'Find Accomodation', to: '/guest' },
-  { name: 'UAH Exchange', to: '/exchange' },
-  { name: 'Recommend', to: '/add' },
+  { name: 'Add service', to: '/guest' },
+  { name: 'Partnership', to: '/exchange' },
+  { name: 'Contact us', to: '/add' },
 ]
 
 export default {
