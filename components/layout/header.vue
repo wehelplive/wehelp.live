@@ -10,7 +10,7 @@
           </NuxtLink>
         </div>
         <div class="font-medium text-gray-800">Hotline 24/7</div>
-        <div class="-mr-2 -my-2 md:hidden">
+        <div class="mr-2 my-2 md:hidden">
           <PopoverButton
             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
@@ -57,7 +57,6 @@
               <div class="mt-17 ml-15">
                 <BrandLogo class="w-24 h-24" />
               </div>
-              <div class="font-medium text-gray-800">Hotline 24/7</div>
               <div class="mr-2">
                 <PopoverButton
                   class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -74,7 +73,7 @@
                 v-for="item in navigation"
                 :key="item.name"
                 :to="item.to"
-                class="text-base font-medium text-gray-900 hover:text-gray-700"
+                class="text-bas font-light text-gray-900 hover:text-gray-700"
               >
                 {{ item.name }}
               </NuxtLink>
