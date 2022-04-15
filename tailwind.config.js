@@ -137,7 +137,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
-        'favicon-transp': "url( './vector.png')",
+        'favicon-transp': "url( './button-icon without-top-border.png')",
       }),
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',
