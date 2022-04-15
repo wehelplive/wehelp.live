@@ -92,14 +92,21 @@
               <div class="h-20"></div>
               <br />
               <div class="float-right m-8 space-y-2">
-                <Icon icon="akar-icons:telegram-fill" height="24" width="24" />
-                <Icon
-                  icon="ant-design:instagram-filled"
-                  height="24"
-                  width="24"
-                />
-                <Icon icon="bi:twitter" height="24" width="24" />
-                <Icon icon="bi:github" height="24" width="24" />
+                <a href="https://t.me/wehelplive">
+                  <Icon icon="akar-icons:telegram-fill" height="24" width="24"
+                /></a>
+                <a href="https://www.instagram.com/wehelpl">
+                  <Icon
+                    icon="ant-design:instagram-filled"
+                    height="24"
+                    width="24"
+                /></a>
+                <a href="https://twitter.com/wehelplive">
+                  <Icon icon="bi:twitter" height="24" width="24"
+                /></a>
+                <a href="https://github.com/wehelplive">
+                  <Icon icon="bi:github" height="24" width="24"
+                /></a>
               </div>
             </div>
           </div>
