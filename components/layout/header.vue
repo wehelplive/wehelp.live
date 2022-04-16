@@ -1,6 +1,6 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto shadow-md z-20 px-4 sm:px-6">
       <div
         class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
       >
@@ -67,16 +67,18 @@
               </div>
             </div>
           </div>
-          <div class="py-6 px-5 space-y-6">
+          <div class="py-6 space-y-6">
+            <div class="h-20"></div>
             <div class="flex flex-col float-right space-y-4">
               <NuxtLink
                 v-for="item in navigation"
                 :key="item.name"
                 :to="item.to"
-                class="text-bas font-light text-gray-900 hover:text-gray-700"
+                class="text-base font-normal text-gray-900 hover:text-gray-700"
               >
                 {{ item.name }}
               </NuxtLink>
+              <div class="h-5"></div>
               <div class="m-6">
                 <select
                   class="form-select appearance-none rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -89,10 +91,10 @@
                 </select>
               </div>
               <br />
-              <div class="h-20"></div>
+              <div class="h-10"></div>
               <br />
-              <div class="float-right m-8 space-y-2">
-                <a href="https://t.me/wehelplive">
+              <div class="float-right m-10 space-y-4">
+                <a href="https://t.me/wehelplive" class="mb-2">
                   <Icon icon="akar-icons:telegram-fill" height="24" width="24"
                 /></a>
                 <a href="https://www.instagram.com/wehelpl">
@@ -108,6 +110,8 @@
                   <Icon icon="bi:github" height="24" width="24"
                 /></a>
               </div>
+              <div class="h-20"></div>
+              <br />
             </div>
           </div>
         </div>
@@ -140,9 +144,9 @@ import {
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 import { Icon } from '@iconify/vue'
 const navigation = [
-  { name: 'Add service', to: '/guest' },
-  { name: 'Partnership', to: '/exchange' },
-  { name: 'Contact us', to: '/add' },
+  { name: 'Add service', to: '/add' },
+  { name: 'Partnership', to: '/' },
+  { name: 'Contact us', to: '/' },
 ]
 
 export default {
