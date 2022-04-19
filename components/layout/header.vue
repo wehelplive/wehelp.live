@@ -85,9 +85,9 @@
                   id="language"
                 >
                   <option selected>EN</option>
-                  <option>GER</option>
-                  <option>RUS</option>
-                  <option>UKR</option>
+                  <option>DE</option>
+                  <option>RU</option>
+                  <option>UA</option>
                 </select>
               </div>
               <br />
