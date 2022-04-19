@@ -3,6 +3,12 @@ import { defineNuxtConfig } from 'nuxt3'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   css: ['tailwindcss/tailwind.css'],
+  googleFonts: {
+    display: 'swap',
+    families : {
+      'Nunito': true,
+    },
+  },
   watch: ['~/tailwind.config.js'],
   meta: {
     title: 'WeHelp – Evacuation to Europe',
@@ -51,4 +57,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  
+  
+  
 })
