@@ -8,11 +8,11 @@
           Our mission
         </h2>
         <p
-          class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="mt-1 text-4xl font-extrabold text-grey-800 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
           Effective organization of volunteer activities
         </p>
-        <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+        <p class="max-w-xl mt-5 mx-auto text-xl text-grey-500">
           There are many people who are <strong>ready to help</strong> and who
           <strong>need help</strong>. Existing organizations do not cope with
           coordination and chaos is formed and many issues remain unresolved. It

@@ -5,17 +5,17 @@
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <BrandLogo class="h-24 w-24" />
-          <p class="text-gray-600 text-base">
+          <p class="text-grey-600 text-base">
             We help to solve complex problems in the Ukrainian refugee crisis in
             Europe
           </p>
-          <p class="text-gray-600 text-base">#WEHELPUKRAINE</p>
+          <p class="text-grey-600 text-base">#WEHELPUKRAINE</p>
           <div class="flex space-x-2">
             <a
               v-for="item in navigation.social"
               :key="item.name"
               :href="item.href"
-              class="text-black hover:text-gray-500"
+              class="text-black hover:text-grey-500"
             >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
@@ -34,7 +34,7 @@
                 <li v-for="item in navigation.solutions" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-600 hover:text-gray-900"
+                    class="text-base text-grey-600 hover:text-grey-800"
                   >
                     {{ item.name }}
                   </a>
@@ -51,7 +51,7 @@
                 <li v-for="item in navigation.support" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-600 hover:text-gray-900"
+                    class="text-base text-grey-600 hover:text-grey-800"
                   >
                     {{ item.name }}
                   </a>
@@ -70,7 +70,7 @@
                 <li v-for="item in navigation.company" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-600 hover:text-gray-900"
+                    class="text-base text-grey-600 hover:text-grey-800"
                   >
                     {{ item.name }}
                   </a>
@@ -87,7 +87,7 @@
                 <li v-for="item in navigation.legal" :key="item.name">
                   <a
                     :href="item.href"
-                    class="text-base text-gray-600 hover:text-gray-900"
+                    class="text-base text-grey-600 hover:text-grey-800"
                   >
                     {{ item.name }}
                   </a>
@@ -97,8 +97,8 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-600 xl:text-center">
+      <div class="mt-12 border-t border-grey-200 pt-8">
+        <p class="text-base text-grey-600 xl:text-center">
           &copy; 2022 WeHelp. All rights reserved.
         </p>
       </div>

@@ -8,7 +8,7 @@
       >
         Our core values
       </h2>
-      <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">
+      <p class="mx-auto mt-5 max-w-prose text-xl text-grey-500">
         We aim to be a <strong>trustful</strong> source that give people
         <strong>hope</strong> and help them through effective
         <strong>actions</strong>.
@@ -16,7 +16,7 @@
       <div class="mt-12">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div v-for="feature in features" :key="feature.name" class="pt-6">
-            <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+            <div class="flow-root rounded-lg bg-grey-50 px-6 pb-8">
               <div class="-mt-6">
                 <div>
                   <span
@@ -30,11 +30,11 @@
                   </span>
                 </div>
                 <h3
-                  class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                  class="mt-8 text-lg font-medium tracking-tight text-grey-800"
                 >
                   {{ feature.name }}
                 </h3>
-                <p class="mt-5 text-base text-gray-500">
+                <p class="mt-5 text-base text-grey-500">
                   {{ feature.description }}
                 </p>
               </div>

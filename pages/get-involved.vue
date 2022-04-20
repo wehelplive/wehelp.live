@@ -1,7 +1,7 @@
 <template>
   <iframe
     class="w-full h-full min-h-screen"
-    src="https://airtable.com/embed/shrGch9kA9mxDaI75?backgroundColor=gray"
+    src="https://airtable.com/embed/shrGch9kA9mxDaI75?backgroundColor=grey"
     frameborder="0"
     onmousewheel=""
     width="100%"
