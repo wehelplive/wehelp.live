@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        Nunito: ['Nunito', 'sans-serif'],
+        nunito: ['Nunito'],
       },
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",

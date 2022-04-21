@@ -1,18 +1,18 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-8xl mx-auto z-50 shadow-md px-4 sm:px-6">
+    <div class="max-w-8xl z-50 shadow-md sm:px-6">
       <div
-        class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
+        class="flex justify-between items-center md:justify-start md:space-x-10"
       >
-        <div class="flex justify-start lg:w-0 lg:flex-1">
+        <div class="flex justify-start mt-2 ml-2 lg:w-0 lg:flex-1">
           <NuxtLink to="/">
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
-        <div class="font-medium text-gray-800">Hotline 24/7</div>
-        <div class="mr-2 my-2 md:hidden">
+        <div class="font-medium mt-5 text-gray-800">Hotline 24/7</div>
+        <div class="my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="bg-white rounded-md mt-2 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
@@ -20,7 +20,7 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
+            class="text-base font-medium mt-5 text-gray-500 hover:text-gray-900"
             v-for="item in navigation.solutions"
             :key="item.name"
             :to="item.to"
@@ -49,7 +49,7 @@
     >
       <PopoverPanel
         focus
-        class="bg-white absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        class="bg-white fixed h-auto absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden overflow-hidden"
       >
         <div class="bg-white bg-white divide-y-2 divide-gray-50">
           <div class="">
@@ -70,21 +70,23 @@
           <div class="py-6 space-y-6">
             <div class="h-10"></div>
             <div class="flex flex-col float-right space-y-4">
-              <NuxtLink
-                v-for="item in navigation.solutions"
-                :key="item.name"
-                :to="item.to"
-                class="text-base color-[#202020] font-Nunito text-gray-900 hover:text-gray-700"
-              >
-                {{ item.name }}
-              </NuxtLink>
+              <div class="m-5 flex flex-col float-right">
+                <NuxtLink
+                  v-for="item in navigation.solutions"
+                  :key="item.name"
+                  :to="item.to"
+                  class="text-base color-[#202020] mb-3 font-nunito text-gray-900 hover:text-gray-700"
+                >
+                  {{ item.name }}
+                </NuxtLink>
+              </div>
               <div class="h-5"></div>
               <div class="m-6">
                 <select
-                  class="form-select appearance-none rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  class="form-select w-18 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="language"
                 >
-                  <option selected>EN</option>
+                  <option>EN</option>
                   <option>DE</option>
                   <option>RU</option>
                   <option>UA</option>
@@ -93,7 +95,9 @@
               <br />
               <div class="h-10"></div>
               <br />
-              <div class="flex flex-col float-right m-10 space-y-3">
+              <div
+                class="flex flex-col float-right m-10 space-y-3 overflow-y-clip"
+              >
                 <a
                   v-for="item in navigation.social"
                   :key="item.name"
@@ -145,7 +149,7 @@ const navigation = {
   solutions: [
     { name: 'Add service', to: '/add' },
     { name: 'Partnership', to: '/partnership' },
-    { name: 'Contact us', to: '/contact' },
+    { name: 'Contact us', to: '/request' },
   ],
   social: [
     {
