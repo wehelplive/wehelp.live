@@ -1,5 +1,5 @@
 <template>
-  <Popover class="relative bg-white">
+  <Popover class="relative bg-white-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="flex justify-between items-center border-b-2 border-grey-100 py-6 md:justify-start md:space-x-10"
@@ -11,7 +11,7 @@
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-grey-400 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-500"
+            class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-grey-400 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-500"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
@@ -51,7 +51,7 @@
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
       >
         <div
-          class="rounded-lg shadow-lg ring-1 ring-black-500 ring-opacity-5 bg-white-500 divide-y-2 divide-grey-50"
+          class="rounded-lg shadow-lg ring-1 ring-black-500 ring-opacity-5 bg-white-500-500 divide-y-2 divide-grey-50"
         >
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
@@ -60,7 +60,7 @@
               </div>
               <div class="-mr-2">
                 <PopoverButton
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-grey-400 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-500"
+                  class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-grey-400 hover:text-grey-500 hover:bg-grey-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-500"
                 >
                   <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6" aria-hidden="true" />
@@ -82,7 +82,7 @@
             <div>
               <a
                 href="/request"
-                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-blue-600 hover:bg-royal-blue-700"
+                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-royal-blue-600 hover:bg-royal-blue-700"
               >
                 Need help?
               </a>

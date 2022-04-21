@@ -27,7 +27,7 @@
           <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
             <NuxtLink
               to="/get-involved"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-blue-600 bg-white hover:bg-grey-50 md:py-4 md:text-lg md:px-10"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-blue-600 bg-white-500 hover:bg-grey-50 md:py-4 md:text-lg md:px-10"
             >
               I can help
             </NuxtLink>
