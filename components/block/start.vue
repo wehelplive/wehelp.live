@@ -7,7 +7,7 @@
         >
           <span class="block xl:inline">🇺🇦 Evacuation to</span>
           {{ ' ' }}
-          <span class="block text-indigo-600 xl:inline">EU</span>
+          <span class="block text-royal-blue-600 xl:inline">EU</span>
         </h1>
         <p
           class="mt-3 max-w-md mx-auto text-base text-grey-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
@@ -19,7 +19,7 @@
           <div class="rounded-md shadow">
             <NuxtLink
               to="/request"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white-500 bg-royal-blue-600 hover:bg-royal-blue-700 md:py-4 md:text-lg md:px-10"
             >
               I need help
             </NuxtLink>
@@ -27,7 +27,7 @@
           <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
             <NuxtLink
               to="/get-involved"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-grey-50 md:py-4 md:text-lg md:px-10"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-royal-blue-600 bg-white hover:bg-grey-50 md:py-4 md:text-lg md:px-10"
             >
               I can help
             </NuxtLink>

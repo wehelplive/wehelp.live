@@ -4,7 +4,7 @@
       class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
     >
       <h2
-        class="text-base font-semibold uppercase tracking-wider text-indigo-600"
+        class="text-base font-semibold uppercase tracking-wider text-royal-blue-600"
       >
         Our core values
       </h2>
@@ -16,15 +16,15 @@
       <div class="mt-12">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div v-for="feature in features" :key="feature.name" class="pt-6">
-            <div class="flow-root rounded-lg bg-grey-50 px-6 pb-8">
+            <div class="flow-root rounded-lg bg-neutral-300 px-6 pb-8">
               <div class="-mt-6">
                 <div>
                   <span
-                    class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg"
+                    class="inline-flex items-center justify-center rounded-md bg-royal-blue-500 p-3 shadow-lg"
                   >
                     <component
                       :is="feature.icon"
-                      class="h-6 w-6 text-white"
+                      class="h-6 w-6 text-white-500"
                       aria-hidden="true"
                     />
                   </span>
