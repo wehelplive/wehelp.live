@@ -19,9 +19,9 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            class="text-base font-medium text-grey-500 hover:text-grey-800"
             v-for="item in navigation"
             :key="item.name"
+            class="text-base font-medium text-grey-500 hover:text-grey-800"
             :to="item.to"
           >
             {{ item.name }}
@@ -101,21 +101,7 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from '@headlessui/vue'
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/vue/outline'
-import { ChevronDownIcon } from '@heroicons/vue/solid'
+import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 const navigation = [
   { name: 'Find Accomodation', to: '/guest' },
@@ -129,7 +115,6 @@ export default {
     PopoverButton,
     PopoverGroup,
     PopoverPanel,
-    ChevronDownIcon,
     MenuIcon,
     XIcon,
   },
