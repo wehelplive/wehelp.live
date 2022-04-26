@@ -1,11 +1,6 @@
 <template>
-  <div class="bg-transparent overflow-hidden sm:rounded-md h-full min-h-screen">
-    <ul
-      v-for="service in services"
-      :key="service.id"
-      role="list"
-      class="divide-y divide-gray-200"
-    >
+  <div class="grid grid-cols-auto-fit gap-6">
+    <ul v-for="service in services" :key="service.id" role="list">
       <TServiceListItem
         :field-id="service.id"
         :name="service.fields.Name"

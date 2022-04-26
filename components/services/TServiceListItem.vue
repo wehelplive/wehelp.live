@@ -1,6 +1,29 @@
 <template>
-  <li class="m-2">
-    <a href="#" class="block border-2 hover:bg-gray-50 hover:border-gray-400">
+  <div
+    class="col-span-1 flex flex-col  text-center bg-white rounded-lg shadow divide-y divide-gray-200"
+  >
+    <div class="flex-1 flex flex-col p-8">
+      <img
+        class="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
+        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+        alt=""
+      />
+      <h3 class="mt-6 text-gray-900 text-sm font-medium">Jane Cooper</h3>
+      <dl class="mt-1 flex-grow flex flex-col justify-between">
+        <dt class="sr-only">Title</dt>
+        <dd class="text-gray-500 text-sm">Paradigm Representative</dd>
+        <dt class="sr-only">Role</dt>
+        <dd class="mt-3">
+          <span
+            class="px-2 py-1 text-green-800 text-xs font-medium bg-green-100 rounded-full"
+            >Admin</span
+          >
+        </dd>
+      </dl>
+      <LocationMarkerIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" />
+    </div>
+  </div>
+  <!-- <a href="#" class="block border-2 hover:bg-gray-50 hover:border-gray-400">
       <div class="px-4 py-4 sm:px-6">
         <div class="flex items-center justify-between">
           <p class="text-sm font-medium text-indigo-600 truncate">{{ name }}</p>
@@ -35,17 +58,14 @@
           </div>
         </div>
       </div>
-    </a>
-  </li>
+    </a> -->
 </template>
 <script>
-import { ChatIcon, LocationMarkerIcon, LinkIcon } from '@heroicons/vue/solid'
+import { LocationMarkerIcon } from '@heroicons/vue/solid'
 
 export default {
   name: 'TServiceListItem',
   components: {
-    ChatIcon,
-    LinkIcon,
     LocationMarkerIcon,
   },
   props: {

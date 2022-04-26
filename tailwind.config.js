@@ -138,6 +138,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
       }),
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
