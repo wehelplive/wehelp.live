@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center pt-80 items-center min-h-screen bg-gradient-to-r from-blue-200 to-yellow-100"
+    class="flex justify-center pt-40 items-center min-h-full bg-gradient-to-r from-blue-200 to-yellow-100"
   >
     <main class="max-w-7xl sm:-mt-24">
       <div class="px-4">
