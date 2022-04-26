@@ -133,6 +133,12 @@ module.exports = {
         600: '#E3E3E3',
         500: '#FFFFFF',
       },
+      'blue-sky': {
+        200: '#BFDBFE',
+      },
+      'yellow-sun': {
+        100: '#FEF9C3',
+      },
     },
     extend: {
       backgroundImage: (theme) => ({
