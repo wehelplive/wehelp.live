@@ -16,14 +16,10 @@
   </div>
 </template>
 <script>
-import TServiceListItem from '../components/services/TServiceListItem.vue'
 import { getServices } from '../utils/airtable.js'
 
 export default {
   name: 'Services',
-  components: {
-    TServiceListItem,
-  },
   data: () => ({
     services: [],
   }),
