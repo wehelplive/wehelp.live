@@ -134,6 +134,87 @@ module.exports = {
         500: '#FFFFFF',
       },
     },
+    fontFamily: {
+      nunito: ['Nunito', 'sans-serif'],
+      openSans: ['Open Sans', 'sans-serif'],
+    },
+    fontSize: {
+      caption: [
+        '12px',
+        {
+          lineHeight: '16px',
+          letterSpacing: '0.15px',
+        },
+      ],
+      button: [
+        '14px',
+        {
+          lineHeight: '22px',
+          letterSpacing: '0.0025em',
+        },
+      ],
+      body: [
+        '16px',
+        {
+          lineHeight: '150%',
+          letterSpacing: '0.005em',
+        },
+      ],
+      'subtitle-2': [
+        '15px',
+        {
+          lineHeight: '22px',
+          letterSpacing: '0.001em',
+        },
+      ],
+      subtitle: [
+        '16px',
+        {
+          lineHeight: '22px',
+          letterSpacing: '0.0015em',
+        },
+      ],
+      'headline-6': [
+        '21px',
+        {
+          lineHeight: '29px',
+          letterSpacing: '0.0015em',
+        },
+      ],
+      'headline-5': [
+        '25px',
+        {
+          lineHeight: '34px',
+        },
+      ],
+      'headline-4': [
+        '36px',
+        {
+          lineHeight: '49px',
+          letterSpacing: '0.0025em',
+        },
+      ],
+      'headline-3': [
+        '50px',
+        {
+          lineHeight: '68px',
+        },
+      ],
+      'headline-2': [
+        '63px',
+        {
+          lineHeight: '86px',
+          letterSpacing: '-0.005em',
+        },
+      ],
+      'headline-1': [
+        '101px',
+        {
+          lineHeight: '138px',
+          letterSpacing: '-0.0015em',
+        },
+      ],
+    },
     extend: {
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
@@ -143,5 +224,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+  ],
 }
