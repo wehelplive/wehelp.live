@@ -58,18 +58,6 @@ export default defineNuxtConfig({
       'Open Sans': true,
     },
   },
-  buildModules: ['@nuxtjs/google-fonts'],
-  googleFonts: {
-    display: 'swap',
-    families: {
-      'Nunito sans-serif': true,
-      'Open Sans sans-serif': true,
-    },
-  },
-  publicRuntimeConfig: {
-    BASE_ID: process.env.BASE_ID,
-    API_KEY: process.env.API_KEY,
-  },
   build: {
     transpile: ['@heroicons/vue', '@headlessui/vue'],
     postcss: {
