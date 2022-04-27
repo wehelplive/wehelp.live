@@ -135,200 +135,94 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
-        orange: '#FBA239',
-        red: '#DE4527',
-        green: '#209678',
-        blue: '#2EBFD2',
-        gray: '#737373',
-        white: '#FFFFFF',
-        black: '#202020',
-        purple: '#7e5bef',
-        'headline-6-black': '#2B2B2B',
-        'light-grey': '#EEEEEE',
-        'transparent-black': '#000000',
-        'charcoal-grey': '#202020',
-        'dark-grey': '#464646',
-        'coin-grey': '#C4C4C4',
-        'pebble-grey': '#979797',
-        'fossil-grey': '#9CA3AF',
-        'silver-grey': '#E2E8F0',
-        'transparent-black-60': '#000000 bg-opacity-60',
-        'transparent-grey-60': '#737373 bg-opacity-60',
+      backgroundImage: (theme) => ({
+        favicon: "url( './favicon.png')",
+      }),
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',
       },
-      dropShadow: {
-        values: '0px 0px 50px rgba(255, 0, 0, 1)',
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+        openSans: ['Open Sans', 'sans-serif'],
       },
-      extends: {
-        backgroundImage: (theme) => ({
-          favicon: "url( './favicon.png')",
-        }),
-        gridTemplateColumns: {
-          'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',
-        },
-        fontFamily: {
-          nunito: ['Nunito', 'sans-serif'],
-          openSans: ['Open Sans', 'sans-serif'],
-        },
-        fontSize: {
-          caption: [
-            '12px',
-            {
-              lineHeight: '16px',
-              letterSpacing: '0.15px',
-            },
-          ],
-          button: [
-            '14px',
-            {
-              lineHeight: '22px',
-              letterSpacing: '0.0025em',
-            },
-          ],
-          body: [
-            '16px',
-            {
-              lineHeight: '150%',
-              letterSpacing: '0.005em',
-            },
-          ],
-          'subtitle-2': [
-            '15px',
-            {
-              lineHeight: '22px',
-              letterSpacing: '0.001em',
-            },
-          ],
-          subtitle: [
-            '16px',
-            {
-              lineHeight: '22px',
-              letterSpacing: '0.0015em',
-            },
-          ],
-          'headline-6': [
-            '21px',
-            {
-              lineHeight: '29px',
-              letterSpacing: '0.0015em',
-            },
-          ],
-          'headline-5': [
-            '25px',
-            {
-              lineHeight: '34px',
-            },
-          ],
-          'headline-4': [
-            '36px',
-            {
-              lineHeight: '49px',
-              letterSpacing: '0.0025em',
-            },
-          ],
-          'headline-3': [
-            '50px',
-            {
-              lineHeight: '68px',
-            },
-          ],
-          'headline-2': [
-            '63px',
-            {
-              lineHeight: '86px',
-              letterSpacing: '-0.005em',
-            },
-          ],
-          'headline-1': [
-            '101px',
-            {
-              lineHeight: '138px',
-              letterSpacing: '-0.0015em',
-            },
-          ],
-        },
+      fontSize: {
+        caption: [
+          '12px',
+          {
+            lineHeight: '16px',
+            letterSpacing: '0.15px',
+          },
+        ],
+        button: [
+          '14px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0.0025em',
+          },
+        ],
+        body: [
+          '16px',
+          {
+            lineHeight: '150%',
+            letterSpacing: '0.005em',
+          },
+        ],
+        'subtitle-2': [
+          '15px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0.001em',
+          },
+        ],
+        subtitle: [
+          '16px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0.0015em',
+          },
+        ],
+        'headline-6': [
+          '21px',
+          {
+            lineHeight: '29px',
+            letterSpacing: '0.0015em',
+          },
+        ],
+        'headline-5': [
+          '25px',
+          {
+            lineHeight: '34px',
+          },
+        ],
+        'headline-4': [
+          '36px',
+          {
+            lineHeight: '49px',
+            letterSpacing: '0.0025em',
+          },
+        ],
+        'headline-3': [
+          '50px',
+          {
+            lineHeight: '68px',
+          },
+        ],
+        'headline-2': [
+          '63px',
+          {
+            lineHeight: '86px',
+            letterSpacing: '-0.005em',
+          },
+        ],
+        'headline-1': [
+          '101px',
+          {
+            lineHeight: '138px',
+            letterSpacing: '-0.0015em',
+          },
+        ],
       },
     },
-    fontSize: {
-      caption: [
-        '12px',
-        {
-          lineHeight: '16px',
-          letterSpacing: '0.15px',
-        },
-      ],
-      button: [
-        '14px',
-        {
-          lineHeight: '22px',
-          letterSpacing: '0.0025em',
-        },
-      ],
-      body: [
-        '16px',
-        {
-          lineHeight: '150%',
-          letterSpacing: '0.005em',
-        },
-      ],
-      'subtitle-2': [
-        '15px',
-        {
-          lineHeight: '22px',
-          letterSpacing: '0.001em',
-        },
-      ],
-      subtitle: [
-        '16px',
-        {
-          lineHeight: '22px',
-          letterSpacing: '0.0015em',
-        },
-      ],
-      'headline-6': [
-        '21px',
-        {
-          lineHeight: '29px',
-          letterSpacing: '0.0015em',
-        },
-      ],
-      'headline-5': [
-        '25px',
-        {
-          lineHeight: '34px',
-        },
-      ],
-      'headline-4': [
-        '36px',
-        {
-          lineHeight: '49px',
-          letterSpacing: '0.0025em',
-        },
-      ],
-      'headline-3': [
-        '50px',
-        {
-          lineHeight: '68px',
-        },
-      ],
-      'headline-2': [
-        '63px',
-        {
-          lineHeight: '86px',
-          letterSpacing: '-0.005em',
-        },
-      ],
-      'headline-1': [
-        '101px',
-        {
-          lineHeight: '138px',
-          letterSpacing: '-0.0015em',
-        },
-      ],
-    },
-    backgroundImage: (theme) => ({
-      favicon: "url( './favicon.png')",
-    }),
   },
   plugins: [
     require('@tailwindcss/typography'),
