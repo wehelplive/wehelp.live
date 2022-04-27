@@ -1,5 +1,5 @@
 <template>
-    <li class="m-2 drop-shadow-lg">
+    <li class="m-2">
       <a href="#" class="block border-2 hover:bg-gray-50 hover:border-gray-400">
         <div class="px-4 py-4 sm:px-6">
           <div class="flex items-center justify-between">
