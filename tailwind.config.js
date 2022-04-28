@@ -185,7 +185,7 @@ module.exports = {
           '21px',
           {
             lineHeight: '29px',
-            letterSpacing: '0.0015em',
+            letterSpacing: '0.15px',
           },
         ],
         'headline-5': [
