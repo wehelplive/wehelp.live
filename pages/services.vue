@@ -1,22 +1,8 @@
 <template>
-  <div class="grid grid-cols-auto-fit gap-6 p-1">
-    <ul v-for="service in services" :key="service.id" role="list">
-      <TServiceListItem
-        :field-id="service.id"
-        :name="service.fields.Name"
-        :description="service.fields.Description"
-        :url="service.fields.URL"
-        :location="service.fields.Location"
-        :type="service.fields.Type"
-        :services="service.fields.Services"
-        :phone="service.fields.Phone"
-        :rating="service.fields.Rating"
-      />
-    </ul>
-  </div>
+  <ServiceList :services="services" />
 </template>
 <script>
-import { getServices } from '../utils/airtable.js'
+import { fetchServices } from '../utils/airtable.js'
 
 export default {
   name: 'Services',
@@ -24,8 +10,7 @@ export default {
     services: [],
   }),
   async mounted() {
-    const result = await getServices()
-    this.services = result
+    this.services = await fetchServices()
   },
 }
 </script>
