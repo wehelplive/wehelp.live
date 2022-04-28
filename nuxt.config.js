@@ -39,6 +39,24 @@ export default defineNuxtConfig({
         async: true,
       },
     ],
+    link: [
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap',
+      },
+    ],
+  },
+  publicRuntimeConfig: {
+    BASE_ID: process.env.BASE_ID,
+    API_KEY: process.env.API_KEY,
+  },
+  buildModules: ['@nuxtjs/google-fonts'],
+  googleFonts: {
+    display: 'swap',
+    families: {
+      'Open Sans': true,
+    },
   },
   build: {
     transpile: ['@heroicons/vue', '@headlessui/vue'],
