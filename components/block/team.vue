@@ -20,11 +20,11 @@
                 </div>
               </div>
               <div class="flex ml-auto">
-                <div class="mr-4 mt-1 text-l text-zinc-700">25.07.2022</div>
+                <div class="mr-4 mt-1 text-l text-zink-700">25.07.2022</div>
               </div>
             </div>
           </header>
-          <div class="relative text-l pt-10 text-zinc-700 md:flex-grow">
+          <div class="relative text-l pt-10 text-zink-700 md:flex-grow">
             <p class="relative">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
