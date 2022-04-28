@@ -3,7 +3,7 @@
     class="col-span-1 flex flex-col p-5  bg-white-500 box-border rounded-lg border-2 border-solid border-[#0000001a]"
   >
     <div class="flex flex-col pr-3 mb-4">
-      <div class="font-nunito text-headline-5 mb-2 truncate">
+      <div class="font-nunito text-subtitle mb-2">
         {{ name }}
       </div>
 
@@ -34,12 +34,6 @@
             </svg>
           </div>
         </div>
-
-        <div class="flex flex-1 items-center justify-center">
-          <div class=" text-[#5F6267] font-openSans font-semibold text-caption">
-            Read 28 reviews
-          </div>
-        </div>
       </div>
 
       <div
@@ -54,6 +48,17 @@
       {{ description }}
     </p>
 
+    <div v-if="url" class="flex flex-row mb-4 items-center">
+      <LinkIcon class="h-5 w-5 mr-2 text-grey-500" />
+      <a
+        class="text-[#5F6267] flex-1 font-openSans truncate"
+        :href="url"
+        target="_blank"
+      >
+        {{ url }}
+      </a>
+    </div>
+
     <div v-if="phone" class="flex flex-row mb-4 items-center">
       <PhoneIcon class="h-5 w-5 mr-2 text-grey-500" />
       <div class="text-[#5F6267] flex-1 font-openSans">
@@ -61,25 +66,17 @@
       </div>
     </div>
 
-    <div
-      v-if="location.length > 0 && location[0]?.fields?.Name"
-      class="flex flex-row mb-4 items-center"
-    >
-      <LocationMarkerIcon class="h-5 w-5 mr-2 text-grey-500" />
-      <div class="text-[#5F6267] flex-1 font-openSans">
-        {{ location[0].fields.Name }}
-      </div>
-    </div>
+    <LocationItem :id="location" />
   </div>
 </template>
 <script>
-import { PhoneIcon, LocationMarkerIcon } from '@heroicons/vue/solid'
+import { PhoneIcon, LinkIcon } from '@heroicons/vue/solid'
 
 export default {
-  name: 'TServiceListItem',
+  name: 'ServiceItem',
   components: {
     PhoneIcon,
-    LocationMarkerIcon,
+    LinkIcon,
   },
   props: {
     fieldId: {
@@ -99,8 +96,8 @@ export default {
       default: '',
     },
     location: {
-      type: Array,
-      default: () => [],
+      type: String,
+      default: '',
     },
     type: {
       type: String,
