@@ -21,11 +21,15 @@
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
             class="text-base font-medium mt-5 text-gray-500 hover:text-gray-900"
-            v-for="item in navigation.solutions"
-            :key="item.name"
-            :to="item.to"
+            to="/add"
           >
-            {{ item.name }}
+            Add service
+          </NuxtLink>
+          <NuxtLink
+            class="text-base font-medium mt-5 text-gray-500 hover:text-gray-900"
+            to="/partnership"
+          >
+            Partnership
           </NuxtLink>
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
