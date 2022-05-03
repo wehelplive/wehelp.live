@@ -7,7 +7,7 @@
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
-        <div class="font-medium mt-5 text-gray-800">Hotline 24/7</div>
+        <div class="font-medium mt-5 mr-10 text-gray-800">Hotline 24/7</div>
         <div class="mr-4 md:hidden">
           <PopoverButton
             class="bg-white rounded-md mt-1 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
