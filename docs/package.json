@@ -1,0 +1,19 @@
+{
+  "name": "wehelp-handbook",
+  "version": "0.0.1",
+  "description": "agreements, objectives, processes and workflows",
+  "main": "index.js",
+  "authors": {
+    "name": "Amanuel Ayezabu",
+    "email": "babyzewdie@gmail.com"
+  },
+  "repository": "https://github.com/amanuela97/wehelp-handbook.git/wehelp-handbook",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
