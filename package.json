@@ -5,9 +5,7 @@
     "tw": "tailwind-config-viewer --open --port 3001",
     "build": "yarn lint && nuxi build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint",
@@ -32,8 +30,7 @@
     "stylelint": "^10.1.0",
     "tailwind-config-viewer": "^1.6.2",
     "tailwindcss": "^3.0.6",
-    "vue-gtag-next": "^1.14.0",
-    "vuepress": "^1.9.7"
+    "vue-gtag-next": "^1.14.0"
   },
   "engines": {
     "node": ">=14.18.1"
