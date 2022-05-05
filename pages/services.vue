@@ -2,7 +2,7 @@
   <ServiceList :services="services" />
 </template>
 <script>
-import { fetchServices } from '../utils/airtable.js'
+import { fetchServices } from '../utils/airtable'
 
 export default {
   name: 'Services',
