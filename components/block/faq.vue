@@ -8,7 +8,7 @@
         <FaqItem title="What is the organisation structure?" faq-id="1">
           <img
             class="object-cover w-full h-full"
-            src="public\structure.jpg"
+            src="/structure.jpg"
             alt="organisation structure"
           />
         </FaqItem>
