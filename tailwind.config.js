@@ -94,7 +94,7 @@ module.exports = {
         100: '#A4A4A4',
         50: '#AEAEAE',
       },
-      zink: {
+      zinc: {
         900: '#030303',
         800: '#1F1F1F',
         700: '#3B3B3B',
@@ -143,7 +143,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
-        'favicon-transp': "url( './button-icon without-top-border.png')",
+        'favicon-transp': "url( './icon-without-top-border.png')",
       }),
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',

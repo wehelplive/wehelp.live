@@ -6,12 +6,12 @@
       <div class="px-4">
         <div class="text-center">
           <h1
-            class="text-4xl mt-3 tracking-tight uppercase font-extra text-zinc-800 sm:text-5xl md:text-6xl"
+            class="text-4xl mt-3 tracking-tight font-nunito uppercase font-extra text-zinc-800 sm:text-5xl md:text-6xl"
           >
             <span class="block xl:inline">Evacuation to EU</span>
           </h1>
           <p
-            class="mt-5 max-w-md mx-auto text-base text-zinc-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+            class="mt-5 max-w-md mx-auto text-base font-nunito text-zinc-700 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
           >
             We help to solve complex problems in the Ukrainian refugee crisis in
             EU
@@ -22,7 +22,7 @@
             <div class="rounded-3xl shadow">
               <NuxtLink
                 to="/request"
-                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-red-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+                class="w-full flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-red-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
               >
                 I need help
               </NuxtLink>
@@ -30,7 +30,7 @@
             <div class="mt-3 sm:mt-0 sm:ml-3">
               <NuxtLink
                 to="/get-involved"
-                class="w-full underline underline-offset-1 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
+                class="w-full underline underline-offset-1 flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
               >
                 I can help
               </NuxtLink>
