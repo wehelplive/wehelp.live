@@ -1,18 +1,18 @@
 <template>
-  <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+  <dl class="mt-6 space-y-6 divide-y divide-grey-200">
     <div class="pt-6">
       <dt class="text-lg">
         <!-- Expand/collapse question button -->
         <button
           type="button"
-          class="text-left w-full flex justify-between items-start text-gray-400"
+          class="text-left w-full flex justify-between items-start text-grey-400"
           :aria-controls="`faq-${faqId}`"
           :aria-expanded="collapse"
           @click="switchCollapse"
         >
           <span
             v-if="title"
-            class="font-nunito font-semibold text-[#2B2B2B] text-subtitle-2"
+            class="font-nunito font-semibold text-black-500 text-subtitle-2"
           >
             {{ title }}
           </span>
