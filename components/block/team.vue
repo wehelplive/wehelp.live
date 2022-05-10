@@ -1,36 +1,33 @@
 <template>
   <swiper
-    :slides-per-view="1"
-    :space-between="30"
-    :loop="true"
-    :pagination="{
-      clickable: true,
-    }"
-    :navigation="true"
     :modules="modules"
-    class="mySwiper"
+    :slides-per-view="1"
+    :space-between="50"
+    navigation
+    :pagination="{ clickable: true }"
+    :scrollbar="{ draggable: true }"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
   >
-    <swiper-slide>Slide 1</swiper-slide><swiper-slide>Slide 2</swiper-slide
-    ><swiper-slide>Slide 3</swiper-slide><swiper-slide>Slide 4</swiper-slide
-    ><swiper-slide>Slide 5</swiper-slide><swiper-slide>Slide 6</swiper-slide
-    ><swiper-slide>Slide 7</swiper-slide><swiper-slide>Slide 8</swiper-slide
-    ><swiper-slide>Slide 9</swiper-slide>
+    <swiper-slide class="h-300 line-height: 5rem bg-blue-500 	text-align: center"
+      >Slide 1</swiper-slide
+    >
+    <swiper-slide class="h-300 line-height: 5rem bg-blue-500 text-align: center"
+      >Slide 2</swiper-slide
+    >
+    <swiper-slide class="h-300 line-height: 5rem bg-blue-500 text-align: center"
+      >Slide 3</swiper-slide
+    >
   </swiper>
 </template>
 <script>
-// Import Swiper Vue.js components
+import { Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-// Import Swiper styles
 import 'swiper/css'
-
-import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-
-import './style.css'
-
-// import required modules
-import { Pagination, Navigation } from 'swiper'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 export default {
   components: {
@@ -38,9 +35,26 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const onSwiper = (swiper) => {
+      console.log(swiper)
+    }
+    const onSlideChange = () => {
+      console.log('slide change')
+    }
     return {
-      modules: [Pagination, Navigation],
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination],
     }
   },
 }
 </script>
+<style scoped>
+.swiper-slide {
+  height: 300px;
+  line-height: 300px;
+  font-size: 30px;
+  text-align: center;
+  background-color: pink;
+}
+</style>
