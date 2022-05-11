@@ -10,7 +10,7 @@
         <div class="font-medium mt-5 mr-10 text-gray-800">Hotline 24/7</div>
         <div class="mr-4 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md mt-1 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
@@ -33,7 +33,7 @@
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a
             href="/request"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-indigo-600 hover:bg-indigo-700"
           >
             Contact us
           </a>
@@ -51,9 +51,9 @@
     >
       <PopoverPanel
         focus
-        class="bg-white fixed h-auto absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden overflow-hidden"
+        class="bg-white-500 fixed h-auto absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden overflow-hidden"
       >
-        <div class="bg-white bg-white divide-y-2 divide-gray-50">
+        <div class="bg-white-500 bg-white-500 ">
           <div class="">
             <div class="flex items-center justify-between">
               <div class="mt-17 ml-15">
@@ -61,7 +61,7 @@
               </div>
               <div class="mr-2">
                 <PopoverButton
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 >
                   <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6" aria-hidden="true" />
@@ -85,7 +85,7 @@
               <div class="h-5"></div>
               <div class="m-6">
                 <select
-                  class="form-select w-18 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  class="form-select w-18 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white-500 focus:border-blue-600 focus:outline-none"
                   id="language"
                 >
                   <option>EN</option>
