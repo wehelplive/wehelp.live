@@ -7,10 +7,10 @@
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
-        <div class="font-medium mt-5 mr-10 text-gray-800">Hotline 24/7</div>
+        <div class="font-medium mt-5 mr-10 text-zinc-800">Hotline 24/7</div>
         <div class="mr-4 md:hidden">
           <PopoverButton
-            class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-zinc-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
           >
             <span class="sr-only">Open menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
@@ -18,13 +18,13 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            class="text-base font-medium mt-5 text-gray-500 hover:text-gray-900"
+            class="text-base font-medium mt-5 text-black-500 hover:text-black-500"
             to="/add"
           >
             Add service
           </NuxtLink>
           <NuxtLink
-            class="text-base font-medium mt-5 text-gray-500 hover:text-gray-900"
+            class="text-base font-medium mt-5 text-black-500 hover:text-black-900"
             to="/partnership"
           >
             Partnership
@@ -33,7 +33,7 @@
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a
             href="/request"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-indigo-600 hover:bg-indigo-700"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-red-500 hover:bg-red-500"
           >
             Contact us
           </a>
@@ -55,13 +55,13 @@
       >
         <div class="bg-white-500 bg-white-500 ">
           <div class="">
-            <div class="flex items-center justify-between">
+            <div class="flex m-0 p-0 items-center justify-between">
               <div class="mt-17 ml-15">
                 <BrandLogo class="w-24 h-24" />
               </div>
               <div class="mr-2">
                 <PopoverButton
-                  class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
                 >
                   <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6" aria-hidden="true" />
@@ -77,15 +77,14 @@
                   v-for="item in navigation.solutions"
                   :key="item.name"
                   :to="item.to"
-                  class="text-base color-[#202020] mb-3 font-nunito text-gray-900 hover:text-gray-700"
+                  class="text-base color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
                 >
                   {{ item.name }}
                 </NuxtLink>
               </div>
-              <div class="h-5"></div>
               <div class="m-6">
                 <select
-                  class="form-select w-18 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white-500 focus:border-blue-600 focus:outline-none"
+                  class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
                   id="language"
                 >
                   <option>EN</option>
@@ -94,17 +93,17 @@
                   <option>UA</option>
                 </select>
               </div>
-              <br />
+
               <div class="h-10"></div>
               <br />
               <div
-                class="flex flex-col float-right m-10 space-y-3 overflow-y-clip"
+                class="flex flex-col float-right m-12 space-y-3 overflow-y-clip"
               >
                 <a
                   v-for="item in navigation.social"
                   :key="item.name"
                   :href="item.href"
-                  class="text-black hover:text-gray-500"
+                  class="text-black hover:text-zinc-800"
                 >
                   <span class="sr-only">{{ item.name }}</span>
                   <component
