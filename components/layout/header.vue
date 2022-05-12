@@ -51,17 +51,17 @@
     >
       <PopoverPanel
         focus
-        class="bg-white-500 fixed h-auto absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden overflow-hidden"
+        class="bg-white-500 fixed h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
       >
         <div class="bg-white-500 bg-white-500 ">
           <div class="">
             <div class="flex m-0 p-0 items-center justify-between">
-              <div class="mt-17 ml-15">
+              <div class="mt-2 ml-2">
                 <BrandLogo class="w-24 h-24" />
               </div>
               <div class="mr-2">
                 <PopoverButton
-                  class="bg-white-500 rounded-md p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
+                  class="bg-white-500 rounded-md mt-1 mr-2 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
                 >
                   <span class="sr-only">Close menu</span>
                   <XIcon class="h-6 w-6" aria-hidden="true" />
@@ -71,7 +71,7 @@
           </div>
           <div class="py-6 space-y-6">
             <div class="h-10"></div>
-            <div class="flex flex-col float-right space-y-4">
+            <div class="flex w-8xl flex-col float-right space-y-4">
               <div class="m-5 flex flex-col float-right">
                 <NuxtLink
                   v-for="item in navigation.solutions"
@@ -97,7 +97,7 @@
               <div class="h-10"></div>
               <br />
               <div
-                class="flex flex-col float-right m-12 space-y-3 overflow-y-clip"
+                class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
               >
                 <a
                   v-for="item in navigation.social"
