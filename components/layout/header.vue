@@ -72,7 +72,7 @@
           <div class="py-6 space-y-6">
             <div class="h-10"></div>
             <div class="flex w-8xl flex-col float-right space-y-4">
-              <div class="m-5 flex flex-col float-right">
+              <div class="mr-1 flex flex-col float-right">
                 <NuxtLink
                   v-for="item in navigation.solutions"
                   :key="item.name"
@@ -82,7 +82,7 @@
                   {{ item.name }}
                 </NuxtLink>
               </div>
-              <div class="m-6">
+              <div class="m-6 mr-5">
                 <select
                   class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
                   id="language"
@@ -114,6 +114,7 @@
                 </a>
               </div>
               <div class="h-20"></div>
+              <br />
               <br />
             </div>
           </div>
