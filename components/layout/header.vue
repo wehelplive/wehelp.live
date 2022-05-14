@@ -84,8 +84,8 @@
               </div>
               <div class="m-6 mr-5">
                 <select
-                  class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
                   id="language"
+                  class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
                 >
                   <option>EN</option>
                   <option>DE</option>
@@ -125,26 +125,15 @@
 </template>
 
 <script>
+import { defineComponent, h } from 'vue'
+
 import {
   Popover,
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
 } from '@headlessui/vue'
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/vue/outline'
+import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 const navigation = {
   solutions: [
@@ -215,6 +204,7 @@ const navigation = {
 }
 
 export default {
+  name: 'Header',
   components: {
     Popover,
     PopoverButton,
