@@ -72,7 +72,9 @@
           <div class="py-6 space-y-6">
             <div class="h-10"></div>
             <div class="flex w-8xl flex-col float-right space-y-4">
+
               <div class="mr-1 flex flex-col float-right">
+
                 <NuxtLink
                   v-for="item in navigation.solutions"
                   :key="item.name"
@@ -82,6 +84,7 @@
                   {{ item.name }}
                 </NuxtLink>
               </div>
+
               <div class="m-6 mr-5">
                 <select
                   id="language"
@@ -115,7 +118,9 @@
               </div>
               <div class="h-20"></div>
               <br />
+
               <br />
+
             </div>
           </div>
         </div>
@@ -133,7 +138,9 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from '@headlessui/vue'
+
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
+
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 const navigation = {
   solutions: [
