@@ -72,9 +72,7 @@
           <div class="py-6 space-y-6">
             <div class="h-10"></div>
             <div class="flex w-8xl flex-col float-right space-y-4">
-
               <div class="mr-1 flex flex-col float-right">
-
                 <NuxtLink
                   v-for="item in navigation.solutions"
                   :key="item.name"
@@ -120,7 +118,6 @@
               <br />
 
               <br />
-
             </div>
           </div>
         </div>
