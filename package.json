@@ -3,15 +3,31 @@
   "scripts": {
     "dev": "nuxi dev",
     "tw": "tailwind-config-viewer --open --port 3001",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "build": "yarn lint && nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "lint-staged": {
+    "*.{js,vue}": "yarn lint",
+    "*.{css,vue}": "stylelint"
   },
   "devDependencies": {
     "@nuxt/postcss8": "^1.1.3",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/google-fonts": "^1.3.0",
     "@tailwindcss/typography": "^0.5.2",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "lint-staged": "^10.0.0",
     "nuxt3": "latest",
     "postcss": "^8.4.5",
+    "prettier": "^1.19.1",
+    "stylelint": "^10.1.0",
     "tailwind-config-viewer": "^1.6.2",
     "tailwindcss": "^3.0.6",
     "vue-gtag-next": "^1.14.0"
@@ -22,8 +38,13 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "^1.0.5",
+
     "@tailwindcss/forms": "^0.5.0",
     "airtable": "^0.11.3",
+
+    "@iconify/vue": "^3.2.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
+
     "lodash": "^4.17.21"
   }
 }

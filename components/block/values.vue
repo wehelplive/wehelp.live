@@ -1,78 +1,25 @@
 <template>
-  <div class="relative bg-white py-16 sm:py-24 lg:py-32">
-    <div
-      class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
-    >
+  <div class="grid place-items-center  min-h-screen">
+    <div class="max-w-2xl text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
       <h2
-        class="text-base font-semibold uppercase tracking-wider text-indigo-600"
+        class="font-nunito font-semibold md:font-extrabold text-3xl w-fit sm:mx-auto"
       >
-        Our core values
+        <span class="block">Our core values</span>
       </h2>
-      <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-        We aim to be a <strong>trustful</strong> source that give people
-        <strong>hope</strong> and help them through effective
-        <strong>actions</strong>.
+      <p
+        class="mt-[10%] md:text-lg leading-6 font-nunito text-subtitle text-[#464646]"
+      >
+        We aim to be a
+        <span class="font-bold text-green-500">trustful</span> source that give
+        people <span class="font-bold text-orange-500">hope</span> and help them
+        through <span class="font-bold text-blue-500">effective</span>
+        actions
       </p>
-      <div class="mt-12">
-        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div v-for="feature in features" :key="feature.name" class="pt-6">
-            <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-              <div class="-mt-6">
-                <div>
-                  <span
-                    class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg"
-                  >
-                    <component
-                      :is="feature.icon"
-                      class="h-6 w-6 text-white"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </div>
-                <h3
-                  class="mt-8 text-lg font-medium tracking-tight text-gray-900"
-                >
-                  {{ feature.name }}
-                </h3>
-                <p class="mt-5 text-base text-gray-500">
-                  {{ feature.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img
+        class="mt-[15%] inline-flex items-center justify-center  object-cove"
+        src="/values.svg"
+        alt="values image"
+      />
     </div>
   </div>
 </template>
-
-<script>
-import {
-  CloudUploadIcon,
-  LockClosedIcon,
-  RefreshIcon,
-} from '@heroicons/vue/outline'
-
-const features = [
-  {
-    name: 'Hope',
-    icon: CloudUploadIcon,
-  },
-  {
-    name: 'Trust',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Action',
-    icon: RefreshIcon,
-  },
-]
-
-export default {
-  setup() {
-    return {
-      features,
-    }
-  },
-}
-</script>
