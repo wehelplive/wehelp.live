@@ -17,7 +17,7 @@
             <li class="text-subtitle p-2">
               Where can I find the full schedule? Subscribe to calendar -
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/calendar/"
                 >https://wehelp.live/calendar/</a
               >
@@ -29,7 +29,7 @@
             <li class="text-subtitle p-2">
               How do I join Slack? Sign up as a volunteer at
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/get-involved/"
                 >https://wehelp.live/get-involved/</a
               >
@@ -44,7 +44,7 @@
               Retrospective, Governance Meeting, Daily Standup, Planning And
               Review Meetings, Coordination Meeting, read more:
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black-500 hover:text-grey-300 underline"
                 href="https://patterns.sociocracy30.org/meeting-formats.html"
                 >https://patterns.sociocracy30.org/meeting-formats.html/</a
               >
@@ -52,7 +52,7 @@
             <li class="text-subtitle p-2">
               How to prepare for a meeting?
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black-500 hover:text-grey-300 underline"
                 href="https://patterns.sociocracy30.org/prepare-for-meetings.html"
                 >https://patterns.sociocracy30.org/prepare-for-meetings.html</a
               >
@@ -60,7 +60,7 @@
             <li class="text-subtitle p-2">
               Responsibilities of a meeting host
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black-500 hover:text-grey-300 underline"
                 href=" https://patterns.sociocracy30.org/meeting-host.html"
               >
                 https://patterns.sociocracy30.org/meeting-host.html</a
@@ -73,7 +73,7 @@
             <div class="text-subtitle p-2">
               All downloadable files you can find in our
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black hover:text-grey-300 underline"
                 href="https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi)"
                 >Google Drive</a
               >
@@ -84,7 +84,7 @@
             <div class="text-subtitle p-2">
               Source files are in
               <a
-                class="text-black hover:text-grey-500 underline"
+                class="text-black hover:text-grey-300 underline"
                 href="https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631"
                 >WeHelp Figma</a
               >
@@ -105,7 +105,7 @@
           <span class="text-subtitle ml-6"
             >In our
             <a
-              class="text-black hover:text-grey-500 underline"
+              class="text-black hover:text-grey-300 underline"
               href="https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi)"
               >Google Drive</a
             >.</span

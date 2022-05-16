@@ -1,5 +1,5 @@
 <template>
-  <dl class="mt-6 space-y-6 divide-y divide-grey-200">
+  <dl class="mt-6 space-y-6 divide-y divide-grey-300">
     <div class="pt-6">
       <dt class="text-lg">
         <!-- Expand/collapse question button -->
@@ -23,8 +23,8 @@
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="#979797"
+              stroke-width="1"
+              stroke="#7B7B7B"
               aria-hidden="true"
             >
               <path
