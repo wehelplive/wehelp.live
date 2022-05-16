@@ -1,13 +1,13 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-8xl z-50 shadow-md sm:px-6">
+    <div class="max-w-8xl z-50 m-0 p-0 shadow-md sm:px-6">
       <div class="flex justify-between items-center md:justify-start">
         <div class="flex justify-start mt-2 ml-2 lg:w-0 lg:flex-1">
           <NuxtLink to="/">
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
-        <div class="font-medium mt-5 mr-10 text-zinc-800">Hotline 24/7</div>
+
         <div class="mr-4 md:hidden">
           <PopoverButton
             class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-zinc-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
@@ -18,26 +18,24 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            class="text-base font-medium mt-5 text-black-500 hover:text-black-500"
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
             to="/add"
           >
             Add service
           </NuxtLink>
           <NuxtLink
-            class="text-base font-medium mt-5 text-black-500 hover:text-black-900"
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
             to="/partnership"
           >
             Partnership
           </NuxtLink>
-        </PopoverGroup>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a
-            href="/request"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-red-500 hover:bg-red-500"
+          <NuxtLink
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
+            to="/request"
           >
             Contact us
-          </a>
-        </div>
+          </NuxtLink>
+        </PopoverGroup>
       </div>
     </div>
 
@@ -61,10 +59,10 @@
               </div>
               <div class="mr-2">
                 <PopoverButton
-                  class="bg-white-500 rounded-md mt-1 mr-2 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
+                  class="bg-white-500 rounded-md mr-2 mt-1.5 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
                 >
                   <span class="sr-only">Close menu</span>
-                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                  <XIcon class="h-5.5 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
