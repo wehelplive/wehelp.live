@@ -157,75 +157,63 @@ module.exports = {
           '12px',
           {
             lineHeight: '16px',
-            letterSpacing: '0.15px',
-          },
-        ],
-        button: [
-          '14px',
-          {
-            lineHeight: '22px',
-            letterSpacing: '0.0025em',
+            letterSpacing: '0px',
           },
         ],
         body: [
-          '16px',
+          '14px',
           {
-            lineHeight: '150%',
-            letterSpacing: '0.005em',
-          },
-        ],
-        'subtitle-2': [
-          '15px',
-          {
-            lineHeight: '22px',
-            letterSpacing: '0.001em',
+            lineHeight: '20px',
+            letterSpacing: '0em',
           },
         ],
         subtitle: [
           '16px',
           {
             lineHeight: '22px',
-            letterSpacing: '0.0015em',
+            letterSpacing: '0em',
           },
         ],
         'headline-6': [
-          '21px',
+          '22px',
           {
-            lineHeight: '29px',
-            letterSpacing: '0.15px',
+            lineHeight: '30px',
+            letterSpacing: '0em',
           },
         ],
         'headline-5': [
           '25px',
           {
             lineHeight: '34px',
+            letterSpacing: '0em',
           },
         ],
         'headline-4': [
           '36px',
           {
-            lineHeight: '49px',
-            letterSpacing: '0.0025em',
+            lineHeight: '50px',
+            letterSpacing: '0em',
           },
         ],
         'headline-3': [
           '50px',
           {
             lineHeight: '68px',
+            letterSpacing: '0em',
           },
         ],
         'headline-2': [
-          '63px',
+          '64px',
           {
-            lineHeight: '86px',
-            letterSpacing: '-0.005em',
+            lineHeight: '88px',
+            letterSpacing: '0em',
           },
         ],
         'headline-1': [
-          '101px',
+          '100px',
           {
             lineHeight: '138px',
-            letterSpacing: '-0.0015em',
+            letterSpacing: '0em',
           },
         ],
       },
