@@ -19,21 +19,27 @@
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
             class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
-            to="/add"
+            to="/guest"
           >
-            Add service
+            Find Accomodation
           </NuxtLink>
           <NuxtLink
             class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
-            to="/partnership"
+            to="/host"
           >
-            Partnership
+            Offer Accomodation
+          </NuxtLink>
+          <NuxtLink
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
+            to="/exchange"
+          >
+            UAH Exchange
           </NuxtLink>
           <NuxtLink
             class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
             to="/request"
           >
-            Contact us
+            Ask for Help
           </NuxtLink>
         </PopoverGroup>
       </div>
