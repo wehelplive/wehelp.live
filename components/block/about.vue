@@ -11,14 +11,14 @@
       @slideChange="onSlideChange"
     >
       <!-- :pagination="{ clickable: true }" -->
-      <swiper-slide class="h-300 "><BlockVolunteer /> </swiper-slide>
-      <swiper-slide class="h-300 "><BlockVolunteer /></swiper-slide>
-      <swiper-slide class="h-300 "><BlockVolunteer /></swiper-slide>
+      <swiper-slide class="h-300 "><BlockReview /> </swiper-slide>
+      <swiper-slide class="h-300 "><BlockReview /></swiper-slide>
+      <swiper-slide class="h-300 "><BlockReview /></swiper-slide>
     </swiper>
   </div>
 </template>
 <script>
-import { Autoplay, Navigation, Pagination } from 'swiper'
+import { Autoplay, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import 'swiper/css'

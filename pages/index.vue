@@ -3,7 +3,7 @@
     <BlockStart />
     <BlockMission />
     <BlockValues />
-    <BlockTeam />
+    <BlockAbout />
     <BlockFaq />
   </div>
 </template>
