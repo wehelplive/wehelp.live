@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-neutral-300">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto divide-y divide-neutral-500">
         <h2 class="font-semibold text-headline-6 font-nunito text-black-500">
