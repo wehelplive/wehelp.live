@@ -18,28 +18,12 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
+            v-for="item in navigation.solutions"
+            :key="item.name"
+            :to="item.to"
             class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
-            to="/guest"
           >
-            Find Accomodation
-          </NuxtLink>
-          <NuxtLink
-            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
-            to="/host"
-          >
-            Offer Accomodation
-          </NuxtLink>
-          <NuxtLink
-            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
-            to="/exchange"
-          >
-            UAH Exchange
-          </NuxtLink>
-          <NuxtLink
-            class="text-base font-nunito text-xl text-black-500 hover:text-black-900"
-            to="/request"
-          >
-            Ask for Help
+            {{ item.name }}
           </NuxtLink>
         </PopoverGroup>
       </div>
@@ -73,57 +57,51 @@
               </div>
             </div>
           </div>
-          <div class="py-6 space-y-6">
-            <div class="h-10"></div>
-            <div class="flex w-8xl flex-col float-right space-y-4">
-              <div class="mr-1 flex flex-col float-right">
-                <NuxtLink
-                  v-for="item in navigation.solutions"
-                  :key="item.name"
-                  :to="item.to"
-                  class="text-base color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
-                >
-                  {{ item.name }}
-                </NuxtLink>
-              </div>
 
-              <div class="m-6 mr-5">
-                <select
-                  id="language"
-                  class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
-                >
-                  <option>EN</option>
-                  <option>DE</option>
-                  <option>RU</option>
-                  <option>UA</option>
-                </select>
-              </div>
+          <div class="h-10"></div>
 
-              <div class="h-10"></div>
-              <br />
-              <div
-                class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
+          <div class="flex flex-col float-right mr-5">
+            <NuxtLink
+              v-for="item in navigation.solutions"
+              :key="item.name"
+              :to="item.to"
+              class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
+            >
+              {{ item.name }}
+            </NuxtLink>
+          </div>
+          <div class="block ml-[220px] mr-5 justify-end">
+            <div class="">
+              <select
+                id="language"
+                class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
               >
-                <a
-                  v-for="item in navigation.social"
-                  :key="item.name"
-                  :href="item.href"
-                  class="text-black hover:text-zinc-800"
-                >
-                  <span class="sr-only">{{ item.name }}</span>
-                  <component
-                    :is="item.icon"
-                    class="h-6 w-6"
-                    aria-hidden="true"
-                  />
-                </a>
-              </div>
-              <div class="h-20"></div>
-              <br />
-
-              <br />
+                <option>EN</option>
+                <option>DE</option>
+                <option>RU</option>
+                <option>UA</option>
+              </select>
             </div>
           </div>
+          <div class="h-10"></div>
+          <br />
+          <div
+            class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
+          >
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="text-black hover:text-zinc-800"
+            >
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
+          </div>
+          <div class="h-20"></div>
+          <br />
+
+          <br />
         </div>
       </PopoverPanel>
     </transition>
@@ -144,9 +122,10 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 const navigation = {
   solutions: [
-    { name: 'Add service', to: '/add' },
-    { name: 'Partnership', to: '/partnership' },
-    { name: 'Contact us', to: '/request' },
+    { name: 'Find Accomodation', to: '/guest' },
+    { name: 'Offer Accomodation', to: '/host' },
+    { name: 'UAH Exchange', to: '/exchange' },
+    { name: 'Ask for Help', to: '/request' },
   ],
   social: [
     {
