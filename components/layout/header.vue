@@ -103,6 +103,25 @@
 
             <br />
           </div>
+          <div class="h-10"></div>
+          <br />
+          <div
+            class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
+          >
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="text-black hover:text-zinc-800"
+            >
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
+          </div>
+          <div class="h-20"></div>
+          <br />
+
+          <br />
         </div>
       </PopoverPanel>
     </transition>
