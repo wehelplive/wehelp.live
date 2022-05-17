@@ -59,49 +59,50 @@
           </div>
 
           <div class="h-10"></div>
-
-          <div class="flex flex-col float-right mr-5">
-            <NuxtLink
-              v-for="item in navigation.solutions"
-              :key="item.name"
-              :to="item.to"
-              class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
-            >
-              {{ item.name }}
-            </NuxtLink>
-          </div>
-          <div class="block ml-[220px] mr-5 justify-end">
-            <div class="">
-              <select
-                id="language"
-                class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
+          <div class="flex flex-col float-right">
+            <div class="flex flex-col float-right mr-5">
+              <NuxtLink
+                v-for="item in navigation.solutions"
+                :key="item.name"
+                :to="item.to"
+                class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
               >
-                <option>EN</option>
-                <option>DE</option>
-                <option>RU</option>
-                <option>UA</option>
-              </select>
+                {{ item.name }}
+              </NuxtLink>
             </div>
-          </div>
-          <div class="h-10"></div>
-          <br />
-          <div
-            class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
-          >
-            <a
-              v-for="item in navigation.social"
-              :key="item.name"
-              :href="item.href"
-              class="text-black hover:text-zinc-800"
-            >
-              <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-            </a>
-          </div>
-          <div class="h-20"></div>
-          <br />
+            <div class="block mr-5 ml-[60px] mt-[30px] justify-end">
+              <div class="">
+                <select
+                  id="language"
+                  class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
+                >
+                  <option>EN</option>
+                  <option>DE</option>
+                  <option>RU</option>
+                  <option>UA</option>
+                </select>
+              </div>
+            </div>
 
-          <br />
+            <div
+              class="flex flex-col float-right mt-[80px] mr-5 ml-[100px] space-y-3 overflow-y-clip"
+            >
+              <a
+                v-for="item in navigation.social"
+                :key="item.name"
+                :href="item.href"
+                class="text-black hover:text-zinc-800"
+              >
+                <span class="sr-only">{{ item.name }}</span>
+                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              </a>
+            </div>
+
+            <div class="h-20"></div>
+            <br />
+
+            <br />
+          </div>
         </div>
       </PopoverPanel>
     </transition>
