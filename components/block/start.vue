@@ -21,18 +21,18 @@
           >
             <div class="rounded-3xl shadow">
               <NuxtLink
-                to="/request"
+                to="/guest"
                 class="w-full flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-red-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
               >
-                I need help
+                Find Accomodation
               </NuxtLink>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
               <NuxtLink
-                to="/get-involved"
+                to="/host"
                 class="w-full underline underline-offset-1 flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
               >
-                I can help
+                Offer Accomodation
               </NuxtLink>
             </div>
           </div>

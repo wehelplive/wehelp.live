@@ -1,13 +1,13 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-8xl z-50 shadow-md sm:px-6">
+    <div class="max-w-8xl z-50 m-0 p-0 shadow-md sm:px-6">
       <div class="flex justify-between items-center md:justify-start">
         <div class="flex justify-start mt-2 ml-2 lg:w-0 lg:flex-1">
           <NuxtLink to="/">
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
         </div>
-        <div class="font-medium mt-5 mr-10 text-zinc-800">Hotline 24/7</div>
+
         <div class="mr-4 md:hidden">
           <PopoverButton
             class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-zinc-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
@@ -18,26 +18,14 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            class="text-base font-medium mt-5 text-black-500 hover:text-black-500"
-            to="/add"
+            v-for="item in navigation.solutions"
+            :key="item.name"
+            :to="item.to"
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
           >
-            Add service
-          </NuxtLink>
-          <NuxtLink
-            class="text-base font-medium mt-5 text-black-500 hover:text-black-900"
-            to="/partnership"
-          >
-            Partnership
+            {{ item.name }}
           </NuxtLink>
         </PopoverGroup>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a
-            href="/request"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white-500 bg-red-500 hover:bg-red-500"
-          >
-            Contact us
-          </a>
-        </div>
       </div>
     </div>
 
@@ -61,29 +49,29 @@
               </div>
               <div class="mr-2">
                 <PopoverButton
-                  class="bg-white-500 rounded-md mt-1 mr-2 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
+                  class="bg-white-500 rounded-md mr-2 mt-1.5 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
                 >
                   <span class="sr-only">Close menu</span>
-                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                  <XIcon class="h-5.5 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
           </div>
-          <div class="py-6 space-y-6">
-            <div class="h-10"></div>
-            <div class="flex w-8xl flex-col float-right space-y-4">
-              <div class="mr-1 flex flex-col float-right">
-                <NuxtLink
-                  v-for="item in navigation.solutions"
-                  :key="item.name"
-                  :to="item.to"
-                  class="text-base color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
-                >
-                  {{ item.name }}
-                </NuxtLink>
-              </div>
 
-              <div class="m-6 mr-5">
+          <div class="h-10"></div>
+          <div class="flex flex-col float-right">
+            <div class="flex flex-col float-right mr-5">
+              <NuxtLink
+                v-for="item in navigation.solutions"
+                :key="item.name"
+                :to="item.to"
+                class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
+              >
+                {{ item.name }}
+              </NuxtLink>
+            </div>
+            <div class="block mr-5 ml-[60px] mt-[30px] justify-end">
+              <div class="">
                 <select
                   id="language"
                   class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
@@ -94,32 +82,46 @@
                   <option>UA</option>
                 </select>
               </div>
-
-              <div class="h-10"></div>
-              <br />
-              <div
-                class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
-              >
-                <a
-                  v-for="item in navigation.social"
-                  :key="item.name"
-                  :href="item.href"
-                  class="text-black hover:text-zinc-800"
-                >
-                  <span class="sr-only">{{ item.name }}</span>
-                  <component
-                    :is="item.icon"
-                    class="h-6 w-6"
-                    aria-hidden="true"
-                  />
-                </a>
-              </div>
-              <div class="h-20"></div>
-              <br />
-
-              <br />
             </div>
+
+            <div
+              class="flex flex-col float-right mt-[80px] mr-5 ml-[100px] space-y-3 overflow-y-clip"
+            >
+              <a
+                v-for="item in navigation.social"
+                :key="item.name"
+                :href="item.href"
+                class="text-black hover:text-zinc-800"
+              >
+                <span class="sr-only">{{ item.name }}</span>
+                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              </a>
+            </div>
+
+            <div class="h-20"></div>
+            <br />
+
+            <br />
           </div>
+          <div class="h-10"></div>
+          <br />
+          <div
+            class="flex flex-col float-right ml-12 space-y-3 overflow-y-clip"
+          >
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="text-black hover:text-zinc-800"
+            >
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
+          </div>
+          <div class="h-20"></div>
+          <br />
+
+          <br />
         </div>
       </PopoverPanel>
     </transition>
@@ -140,9 +142,10 @@ import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 const navigation = {
   solutions: [
-    { name: 'Add service', to: '/add' },
-    { name: 'Partnership', to: '/partnership' },
-    { name: 'Contact us', to: '/request' },
+    { name: 'Find Accomodation', to: '/guest' },
+    { name: 'Offer Accomodation', to: '/host' },
+    { name: 'UAH Exchange', to: '/exchange' },
+    { name: 'Ask for Help', to: '/request' },
   ],
   social: [
     {
