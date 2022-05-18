@@ -97,6 +97,7 @@
 </template>
 
 <script setup>
+// eslint-disable-next-line no-unused-vars
 const people = [
   {
     name: 'Gulnara Mustafaeva',
