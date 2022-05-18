@@ -115,7 +115,7 @@ const navigation = {
     { name: 'Find Accomodation', href: '/guest' },
     { name: 'Offer Accomodation', href: '/host' },
     { name: 'UAH Exchange', href: '/exchange' },
-    { name: 'Ask for Help', to: '/request' },
+    { name: 'Ask for Help', href: '/request' },
     { name: 'Evacuation Planner', href: '/services' },
     { name: 'Add review', href: '/add' },
   ],
