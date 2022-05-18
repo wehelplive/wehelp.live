@@ -112,6 +112,7 @@ import { defineComponent, h } from 'vue'
 
 const navigation = {
   solutions: [
+    { name: 'Ask for Help', to: '/request' },
     { name: 'Evacuation Planner', href: '/services' },
     { name: 'Find Accomodation', href: '/guest' },
     { name: 'Offer Accomodation', href: '/host' },
