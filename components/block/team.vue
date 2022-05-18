@@ -25,12 +25,12 @@
                   <h3>{{ person.name }}</h3>
                   <p class="mt-2 text-zinc-600">{{ person.role }}</p>
                 </div>
-                <div class="space-y-40">
+                <div class="space-y-4">
                   <ul role="list" class="flex justify-center space-x-2">
                     <li>
                       <a
                         :href="person.twitterUrl"
-                        class="text-grey-400 hover:text-grey-300"
+                        class="text-slate-500 hover:text-slate-400"
                       >
                         <span class="sr-only">Twitter</span>
                         <svg
@@ -48,7 +48,7 @@
                     <li>
                       <a
                         :href="person.linkedinUrl"
-                        class="text-grey-400 hover:text-grey-300"
+                        class="text-slate-500 hover:text-slate-400"
                       >
                         <span class="sr-only">LinkedIn</span>
                         <svg
@@ -74,9 +74,9 @@
       </div>
     </div>
     <div
-      class="mt-4 mb-6 ml-10 mr-10 max-w-3xl mx-auto sm:flex sm:justify-center md:justify-center lg:justify-center  md:mt-16"
+      class="mt-4 mb-6 pl-10 pr-10 max-w-3xl mx-auto sm:flex sm:justify-center md:justify-center lg:justify-center  md:mt-16"
     >
-      <div class="mt-2 sm:mt-0 sm:ml-3">
+      <div class="mt-2 ">
         <NuxtLink
           to="/"
           class="w-full underline underline-offset-1 flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
@@ -84,7 +84,7 @@
           Meet everyone from our team
         </NuxtLink>
       </div>
-      <div class="rounded-3xl shadow">
+      <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
           to="/"
           class="w-full flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
