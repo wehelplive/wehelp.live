@@ -72,6 +72,7 @@
             </div>
             <div class="block mr-5 ml-[60px] mt-[30px] justify-end">
               <div class="">
+
                 <select
                   id="language"
                   class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
@@ -93,9 +94,11 @@
                 :href="item.href"
                 class="text-black hover:text-zinc-800"
               >
+
                 <span class="sr-only">{{ item.name }}</span>
                 <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
               </a>
+
             </div>
 
             <div class="h-20"></div>
