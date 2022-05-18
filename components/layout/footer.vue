@@ -28,7 +28,7 @@
               <h3
                 class="text-sm font-semibold text-black tracking-wider uppercase"
               >
-                Initiatives
+                Services
               </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li v-for="item in navigation.solutions" :key="item.name">
@@ -117,12 +117,9 @@ const navigation = {
     { name: 'Find Accomodation', href: '/guest' },
     { name: 'Offer Accomodation', href: '/host' },
     { name: 'UAH Exchange', href: '/exchange' },
-    { name: 'Recommend Link', href: '/add' },
+    { name: 'Add review', href: '/add' },
   ],
-  support: [
-    { name: 'Report Problem', href: '/request' },
-    { name: 'Contact Us', href: 'mailto:hello@wehelp.vip' },
-  ],
+  support: [{ name: 'Contact Us', href: 'mailto:hello@wehelp.vip' }],
   company: [
     {
       name: 'About',
@@ -138,8 +135,12 @@ const navigation = {
       href: '/calendar',
     },
     {
-      name: 'Jobs',
+      name: 'Get Involved',
       href: '/get-involved',
+    },
+    {
+      name: 'Jobs',
+      href: 'https://angel.co/company/wehelplive/jobs',
     },
   ],
   legal: [
