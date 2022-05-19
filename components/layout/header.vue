@@ -23,7 +23,7 @@
             :to="item.to"
             class="font-nunito text-xl text-black-500 hover:text-black-500 self-center"
           >
-            {{ item.name }}
+            {{ item.name?.value ? item.name?.value : item.name }}
           </NuxtLink>
           <div id="locale-switcher">
             <div>
@@ -357,13 +357,13 @@ export default {
     const { t } = useI18n()
     const navigation = {
       solutions: [
-        { name: 'Find Accomodation', to: '/guest' },
-        { name: 'Offer Accomodation', to: '/host' },
+        { name: computed(() => t('guest')), to: '/guest' },
+        { name: computed(() => t('host')), to: '/host' },
         {
           name: computed(() => t('exchange')),
           to: '/exchange',
         },
-        { name: 'Ask for Help', to: '/request' },
+        { name: computed(() => t('request')), to: '/request' },
       ],
       social: [
         {
