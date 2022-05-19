@@ -83,7 +83,7 @@
                 :to="item.to"
                 class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
               >
-                {{ item.name }}
+                {{ item.name?.value ? item.name?.value : item.name }}
               </NuxtLink>
             </div>
             <div class="block mr-5 ml-[60px] mt-[30px] justify-end">
