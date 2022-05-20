@@ -1,0 +1,47 @@
+header:
+  guest: Find Accomodation,
+  host: Offer Accomodation,
+  exchange: UAH Exchange,
+  request: Ask for Help,
+home:
+  start:
+    title: Evacuation to EU,
+    description: We help to solve complex problems in the Ukrainian refugee crisis in EU,
+    findAccomodation: Find Accomodation,
+    offerAccomodation: Offer Accomodation
+  mission:
+    title: Our mission
+    subtitle: Effective organization of volunteer activities
+    description:
+      There are many people who are <strong>ready to help</strong> and who
+      <strong>need help</strong>. Existing organizations do not cope with
+      coordination and chaos is formed and many issues remain unresolved. It
+      is necessary to find and eliminate hatches in organizations, to link
+      them together, to establish coordination in order to effectively cope
+      with the existing situation.
+  values:
+    title: Our core values
+    subtitle: We aim to be a
+      <span class="font-bold text-green-500">trustful</span> source that give
+      people <span class="font-bold text-orange-500">hope</span> and help them
+      through <span class="font-bold text-blue-500">effective</span>
+      actions
+  faq:
+    title:
+      main: FAQ
+      first: What is the organisation structure?
+      second: How can I meet my team?
+      third: How to schedule a Meeting?
+      fourth: Where do I get WeHelp brand assets?
+      fifth: Where do I find all available information about WeHelp?
+    content:
+      firstList:
+        - Where can I find the full schedule? Subscribe to calendar -
+        - How to join a team meeting? Follow the Welcome Guide on Slack
+          (channel #welcome).
+        - How do I join Slack? Sign up as a volunteer at
+        - and you will get an invitation to our Slack.
+      secondList:
+        - What kind of meetings do we have? 1-1 to discuss topics,
+          Retrospective, Governance Meeting, Daily Standup, Planning And
+          Review Meetings, Coordination Meeting, read more

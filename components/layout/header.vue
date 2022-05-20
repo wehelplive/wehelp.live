@@ -335,13 +335,6 @@ import { ChevronDownIcon } from '@heroicons/vue/solid'
 
 import { useI18n } from 'vue-i18n'
 
-const langs = [
-  { long: 'Deutsch', icon: '🇩🇪', short: 'de' },
-  { long: 'English', icon: '🇬🇧', short: 'en' },
-  { long: 'Русский', icon: '🇷🇺', short: 'ru' },
-  { long: 'Українська', icon: '🇺🇦', short: 'ua' },
-]
-
 export default {
   name: 'Header',
   components: {
@@ -357,13 +350,13 @@ export default {
     const { t } = useI18n()
     const navigation = {
       solutions: [
-        { name: computed(() => t('guest')), to: '/guest' },
-        { name: computed(() => t('host')), to: '/host' },
+        { name: computed(() => t('header.guest')), to: '/guest' },
+        { name: computed(() => t('header.host')), to: '/host' },
         {
-          name: computed(() => t('exchange')),
+          name: computed(() => t('header.exchange')),
           to: '/exchange',
         },
-        { name: computed(() => t('request')), to: '/request' },
+        { name: computed(() => t('header.request')), to: '/request' },
       ],
       social: [
         {
@@ -429,8 +422,6 @@ export default {
 
     return {
       navigation,
-      langs,
-      t,
     }
   },
 }

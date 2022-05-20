@@ -2,24 +2,20 @@
   <div class="bg-white-500">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto divide-y divide-neutral-500">
-        <div class="text-center">
-          <h2
-            class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
-          >
-            FAQ
-          </h2>
-        </div>
-        <FaqItem title="What is the organisation structure?" faq-id="1">
+        <h2 class="font-semibold text-headline-6 font-nunito text-black-500">
+          {{ t('home.faq.title.main') }}
+        </h2>
+        <FaqItem :title="t('home.faq.title.first')" faq-id="1">
           <img
             class="object-cover w-full h-full"
             src="/structure.jpg"
             alt="organisation structure"
           />
         </FaqItem>
-        <FaqItem title="How can I meet my team?" faq-id="2">
+        <FaqItem :title="t('home.faq.title.second')" faq-id="2">
           <ol class="pl-8 list-decimal break-words">
             <li class="text-subtitle p-2">
-              Where can I find the full schedule? Subscribe to calendar -
+              {{ t('home.faq.content.firstList[0]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/calendar/"
@@ -27,21 +23,20 @@
               >
             </li>
             <li class="text-subtitle p-2">
-              How to join a team meeting? Follow the Welcome Guide on Slack
-              (channel #welcome).
+              {{ t('home.faq.content.firstList[1]') }}
             </li>
             <li class="text-subtitle p-2">
-              How do I join Slack? Sign up as a volunteer at
+              {{ t('home.faq.content.firstList[2]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/get-involved/"
                 >https://wehelp.live/get-involved/</a
               >
-              and you will get an invitation to our Slack.
+              {{ t('home.faq.content.firstList[1]') }}
             </li>
           </ol>
         </FaqItem>
-        <FaqItem title="How to schedule a Meeting?" faq-id="3">
+        <FaqItem :title="t('home.faq.title.third')" faq-id="3">
           <ol class="pl-8 list-decimal break-words">
             <li class="text-subtitle p-2">
               What kind of meetings do we have? 1-1 to discuss topics,
@@ -72,7 +67,7 @@
             </li>
           </ol>
         </FaqItem>
-        <FaqItem title="Where do I get WeHelp brand assets?" faq-id="4">
+        <FaqItem :title="t('home.faq.title.fourth')" faq-id="4">
           <div class="pl-4">
             <div class="text-subtitle p-2">
               All downloadable files you can find in our
@@ -102,10 +97,7 @@
             </ul>
           </div>
         </FaqItem>
-        <FaqItem
-          title="Where do I find all available information about WeHelp?"
-          faq-id="5"
-        >
+        <FaqItem :title="t('home.faq.title.fifth')" faq-id="5">
           <span class="text-subtitle ml-6"
             >In our
             <a
@@ -119,3 +111,15 @@
     </div>
   </div>
 </template>
+<script>
+import { useI18n } from 'vue-i18n'
+
+export default {
+  setup() {
+    const { t } = useI18n()
+    return {
+      t,
+    }
+  },
+}
+</script>
