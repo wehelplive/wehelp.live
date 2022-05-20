@@ -34,14 +34,58 @@ home:
       third: How to schedule a Meeting?
       fourth: Where do I get WeHelp brand assets?
       fifth: Where do I find all available information about WeHelp?
-    content:
-      firstList:
+    list:
+      one:
         - Where can I find the full schedule? Subscribe to calendar -
-        - How to join a team meeting? Follow the Welcome Guide on Slack
-          (channel #welcome).
+        - 'How to join a team meeting? Follow the Welcome Guide on Slack
+          (channel #welcome).'
         - How do I join Slack? Sign up as a volunteer at
         - and you will get an invitation to our Slack.
-      secondList:
-        - What kind of meetings do we have? 1-1 to discuss topics,
+      two:
+        - 'What kind of meetings do we have? 1-1 to discuss topics,
           Retrospective, Governance Meeting, Daily Standup, Planning And
-          Review Meetings, Coordination Meeting, read more
+          Review Meetings, Coordination Meeting, read more:'
+        - How to prepare for a meeting?
+        - Responsibilities of a meeting host
+      three:
+        - Logo
+        - Brand guidelines
+        - Presentation templates
+        - Instagram post templates
+    subtitle:
+      one:
+        - All downloadable files you can find in our
+        - Google Drive
+        - in
+        - Design/Branding
+        - folder.
+      two:
+        - Source files are in
+        - WeHelp Figma
+      three: 'What’s included:'
+      four:
+        - In our
+        - Google Drive
+footer:
+  subtitle: We help to solve complex problems in the Ukrainian refugee crisis in
+    Europe
+  hashtag: '#WEHELPUKRAINE'
+  copyright: 2022 WeHelp. All rights reserved.
+  list:
+    solutions:
+      - Find Accomodation
+      - Offer Accomodation
+      - UAH Exchange
+      - Ask for Help
+      - Evacuation Planner
+      - Add review
+    support: Contact Us
+    company:
+      - About
+      - Teams
+      - Calendar
+      - Get Involved
+      - Jobs
+    legal:
+      - Imprint
+      - Terms

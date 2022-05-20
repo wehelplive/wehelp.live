@@ -15,7 +15,7 @@
         <FaqItem :title="t('home.faq.title.second')" faq-id="2">
           <ol class="pl-8 list-decimal break-words">
             <li class="text-subtitle p-2">
-              {{ t('home.faq.content.firstList[0]') }}
+              {{ t('home.faq.list.one[0]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/calendar/"
@@ -23,25 +23,23 @@
               >
             </li>
             <li class="text-subtitle p-2">
-              {{ t('home.faq.content.firstList[1]') }}
+              {{ t('home.faq.list.one[1]') }}
             </li>
             <li class="text-subtitle p-2">
-              {{ t('home.faq.content.firstList[2]') }}
+              {{ t('home.faq.list.one[2]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://wehelp.live/get-involved/"
                 >https://wehelp.live/get-involved/</a
               >
-              {{ t('home.faq.content.firstList[1]') }}
+              {{ t('home.faq.list.one[3]') }}
             </li>
           </ol>
         </FaqItem>
         <FaqItem :title="t('home.faq.title.third')" faq-id="3">
           <ol class="pl-8 list-decimal break-words">
             <li class="text-subtitle p-2">
-              What kind of meetings do we have? 1-1 to discuss topics,
-              Retrospective, Governance Meeting, Daily Standup, Planning And
-              Review Meetings, Coordination Meeting, read more:
+              {{ t('home.faq.list.two[0]') }}
               <a
                 class="text-black-500 hover:text-grey-300 underline"
                 href="https://patterns.sociocracy30.org/meeting-formats.html"
@@ -49,7 +47,7 @@
               >
             </li>
             <li class="text-subtitle p-2">
-              How to prepare for a meeting?
+              {{ t('home.faq.list.two[1]') }}
               <a
                 class="text-black-500 hover:text-grey-300 underline"
                 href="https://patterns.sociocracy30.org/prepare-for-meetings.html"
@@ -57,7 +55,7 @@
               >
             </li>
             <li class="text-subtitle p-2">
-              Responsibilities of a meeting host
+              {{ t('home.faq.list.two[2]') }}
               <a
                 class="text-black-500 hover:text-grey-300 underline"
                 href=" https://patterns.sociocracy30.org/meeting-host.html"
@@ -70,40 +68,53 @@
         <FaqItem :title="t('home.faq.title.fourth')" faq-id="4">
           <div class="pl-4">
             <div class="text-subtitle p-2">
-              All downloadable files you can find in our
+              {{ t('home.faq.subtitle.one[0]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi)"
-                >Google Drive</a
               >
-              in
-              <span class="font-semibold">Design/Branding</span>
-              folder.
+                {{ t('home.faq.subtitle.one[1]') }}</a
+              >
+              {{ t('home.faq.subtitle.one[2]') }}
+              <span class="font-semibold">
+                {{ t('home.faq.subtitle.one[3]') }}</span
+              >
+              {{ t('home.faq.subtitle.one[4]') }}
             </div>
             <div class="text-subtitle p-2">
-              Source files are in
+              {{ t('home.faq.subtitle.two[0]') }}
               <a
                 class="text-black hover:text-grey-300 underline"
                 href="https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631"
-                >WeHelp Figma</a
+                >{{ t('home.faq.subtitle.two[1]') }}</a
               >
             </div>
-            <div class="text-subtitle p-2">What’s included:</div>
+            <div class="text-subtitle p-2">
+              {{ t('home.faq.subtitle.three') }}
+            </div>
             <ul class="list-disc ml-8">
-              <li class="text-subtitle p-2">Logo</li>
-              <li class="text-subtitle p-2">Brand guidelines</li>
-              <li class="text-subtitle p-2">Presentation templates</li>
-              <li class="text-subtitle p-2">Instagram post templates</li>
+              <li class="text-subtitle p-2">
+                {{ t('home.faq.list.three[0]') }}
+              </li>
+              <li class="text-subtitle p-2">
+                {{ t('home.faq.list.three[1]') }}
+              </li>
+              <li class="text-subtitle p-2">
+                {{ t('home.faq.list.three[2]') }}
+              </li>
+              <li class="text-subtitle p-2">
+                {{ t('home.faq.list.three[3]') }}
+              </li>
             </ul>
           </div>
         </FaqItem>
         <FaqItem :title="t('home.faq.title.fifth')" faq-id="5">
           <span class="text-subtitle ml-6"
-            >In our
+            >{{ t('home.faq.subtitle.four[0]') }}
             <a
               class="text-black hover:text-grey-300 underline"
               href="https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi)"
-              >Google Drive</a
+              >{{ t('home.faq.subtitle.four[1]') }}</a
             >.</span
           >
         </FaqItem>
