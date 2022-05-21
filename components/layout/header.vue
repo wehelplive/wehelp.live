@@ -59,24 +59,23 @@
           </div>
 
           <div class="flex flex-col">
-            <div class="flex float-right">
-              <div class="flex mt-[10px] ml-[300px] float-right">
-                <div class="flex right-0">
-                  <select
-                    id="language"
-                    class="form-select  w-13 h-12 rounded-lg w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
-                  >
-                    <option>EN</option>
-                    <option>DE</option>
-                    <option>RU</option>
-                    <option>UA</option>
-                  </select>
-                </div>
+            <div class="flex w-full justify-end pr-6">
+              <div class="flex">
+                <select
+                  id="language"
+                  class="form-select  w-13 h-12 rounded-lg w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 rounded transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
+                >
+                  <option>EN</option>
+                  <option>DE</option>
+                  <option>RU</option>
+                  <option>UA</option>
+                </select>
               </div>
             </div>
+
             <div class="max-w-7xl mt-1-">
               <div
-                class="mt-12 ml-[20px] grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2"
+                class="mt-6 ml-[20px] grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2"
               >
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                   <div>
