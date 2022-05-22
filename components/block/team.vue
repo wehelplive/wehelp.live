@@ -56,7 +56,7 @@
       <div class="mt-2 ">
         <NuxtLink
           to="/"
-          class="w-full underline underline-offset-1 flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full underline underline-offset-1 flex font-nunito items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Meet everyone from our team
         </NuxtLink>
@@ -64,7 +64,7 @@
       <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
           to="/get-involved"
-          class="w-full flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full flex font-nunito items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Join Our Team
         </NuxtLink>
