@@ -13,7 +13,7 @@
         </div>
         <ul
           role="list"
-          class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
+          class="mx-auto grid grid-cols-2 gap-x-4 gap-y-20 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-24 xl:grid-cols-4"
         >
           <li v-for="person in people" :key="person.name">
             <div class="space-y-4">
