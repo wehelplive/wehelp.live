@@ -5,13 +5,15 @@
     >
       <div class="space-y-22 sm:space-y-22">
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-          <h2 class="text-3xl mb-10 font-extrabold tracking-tight sm:text-4xl">
+          <h2
+            class=" font-nunito font-semibold md:font-extrabold text-headline-6 mb-10 tracking-tight sm:text-headline-5"
+          >
             Our Team
           </h2>
         </div>
         <ul
           role="list"
-          class="mx-auto  grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
+          class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
         >
           <li v-for="person in people" :key="person.name">
             <div class="space-y-4">
@@ -21,30 +23,24 @@
                 :alt="person.name"
               />
               <div class="space-y-4">
-                <div class="text-xs font-medium lg:text-sm">
+                <div
+                  class="text-body font-nunito text-regular font-medium lg:text-subtitle"
+                >
                   <h3>{{ person.name }}</h3>
-                  <p class="mt-2 text-zinc-600">{{ person.role }}</p>
+                  <p class="mt-2 text-caption lg:text-body text-zinc-600">
+                    {{ person.role }}
+                  </p>
                 </div>
-                <div class="space-y-4">
+                <div class="space-y-2">
                   <ul role="list" class="flex justify-center space-x-2">
-                    <li v-for="icon in icons" :key="icon.name">
-                      <div v-if="person.networks[icon.name]" :key="person.name">
-                        <a
-                          :href="person.networks[icon.name]"
-                          class="text-slate-500  hover:text-slate-400"
-                        >
-                          <span class="sr-only">{{ icon.name }}</span>
-                          <!-- <svg
-                            class="w-6 h-6 "
-                            aria-hidden="true"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path :d="icon.path" />
-                          </svg> -->
-                          <img class="fill-currentColor" :src="icon.picture" />
-                        </a>
-                      </div>
+                    <li v-for="(value, key) in person.networks" :key="key">
+                      <a
+                        :href="value"
+                        class="text-slate-500  hover:text-slate-400"
+                      >
+                        <span class="sr-only">{{ key }}</span>
+                        <img class="fill-currentColor" :src="icons[key]" />
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -67,7 +63,7 @@
       </div>
       <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
-          to="/"
+          to="/get-involved"
           class="w-full flex font-openSans items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Join Our Team
@@ -83,8 +79,7 @@ const people = [
   {
     name: 'Gulnara Mustafaeva',
     role: 'Partnerships',
-    imageUrl: '/GulnaraMustafaeva.jpg',
-    // twitterUrl: '#'
+    imageUrl: 'team/GulnaraMustafaeva.jpg',
     networks: {
       instagram: 'https://www.instagram.com/guliamustafayeva/',
       linkedin: 'https://www.linkedin.com/in/gulia-mustafayeva/',
@@ -95,7 +90,7 @@ const people = [
   {
     name: 'Yulia Movsesova',
     role: 'Communications',
-    imageUrl: '/YuliaMovsesova.jpg',
+    imageUrl: 'team/YuliaMovsesova.jpg',
     networks: {
       linkedin: 'https://www.linkedin.com/in/yuliamm/',
     },
@@ -103,13 +98,13 @@ const people = [
   {
     name: 'Olga Alilovic',
     role: 'Mission',
-    imageUrl: '/OlgaAlilovic.jpg',
+    imageUrl: 'team/OlgaAlilovic.jpg',
     networks: {},
   },
   {
     name: 'Aleksey Razabakov',
     role: 'Coordination',
-    imageUrl: '/AlekseyRazabakov.jpg',
+    imageUrl: 'team/AlekseyRazabakov.jpg',
     networks: {
       linkedin: 'https://www.linkedin.com/in/razbakov/',
       facebook: 'https://www.facebook.com/razbakov',
@@ -119,60 +114,17 @@ const people = [
   // More people...
 ]
 // eslint-disable-next-line no-unused-vars
-const icons = [
-  {
-    name: 'linkedin',
-    nameUrl: 'linkedinUrl',
-    picture: '/icons20/LinkedIn.svg',
-  },
-  {
-    name: 'telegram',
-    nameUrl: 'telegramUrl',
-    picture: '/icons20/Telegram.svg',
-  },
+const icons = {
+  linkedin: '/icons/LinkedIn.svg',
+  telegram: '/icons/Telegram.svg',
+  facebook: '/icons/Facebook.svg',
+  githab: '/icons/Github.svg',
+  instagram: '/icons/Instagram.svg',
+  twitter: '/icons/Twitter.svg',
+  youtube: '/icons/YouTube.svg',
+  medium: '/icons/Medium.svg',
+  angellist: '/icons/Angellist.svg',
+}
 
-  {
-    name: 'facebook',
-    nameUrl: 'facebookUrl',
-    picture: '/icons20/Facebook.svg',
-  },
-
-  {
-    name: 'githab',
-    nameUrl: 'githabUrl',
-    picture: '/icons20/Github.svg',
-  },
-
-  {
-    name: 'instagram',
-    nameUrl: 'instagramUrl',
-    picture: '/icons20/Instagram.svg',
-  },
-
-  {
-    name: 'twitter',
-    nameUrl: 'twitterUrl',
-    picture: '/icons20/Twitter.svg',
-  },
-
-  {
-    name: 'youtube',
-    nameUrl: 'youtubeUrl',
-    picture: '/icons20/YouTube.svg',
-  },
-
-  {
-    name: 'medium',
-    nameUrl: 'mediumUrl',
-    picture: '/icons20/Medium.svg',
-  },
-
-  {
-    name: 'angellist',
-    nameUrl: 'angellistUrl',
-    picture: '/icons20/Angellist.svg',
-  },
-
-  // More icons...
-]
+// More icons...
 </script>
