@@ -32,13 +32,6 @@
                 to="/host"
                 class="w-full underline underline-offset-1 flex font-nunito items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
               >
-                Offer Accomodation
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-no-repeat bg-top bg-favicon-transp h-60 w-full"></div>
     </main>
   </div>
 </template>
