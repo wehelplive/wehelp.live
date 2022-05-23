@@ -54,12 +54,12 @@
       class="mt-4 mb-6 pl-10 pr-10 max-w-3xl mx-auto sm:flex sm:justify-center md:justify-center lg:justify-center  md:mt-16"
     >
       <div class="mt-2 ">
-        <NuxtLink
+        <!-- <NuxtLink
           to="/"
           class="w-full underline underline-offset-1 flex font-nunito font-semibold font-body items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Meet everyone from our team
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
       <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
