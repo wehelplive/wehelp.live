@@ -56,7 +56,7 @@
       <div class="mt-2 ">
         <NuxtLink
           to="/"
-          class="w-full underline underline-offset-1 flex font-nunito items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full underline underline-offset-1 flex font-nunito font-semibold font-body items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Meet everyone from our team
         </NuxtLink>
@@ -64,7 +64,7 @@
       <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
           to="/get-involved"
-          class="w-full flex font-nunito items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full flex font-nunito items-center font-semibold font-body justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Join Our Team
         </NuxtLink>
@@ -81,9 +81,7 @@ const people = [
     role: 'Partnerships',
     imageUrl: 'team/GulnaraMustafaeva.jpg',
     networks: {
-      instagram: 'https://www.instagram.com/guliamustafayeva/',
       linkedin: 'https://www.linkedin.com/in/gulia-mustafayeva/',
-      facebook: 'https://www.facebook.com/profile.php?id=100001584059213',
       telegram: 'https://t.me/gulnara_mustafayeva',
     },
   },
@@ -99,7 +97,9 @@ const people = [
     name: 'Olga Alilovic',
     role: 'Mission',
     imageUrl: 'team/OlgaAlilovic.jpg',
-    networks: {},
+    networks: {
+      linkedin: 'https://www.linkedin.com/in/olga-alilovic-a3516a12/',
+    },
   },
   {
     name: 'Aleksey Razabakov',
@@ -107,11 +107,9 @@ const people = [
     imageUrl: 'team/AlekseyRazabakov.jpg',
     networks: {
       linkedin: 'https://www.linkedin.com/in/razbakov/',
-      facebook: 'https://www.facebook.com/razbakov',
       telegram: 'https://t.me/AlexRazbakov',
     },
   },
-  // More people...
 ]
 // eslint-disable-next-line no-unused-vars
 const icons = {
@@ -125,6 +123,4 @@ const icons = {
   medium: '/icons/Medium.svg',
   angellist: '/icons/Angellist.svg',
 }
-
-// More icons...
 </script>
