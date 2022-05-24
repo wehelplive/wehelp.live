@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-white ">
+  <div class="bg-white-500">
     <div
       class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
     >
       <div class="space-y-22 sm:space-y-22">
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
           <h2
-            class=" font-nunito font-semibold md:font-extrabold text-headline-6 mb-10 tracking-tight sm:text-headline-5"
+            class="font-nunito font-semibold md:font-extrabold text-headline-6 mb-10 tracking-tight sm:text-headline-5"
           >
             Our Team
           </h2>
@@ -56,7 +56,7 @@
       <div class="mt-2 ">
         <NuxtLink
           to="/"
-          class="w-full underline underline-offset-1 flex font-openSans font-semibold font-body items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full underline underline-offset-1 flex font-openSans font-semibold font-body items-center justify-center px-8 py-3 border border-transparent rounded-md text-green-500 hover:text-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Meet everyone from our team
         </NuxtLink>
@@ -64,7 +64,7 @@
       <div class="rounded-3xl mt-2 sm:ml-4 shadow">
         <NuxtLink
           to="/get-involved"
-          class="w-full flex font-openSans items-center font-semibold font-body justify-center px-8 py-3 border border-transparent text-base font-medium rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+          class="w-full flex font-openSans items-center font-semibold font-body justify-center px-8 py-3 border border-transparent rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
         >
           Join Our Team
         </NuxtLink>
@@ -102,7 +102,7 @@ const people = [
     },
   },
   {
-    name: 'Aleksey Razabakov',
+    name: 'Aleksey Razbakov',
     role: 'Coordination',
     imageUrl: 'team/AlekseyRazabakov.jpg',
     networks: {

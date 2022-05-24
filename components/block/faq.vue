@@ -1,8 +1,10 @@
 <template>
-  <div class="bg-neutral-300">
+  <div class="bg-white-500">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto divide-y divide-neutral-500">
-        <h2 class="font-semibold text-headline-6 font-nunito text-black-500">
+      <div class="max-w-3xl mx-auto text-center divide-y divide-neutral-500">
+        <h2
+          class="font-nunito font-semibold md:font-extrabold text-headline-6 mb-10 tracking-tight sm:text-headline-5"
+        >
           FAQ
         </h2>
         <FaqItem title="What is the organisation structure?" faq-id="1">
