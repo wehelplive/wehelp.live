@@ -1,13 +1,13 @@
 header:
-  guest: Find Accomodation,
-  host: Offer Accomodation,
-  exchange: UAH Exchange,
-  request: Ask for Help,
+  guest: Find Accomodation
+  host: Offer Accomodation
+  exchange: UAH Exchange
+  request: Ask for Help
 home:
   start:
-    title: Evacuation to EU,
-    description: We help to solve complex problems in the Ukrainian refugee crisis in EU,
-    findAccomodation: Find Accomodation,
+    title: Evacuation to EU
+    description: We help to solve complex problems in the Ukrainian refugee crisis in EU
+    findAccomodation: Find Accomodation
     offerAccomodation: Offer Accomodation
   mission:
     title: Our mission

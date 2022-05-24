@@ -317,7 +317,6 @@
       </PopoverPanel>
     </transition>
   </Popover>
-  <!---select language -->
 </template>
 
 <script>
