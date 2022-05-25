@@ -11,7 +11,7 @@ We need to establish information flow between customers and domains to deliver v
 
 ---
 
-## **Design**
+# **Design**
 
 We need to design user experience and user interfaces for the website.
 
@@ -23,6 +23,6 @@ Version 2.0 Prototype -[WeHelp Design](https://www.figma.com/proto/VCJKSEBUVXn5x
 
 ---
 
-## Code
+# Code
 
 Wed need to implement prototypes from designers and fix bugs.
