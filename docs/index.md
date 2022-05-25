@@ -2,7 +2,7 @@
 home: true
 heroImage: logo.svg
 tagline: agreements, objectives, processes and workflows
-actionText: About Us
+actionText: About WeHelp
 actionLink: /about/
 ---
 
