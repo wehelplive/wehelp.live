@@ -1,11 +1,9 @@
 ---
 home: true
-heroImage: Hero.svg
+heroImage: logo.svg
 tagline: agreements, objectives, processes and workflows
-actionText: Quick Start →
-actionLink: /guide/
-features: null
-footer: null
+actionText: About Us
+actionLink: /about/
 ---
 
 ::: slot footer

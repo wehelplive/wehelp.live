@@ -1,8 +1,5 @@
-const { description, name } = require('../../package')
-
 module.exports = {
-  title: 'Wehelp-Handbook',
-  description: 'agreements, objectives, processes and workflows',
+  title: 'Wehelp',
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -17,27 +14,26 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    logo: '/Logo.png',
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/',
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org',
-      },
-    ],
+    logo: 'logo.svg',
     sidebar: {
-      '/guide/': [
+      '/about/': [
         {
-          title: 'Guide',
+          title: 'About Us',
           collapsable: false,
-          children: ['', 'using-vue'],
+          children: [
+            '',
+            'what',
+            'why',
+            'difference',
+            'mission',
+            'values',
+            'principles',
+            'roadmap',
+            'strategy',
+            'domains',
+            'others-say',
+            'support',
+          ],
         },
       ],
     },
