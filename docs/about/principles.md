@@ -19,3 +19,5 @@
   Record all information that is valuable for the organization and make it accessible to everyone in the organization, unless there is a reason for confidentiality, so that everyone has the information they need to understand how to do their work in a way that contributes most effectively to the whole.
   [Read more](https://patterns.sociocracy30.org/principle-transparency.html)
 - Accountability
+  Respond when something is needed, do what you agreed to do, and accept your share of responsibility for the course of the organization, so that what needs doing gets done, nothing is overlooked and everyone does what they can to contribute toward the effectiveness and integrity of the organization.
+  [Read more](https://patterns.sociocracy30.org/principle-accountability.html)
