@@ -103,7 +103,7 @@
       </div>
       <div class="mt-12 border-t border-neutral-500 pt-8">
         <p
-          class="text-body font-openSans font-normal text-zinc-700 flex flex justify-center xl:text-center"
+          class="text-bodyfont-sans font-normal text-zinc-700 flex flex justify-center xl:text-center"
         >
           &copy; 2022 WeHelp. All rights reserved.
         </p>
