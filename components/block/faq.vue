@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center divide-y divide-neutral-500">
         <h2
-          class="font-nunito font-semibold md:font-extrabold text-headline-6 mb-10 tracking-tight sm:text-headline-5"
+          class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
         >
           FAQ
         </h2>

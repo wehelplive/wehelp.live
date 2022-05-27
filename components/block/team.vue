@@ -6,7 +6,7 @@
       <div class="space-y-22 sm:space-y-22">
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
           <h2
-            class="font-nunito font-semibold text-headline-5 mb-10 tracking-tight sm:text-headline-6"
+            class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
           >
             Our Team
           </h2>
