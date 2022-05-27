@@ -123,8 +123,7 @@ const navigation = {
   company: [
     {
       name: 'About',
-      href:
-        'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
+      href: 'https://handbook.wehelp.live/about/',
     },
     {
       name: 'Teams',
