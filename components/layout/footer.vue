@@ -15,7 +15,7 @@
             Europe
           </p>
 
-          <div class="flex flex justify-center  space-x-2">
+          <div class="flex justify-center space-x-2">
             <a
               v-for="item in navigation.social"
               :key="item.name"
