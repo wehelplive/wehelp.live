@@ -14,7 +14,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    logo: 'logo.svg',
+    logo: '/logo.svg',
     sidebar: [
       {
         title: 'About Us',
