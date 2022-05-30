@@ -44,14 +44,14 @@
       </div>
     </div>
 
-    <p class="flex-1 font-openSans text-body text-[#202020] mb-4 line-clamp-2">
+    <p class="flex-1 font-sans text-body text-[#202020] mb-4 line-clamp-2">
       {{ description }}
     </p>
 
     <div v-if="url" class="flex flex-row mb-4 items-center">
       <LinkIcon class="h-5 w-5 mr-2 text-grey-500" />
       <a
-        class="text-[#5F6267] flex-1 font-openSans truncate"
+        class="text-[#5F6267] flex-1 font-sans truncate"
         :href="url"
         target="_blank"
       >
@@ -61,7 +61,7 @@
 
     <div v-if="phone" class="flex flex-row mb-4 items-center">
       <PhoneIcon class="h-5 w-5 mr-2 text-grey-500" />
-      <div class="text-[#5F6267] flex-1 font-openSans">
+      <div class="text-[#5F6267] flex-1 font-sans">
         {{ phone }}
       </div>
     </div>

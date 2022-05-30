@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div class="text-center">
         <h2
-          class="text-base font-semibold text-royal-blue-600 tracking-wide uppercase"
+          class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
         >
           Our mission
         </h2>
