@@ -3,7 +3,7 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 mx-auto  xl:col-span-1">
+        <div class="space-y-8 mx-auto xl:col-span-1">
           <div class="flex justify-center ">
             <BrandLogo class="h-24 w-24  " />
           </div>
