@@ -11,7 +11,7 @@
       >
         <h3>{{ person.name }}</h3>
         <p class="mt-2 text-caption lg:text-body text-zinc-600">
-          {{ person.role }}
+          {{ person.role?.value }}
         </p>
       </div>
       <div class="space-y-2">

@@ -56,7 +56,6 @@ export default defineNuxtConfig({
     BASE_ID: process.env.BASE_ID,
     API_KEY: process.env.API_KEY,
   },
-  buildModules: ['@nuxtjs/google-fonts'],
   googleFonts: {
     display: 'swap',
     families: {
@@ -73,5 +72,12 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  buildModules: ['@intlify/nuxt3', '@nuxtjs/google-fonts'],
+  intlify: {
+    locale: 'en',
+    fallbackLocale: 'en',
+    localeDir: 'locales',
+    vueI18n: {},
   },
 })
