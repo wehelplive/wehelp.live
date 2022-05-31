@@ -45,8 +45,6 @@
 </template>
 
 <script>
-import { computed } from 'vue'
-
 import { useI18n } from 'vue-i18n'
 
 export default {
@@ -56,7 +54,7 @@ export default {
     const people = [
       {
         name: 'Gulnara Mustafaeva',
-        role: computed(() => t('home.team.roles.partnerships')),
+        role: 'Partnerships',
         imageUrl: 'team/GulnaraMustafaeva.jpg',
         networks: {
           linkedin: 'https://www.linkedin.com/in/gulia-mustafayeva/',
@@ -65,7 +63,7 @@ export default {
       },
       {
         name: 'Yulia Movsesova',
-        role: computed(() => t('home.team.roles.communications')),
+        role: 'Communications',
         imageUrl: 'team/YuliaMovsesova.jpg',
         networks: {
           linkedin: 'https://www.linkedin.com/in/yuliamm/',
@@ -73,7 +71,7 @@ export default {
       },
       {
         name: 'Olga Alilovic',
-        role: computed(() => t('home.team.roles.mission')),
+        role: 'Mission',
         imageUrl: 'team/OlgaAlilovic.jpg',
         networks: {
           linkedin: 'https://www.linkedin.com/in/olga-alilovic-a3516a12/',
@@ -81,7 +79,7 @@ export default {
       },
       {
         name: 'Aleksey Razbakov',
-        role: computed(() => t('home.team.roles.coordination')),
+        role: 'Coordination',
         imageUrl: 'team/AlekseyRazabakov.jpg',
         networks: {
           linkedin: 'https://www.linkedin.com/in/razbakov/',
