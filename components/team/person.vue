@@ -10,9 +10,16 @@
         class="text-body font-nunito text-regular font-medium lg:text-subtitle"
       >
         <h3>{{ person.name }}</h3>
-        <p class="mt-2 text-caption lg:text-body text-zinc-600">
-          {{ person.role }}
-        </p>
+        <div v-if="role">
+          <p class="mt-2 text-caption lg:text-body text-zinc-600">
+            {{ t(`home.team.roles.${person.role.toLowerCase()}`) }}
+          </p>
+        </div>
+        <div v-else>
+          <p class="mt-2 text-caption lg:text-body text-zinc-600">
+            {{ person.role }}
+          </p>
+        </div>
       </div>
       <div class="space-y-2">
         <ul role="list" class="flex justify-center space-x-2">
@@ -28,6 +35,7 @@
   </div>
 </template>
 <script>
+import { useI18n } from 'vue-i18n'
 export default {
   props: {
     person: {
@@ -40,6 +48,22 @@ export default {
           networks: {},
         }
       },
+    },
+  },
+  data() {
+    const { t } = useI18n()
+    return {
+      t,
+    }
+  },
+  computed: {
+    role() {
+      const rolesKeys = useI18n().messages.value.en?.home?.team?.roles
+      if (!rolesKeys) return false
+
+      const roles = Object.keys(rolesKeys)
+      const personRole = this.person.role.toLowerCase()
+      return roles.includes(personRole)
     },
   },
   methods: {
