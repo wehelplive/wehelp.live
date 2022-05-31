@@ -12,7 +12,7 @@
           <PopoverButton
             class="bg-white-500 rounded-md mt-1 p-2 inline-flex items-center justify-center text-zinc-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
           >
-            <span class="sr-only">Open menu</span>
+            <span class="sr-only">{{ t('header.menu.open') }}</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
@@ -21,9 +21,9 @@
             v-for="item in navigation.solutions"
             :key="item.name"
             :to="item.to"
-            class="font-nunito text-xl text-black-500 hover:text-black-500 self-center"
+            class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
           >
-            {{ item.name?.value ? item.name?.value : item.name }}
+            {{ item.name?.value }}
           </NuxtLink>
           <div id="locale-switcher">
             <div>
@@ -55,9 +55,9 @@
     >
       <PopoverPanel
         focus
-        class="bg-white-500 fixed h-auto top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
+        class="bg-white-500 fixed h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
       >
-        <div class="bg-white-500 ">
+        <div class="bg-white-500 bg-white-500 ">
           <div class="">
             <div class="flex m-0 p-0 items-center justify-between">
               <div class="mt-2 ml-2">
@@ -67,40 +67,31 @@
                 <PopoverButton
                   class="bg-white-500 rounded-md mr-2 mt-1.5 p-2 inline-flex items-center justify-center text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-royal-blue-600"
                 >
-                  <span class="sr-only">Close menu</span>
+                  <span class="sr-only">{{ t('header.menu.close') }}</span>
                   <XIcon class="h-5.5 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
           </div>
 
-          <div class="h-10"></div>
-          <div class="flex flex-col float-right">
-            <div class="flex flex-col float-right mr-5">
-              <NuxtLink
-                v-for="item in navigation.solutions"
-                :key="item.name"
-                :to="item.to"
-                class="text-base w-fit color-[#202020] mb-3 font-nunito text-black-500 hover:text-black-500"
-              >
-                {{ item.name?.value ? item.name?.value : item.name }}
-              </NuxtLink>
-            </div>
-            <div class="block mr-5 ml-[60px] mt-[30px] justify-end">
-              <div id="locale-switcher">
-                <div>
-                  <select
-                    v-model="$i18n.locale"
-                    class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
-                  >
-                    <option
-                      v-for="(locale, i) in $i18n.availableLocales"
-                      :key="`Lang${i}`"
-                      :value="locale"
+          <div class="flex flex-col">
+            <div class="flex w-full justify-end pr-6">
+              <div class="flex">
+                <div id="locale-switcher">
+                  <div>
+                    <select
+                      v-model="$i18n.locale"
+                      class="form-select w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
                     >
-                      {{ locale }}
-                    </option>
-                  </select>
+                      <option
+                        v-for="(locale, i) in $i18n.availableLocales"
+                        :key="`Lang${i}`"
+                        :value="locale"
+                      >
+                        {{ locale }}
+                      </option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,7 +105,7 @@
                     <h3
                       class="text-sm font-semibold text-zinc-700  tracking-wider uppercase"
                     >
-                      Services
+                      {{ t('informations.services') }}
                     </h3>
                     <ul role="list" class="mt-4 space-y-4">
                       <li v-for="item in navigation.solutions" :key="item.name">
@@ -122,7 +113,7 @@
                           :href="item.href"
                           class="text-base w-max text-grey-600 hover:text-grey-800"
                         >
-                          {{ item.name }}
+                          {{ item.name?.value }}
                         </a>
                       </li>
                     </ul>
@@ -131,7 +122,7 @@
                     <h3
                       class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
                     >
-                      Support
+                      {{ t('informations.support') }}
                     </h3>
                     <ul role="list" class="mt-4 space-y-4">
                       <li v-for="item in navigation.support" :key="item.name">
@@ -139,7 +130,7 @@
                           :href="item.href"
                           class="text-base text-grey-600 hover:text-grey-800"
                         >
-                          {{ item.name }}
+                          {{ item.name?.value }}
                         </a>
                       </li>
                     </ul>
@@ -150,7 +141,7 @@
                     <h3
                       class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
                     >
-                      Company
+                      {{ t('informations.company') }}
                     </h3>
                     <ul role="list" class="mt-4 space-y-4">
                       <li v-for="item in navigation.company" :key="item.name">
@@ -158,7 +149,7 @@
                           :href="item.href"
                           class="text-base text-grey-600 hover:text-grey-800"
                         >
-                          {{ item.name }}
+                          {{ item.name?.value }}
                         </a>
                       </li>
                     </ul>
@@ -167,7 +158,7 @@
                     <h3
                       class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
                     >
-                      Legal
+                      {{ t('informations.legal') }}
                     </h3>
                     <ul role="list" class="mt-4 space-y-4">
                       <li v-for="item in navigation.legal" :key="item.name">
@@ -175,7 +166,7 @@
                           :href="item.href"
                           class="text-base text-grey-600 hover:text-grey-800"
                         >
-                          {{ item.name }}
+                          {{ item.name?.value }}
                         </a>
                       </li>
                     </ul>
@@ -189,8 +180,7 @@
             <div
               class="text-base text-center mt-[42px] mx-2 text-zinc-700 font-nunito"
             >
-              We're helping to solve comlex problems in Ukrainian refugee crisis
-              in Europe
+              {{ t('header.description') }}
             </div>
             <div class="flex mt-[8px] items-center justify-center space-x-1">
               <a
@@ -306,6 +296,11 @@
               ></a>
             </div>
           </div>
+
+          <div class="h-20"></div>
+          <br />
+
+          <br />
         </div>
         <div class="h-10"></div>
         <br />
@@ -349,13 +344,64 @@ export default {
     const { t } = useI18n()
     const navigation = {
       solutions: [
-        { name: computed(() => t('header.guest')), to: '/guest' },
-        { name: computed(() => t('header.host')), to: '/host' },
+        { name: computed(() => t('header.solutions.guest')), to: '/guest' },
+        { name: computed(() => t('header.solutions.host')), to: '/host' },
         {
-          name: computed(() => t('header.exchange')),
+          name: computed(() => t('header.solutions.exchange')),
           to: '/exchange',
         },
-        { name: computed(() => t('header.request')), to: '/request' },
+        { name: computed(() => t('header.solutions.request')), to: '/request' },
+        {
+          name: computed(() => t('header.solutions.services')),
+          to: '/services',
+          href: '/services',
+        },
+        {
+          name: computed(() => t('header.solutions.add')),
+          to: '/add',
+          href: '/add',
+        },
+      ],
+      support: [
+        {
+          name: computed(() => t('header.support')),
+          href: 'mailto:hello@wehelp.vip',
+        },
+      ],
+      company: [
+        {
+          name: computed(() => t('header.company.about')),
+          href:
+            'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
+        },
+        {
+          name: computed(() => t('header.company.teams')),
+          href: '/teams',
+        },
+        {
+          name: computed(() => t('header.company.calendar')),
+          href: '/calendar',
+        },
+        {
+          name: computed(() => t('header.company.involved')),
+          href: '/get-involved',
+        },
+        {
+          name: computed(() => t('header.company.jobs')),
+          href: 'https://angel.co/company/wehelplive/jobs',
+        },
+      ],
+      legal: [
+        {
+          name: computed(() => t('header.legal.imprint')),
+          href:
+            'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
+        },
+        {
+          name: computed(() => t('header.legal.terms')),
+          href:
+            'https://docs.google.com/document/d/15h_1__MAk8CgBoF4n8mhA-XAyorzDlUQPVNOsGMyhEs/edit',
+        },
       ],
       social: [
         {
@@ -421,6 +467,7 @@ export default {
 
     return {
       navigation,
+      t,
     }
   },
 }

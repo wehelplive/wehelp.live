@@ -1,8 +1,32 @@
+informations:
+  services: Services
+  support: Support
+  company: Company
+  legal: Legal
 header:
-  guest: Find Accomodation
-  host: Offer Accomodation
-  exchange: UAH Exchange
-  request: Ask for Help
+  menu:
+    open: Open menu
+    close: Close menu
+  solutions:
+    guest: Find Accomodation
+    host: Offer Accomodation
+    exchange: UAH Exchange
+    request: Ask for Help
+    services: Evacuation Planner
+    add: Add review
+  support: Contact Us
+  company:
+    about: About
+    teams: Teams
+    calendar: Calendar
+    involved: Get Involved
+    jobs: Jobs
+  legal:
+    imprint: Imprint
+    terms: Terms
+  description:
+    We're helping to solve comlex problems in Ukrainian refugee crisis
+    in Europe
 home:
   start:
     title: Evacuation to EU
@@ -26,7 +50,17 @@ home:
       people <span class="font-bold text-orange-500">hope</span> and help them
       through <span class="font-bold text-blue-500">effective</span>
       actions
+  team:
+    title: Our Team
+    button: Join Our Team
+    roles:
+      partnerships: Partnerships
+      communications: Communications
+      mission: Mission
+      coordination: Coordination
   faq:
+    item:
+      empty: no content
     title:
       main: FAQ
       first: What is the organisation structure?
