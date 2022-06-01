@@ -10,7 +10,7 @@
     <div class="text-sm grid grid-rows-4 gap-4 place-content-center mx-[20px]">
       <div class="space-y-4">
         <a href="/" class="font-bold font-nunito underline-offset-1"
-          >Evacuation planner</a
+          ><h3>Evacuation planner</h3></a
         >
         <p class="font-openSans text-zinc-700">
           Recommendation system based on reviews from real people about services
@@ -19,7 +19,7 @@
       </div>
       <div class="space-y-4">
         <a href="/" class="font-bold font-nunito underline-offset-1"
-          >Accommodation</a
+          ><h3>Accommodation</h3></a
         >
         <p class="font-openSans text-zinc-700">
           Improve the matching process and make Refugee, Host, Shelter Operator
@@ -28,7 +28,7 @@
       </div>
       <div class="space-y-4">
         <a href=" /" class="font-bold font-nunito underline-offset-1"
-          >UAH Exchange in EU</a
+          ><h3>UAH Exchange in EU</h3></a
         >
         <p class="font-openSans text-zinc-700">
           We unite in order to solve this issue together.
@@ -36,7 +36,7 @@
       </div>
       <div class="space-y-4">
         <a href="/" class="font-bold font-nunito underline-offset-1"
-          >Solve Big Problems</a
+          ><h3>Big Problems</h3></a
         >
         <p class="font-openSans text-zinc-700">
           We bring experts to solve big problems. There are no unsolvable tasks.
