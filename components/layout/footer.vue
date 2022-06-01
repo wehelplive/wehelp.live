@@ -4,20 +4,25 @@
     <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
-          <BrandLogo class="h-24 w-24" />
-          <p class="text-grey-600 text-base">
+          <div class="flex justify-center xl:justify-start">
+            <BrandLogo class="h-24 w-24" />
+          </div>
+          <p
+            class="text-grey-600 text-base text-center sm:text-left flex justify-center xl:justify-start"
+          >
             {{ t('footer.subtitle') }}
           </p>
-          <p class="text-grey-600 text-base">{{ t('footer.hashtag') }}</p>
-          <div class="flex space-x-2">
-            <a
-              v-for="item in navigation.social"
-              :key="item.name"
-              :href="item.href"
-            >
-              <span class="sr-only">{{ item.name }}</span>
-              <img class="fill-currentColor" :src="item.icon" />
-            </a>
+          <div class="flex justify-center xl:justify-start">
+            <div class="flex space-x-2">
+              <a
+                v-for="item in navigation.social"
+                :key="item.name"
+                :href="item.href"
+              >
+                <span class="sr-only">{{ item.name }}</span>
+                <img class="fill-currentColor" :src="item.icon" />
+              </a>
+            </div>
           </div>
         </div>
         <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
@@ -96,7 +101,7 @@
         </div>
       </div>
       <div class="mt-12 border-t border-grey-200 pt-8">
-        <p class="text-base text-grey-600 xl:text-center">
+        <p class="text-base text-grey-600 xl:text-center flex justify-center">
           &copy; {{ t('footer.copyright') }}
         </p>
       </div>
