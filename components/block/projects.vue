@@ -3,12 +3,12 @@
     <div
       class="text-xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mb-5 mt-8 lg:mb-6 lg:mt-12"
     >
-      What are we doing?
+      <h3>What are we doing?</h3>
     </div>
     <div
       class="text-sm grid grid-cols-2 gap-4 place-content-center lg:ml-72 mx-5"
     >
-      <div class="space-y-4 max-w-sm">
+      <div class="space-y-4 w-[22rem]">
         <p class="font-bold font-nunito underline-offset-1">
           Evacuation planner
         </p>
@@ -17,7 +17,7 @@
           that really helped them to solve their issues with easy search.
         </p>
       </div>
-      <div class="space-y-4 max-w-sm">
+      <div class="space-y-4 w-[22rem]">
         <p class="font-bold font-nunito underline-offset-1">Accommodation</p>
 
         <p class="font-openSans text-zinc-700">
@@ -25,7 +25,7 @@
           and Volunteer happy.
         </p>
       </div>
-      <div class="space-y-4 max-w-sm">
+      <div class="space-y-4 w-[22rem]">
         <p class="font-bold font-nunito underline-offset-1">
           UAH Exchange in EU
         </p>
@@ -33,7 +33,7 @@
           We unite in order to solve this issue together.
         </p>
       </div>
-      <div class="space-y-4 max-w-sm">
+      <div class="space-y-4 w-[22rem]">
         <p class="font-bold font-nunito underline-offset-1">Big Problems</p>
         <p class="font-openSans text-zinc-700">
           We bring experts to solve big problems. There are no unsolvable tasks.
