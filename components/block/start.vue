@@ -31,7 +31,7 @@
             <div class="mt-3 sm:mt-0 sm:ml-3">
               <NuxtLink
                 to="/host"
-                class="w-full underline underline-offset-1 flex font-sans items-center justify-center capitalize px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 sm:hover:text-white-500 sm:text-white-500 sm:bg-green-500 sm:w-72 sm:h-12 sm:no-underline sm:rounded-3xl sm:py-4 sm:text-lg sm:px-10"
+                class="w-full underline underline-offset-1 flex font-sans items-center justify-center capitalize px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 sm:hover:text-white-500  sm:hover:bg-zinc-500 sm:text-white-500 sm:bg-green-500 sm:w-72 sm:h-12 sm:no-underline sm:rounded-3xl sm:py-4 sm:text-lg sm:px-10"
               >
                 {{ t('home.start.offerAccomodation') }}
               </NuxtLink>
