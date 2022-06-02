@@ -3,19 +3,23 @@
     <div
       class="text-4xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mt-8 mb-6 lg:mt-12"
     >
-      <h3>What are we doing?</h3>
+      <h2>What are we doing?</h2>
     </div>
     <div class="bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:py-2 sm:px-6 lg:px-8">
         <dl
           class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3"
         >
-          <div v-for="faq in faqs" :key="faq.id" class="rounded-md shadow p-12">
+          <div
+            v-for="service in services"
+            :key="service.id"
+            class="rounded-md shadow p-12"
+          >
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              {{ faq.question }}
+              {{ service.name }}
             </dt>
             <dd class="mt-2 text-base text-gray-500">
-              {{ faq.answer }}
+              {{ service.description }}
             </dd>
           </div>
         </dl>
@@ -33,28 +37,28 @@
   </div>
 </template>
 <script setup>
-const faqs = [
+const services = [
   {
     id: 1,
-    question: 'Evacuation planner',
-    answer:
+    name: 'Evacuation planner',
+    description:
       'Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.',
   },
   {
     id: 2,
-    question: 'Accomodation',
-    answer:
+    name: 'Accomodation',
+    description:
       'Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.',
   },
   {
     id: 3,
-    question: 'UAH Exchange in EU',
-    answer: 'We unite in order to solve this issue together.',
+    name: 'UAH Exchange in EU',
+    description: 'We unite in order to solve this issue together.',
   },
   {
     id: 4,
-    question: 'Big Problems',
-    answer:
+    name: 'Big Problems',
+    description:
       'We bring experts to solve big problems. There are no unsolvable tasks.',
   },
 ]
