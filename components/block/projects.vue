@@ -1,45 +1,27 @@
 <template>
   <div>
     <div
-      class="text-xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mb-5 mt-8 lg:mb-6 lg:mt-12"
+      class="text-4xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mt-8 lg:mb-6 lg:mt-12"
     >
       <h3>What are we doing?</h3>
     </div>
-    <div
-      class="text-sm grid grid-cols-2 gap-4 place-content-center lg:ml-72 mx-5"
-    >
-      <div class="space-y-4 w-[22rem]">
-        <p class="font-bold font-nunito underline-offset-1">
-          Evacuation planner
-        </p>
-        <p class="font-openSans text-zinc-700">
-          Recommendation system based on reviews from real people about services
-          that really helped them to solve their issues with easy search.
-        </p>
-      </div>
-      <div class="space-y-4 w-[22rem]">
-        <p class="font-bold font-nunito underline-offset-1">Accommodation</p>
-
-        <p class="font-openSans text-zinc-700">
-          Improve the matching process and make Refugee, Host, Shelter Operator
-          and Volunteer happy.
-        </p>
-      </div>
-      <div class="space-y-4 w-[22rem]">
-        <p class="font-bold font-nunito underline-offset-1">
-          UAH Exchange in EU
-        </p>
-        <p class="font-openSans text-zinc-700">
-          We unite in order to solve this issue together.
-        </p>
-      </div>
-      <div class="space-y-4 w-[22rem]">
-        <p class="font-bold font-nunito underline-offset-1">Big Problems</p>
-        <p class="font-openSans text-zinc-700">
-          We bring experts to solve big problems. There are no unsolvable tasks.
-        </p>
+    <div class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:py-2 sm:px-6 lg:px-8">
+        <dl
+          class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3"
+        >
+          <div v-for="faq in faqs" :key="faq.id" class="rounded-md shadow p-12">
+            <dt class="text-lg leading-6 font-medium text-gray-900">
+              {{ faq.question }}
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              {{ faq.answer }}
+            </dd>
+          </div>
+        </dl>
       </div>
     </div>
+
     <div class="flex justify-center mt-14">
       <NuxtLink
         to="/"
@@ -50,3 +32,30 @@
     </div>
   </div>
 </template>
+<script setup>
+const faqs = [
+  {
+    id: 1,
+    question: 'Evacuation planner',
+    answer:
+      'Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.',
+  },
+  {
+    id: 2,
+    question: 'Accomodation',
+    answer:
+      'Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.',
+  },
+  {
+    id: 3,
+    question: 'UAH Exchange in EU',
+    answer: 'We unite in order to solve this issue together.',
+  },
+  {
+    id: 4,
+    question: 'Big Problems',
+    answer:
+      'We bring experts to solve big problems. There are no unsolvable tasks.',
+  },
+]
+</script>
