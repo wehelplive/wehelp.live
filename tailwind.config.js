@@ -160,8 +160,8 @@ module.exports = {
             letterSpacing: '0px',
           },
         ],
-        body: [
-          '14px',
+        body1: [
+          '16px',
           {
             lineHeight: '20px',
             letterSpacing: '0em',

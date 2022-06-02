@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-row mb-2">
     <div class="flex items-center mr-3">
-      <div v-for="n in parseInt(rating)" :key="n">
+      <div v-for="n in rated" :key="n">
         <svg
-          class="w-5 h-5 text-orange-500"
+          :class="`w-${size} h-${size} text-orange-500`"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@
       </div>
       <div v-for="n in unrated" :key="n">
         <svg
-          class="w-5 h-5 text-[#D9D9D9]"
+          :class="`w-${size} h-${size} text-[#D9D9D9]`"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +36,10 @@ export default {
       type: Number,
       default: 0,
     },
+    size: {
+      type: Number,
+      default: 5,
+    },
   },
   data() {
     return {
@@ -44,7 +48,10 @@ export default {
   },
   computed: {
     unrated() {
-      return this.stars - parseInt(`${this.rating}`)
+      return this.stars - parseInt(Math.round(`${this.rating}`))
+    },
+    rated() {
+      return parseInt(Math.round(this.rating))
     },
   },
 }

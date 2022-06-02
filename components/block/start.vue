@@ -18,29 +18,40 @@
             </p>
           </div>
           <div
-            class="mt-8 mb-5 mx-auto sm:flex sm:justify-center items-center sm:mt-12 gap-2.5"
+            class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:mt-12 sm:max-w-sm sm:h-16 sm:flex-row sm:gap-4"
           >
-            <div class="rounded-3xl">
+            <div
+              class="w-full h-1/2 flex items-center justify-center sm:w-1/2 sm:h-16"
+            >
               <NuxtLink
                 to="/guest"
-                class="w-72 h-12 flex shadow font-sans items-center justify-center capitalize border border-transparent  font-semibold  rounded-3xl text-white-500 bg-red-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body1 sm:rounded-xl"
               >
                 {{ t('home.start.findAccomodation') }}
               </NuxtLink>
             </div>
-            <div class="mt-3 sm:mt-0 sm:ml-3">
+            <div
+              class="w-full h-1/2 flex items-center justify-center sm:w-1/2 sm:h-16"
+            >
               <NuxtLink
                 to="/host"
-                class="w-full underline underline-offset-1 flex font-sans items-center justify-center capitalize px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-500 hover:text-zinc-500 sm:hover:text-white-500  sm:hover:bg-zinc-500 sm:text-white-500 sm:bg-green-500 sm:w-72 sm:h-12 sm:no-underline sm:rounded-3xl sm:py-4 sm:text-lg sm:px-10"
+                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body1 sm:rounded-xl"
               >
                 {{ t('home.start.offerAccomodation') }}
               </NuxtLink>
             </div>
           </div>
-          <div class="flex items-end flex-row justify-center gap-2 w-xs h-28">
-            <RatingItem :rating="4.8" class="md:h-[34px]" />
+          <div
+            class="mt-12 flex items-end flex-row justify-center gap-2 w-xs h-28"
+          >
+            <div class="sm:hidden">
+              <RatingItem :rating="4.8" />
+            </div>
+            <div class="hidden sm:flex">
+              <RatingItem :rating="4.8" :size="10" />
+            </div>
             <div
-              class="mb-2 font-nunito text-subtitle md:text-headline-5 text-zinc-700"
+              class="mb-2 font-nunito text-subtitle sm:text-headline-5 text-zinc-700"
             >
               {{ t('home.start.review', { stars: 4.8, reviews: 5 }) }}
             </div>

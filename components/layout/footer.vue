@@ -25,7 +25,9 @@
             </div>
           </div>
         </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+        <div
+          class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 justify-items-center xl:justify-items-start"
+        >
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3
