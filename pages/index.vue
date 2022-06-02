@@ -1,7 +1,7 @@
 <template>
   <div>
     <BlockStart />
-    <BlockProjects />
+    <BlockServices />
     <BlockMission />
     <BlockValues />
     <BlockFaq />

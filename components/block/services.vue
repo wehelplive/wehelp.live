@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="text-4xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mt-8 lg:mb-6 lg:mt-12"
+      class="text-4xl text-zinc-900 font-nunito flex justify-center lg:text-4xl mt-8 mb-6 lg:mt-12"
     >
       <h3>What are we doing?</h3>
     </div>
