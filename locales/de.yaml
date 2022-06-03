@@ -1,110 +1,110 @@
 ---
 informations:
-  services: Services
-  support: Support
-  company: Company
-  legal: Legal
+  services: Dienste
+  support: Unterstützung
+  company: Firma
+  legal: Rechtlich
 header:
   menu:
-    open: Open menu
-    close: Close menu
+    open: Menü öffnen
+    close: Menü schließen
   solutions:
-    guest: Find Accomodation
-    host: Offer Accomodation
+    guest: Unterkunft finden
+    host: Angebot Unterkunft
     exchange: USD-Wechsel
-    request: Ask for Help
-    services: Evacuation Planner
-    add: Add review
-  support: Contact Us
+    request: Bitte um Hilfe
+    services: Evakuierungsplaner
+    add: Bewertung hinzufügen
+  support: Kontaktiere uns
   company:
-    about: About
+    about: Über
     teams: Teams
-    calendar: Calendar
-    involved: Get Involved
+    calendar: Kalender
+    involved: Beteiligt werden
     jobs: Jobs
   legal:
-    imprint: Imprint
-    terms: Terms
-  description: We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
+    imprint: Impressum
+    terms: Begriffe
+  description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
 home:
   start:
-    title: Evacuation to EU
-    description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-    findAccomodation: Find Accomodation
-    offerAccomodation: Offer Accomodation
+    title: Evakuierung in die EU
+    description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
+    findAccomodation: Unterkunft finden
+    offerAccomodation: Angebot Unterkunft
   mission:
-    title: Our mission
-    subtitle: Effective organization of volunteer activities
-    description: There are many people who are <strong>ready to help</strong> and who <strong>need help</strong>. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
+    title: Unsere Mission
+    subtitle: Effektive Organisation von Freiwilligentätigkeiten
+    description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen verkraften nicht die Koordinierung, und es entsteht Chaos und viele Fragen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
   values:
-    title: Our core values
-    subtitle: We aim to be a <span class="font-bold text-green-500">trustful</span> source that give people <span class="font-bold text-orange-500">hope</span> and help them through <span class="font-bold text-blue-500">effective</span> actions
+    title: Unsere Kernwerte
+    subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
   team:
-    title: Our Team
-    button: Join Our Team
+    title: Unser Team
+    button: Trete unserem Team bei
     roles:
-      partnerships: Partnerships
-      communications: Communications
+      partnerships: Partnerschaften
+      communications: Kommunikation
       mission: Mission
-      coordination: Coordination
+      coordination: Koordination
   faq:
     item:
-      empty: no content
+      empty: kein Inhalt
     title:
       main: FAQ
-      first: What is the organisation structure?
-      second: How can I meet my team?
-      third: How to schedule a Meeting?
-      fourth: Where do I get WeHelp brand assets?
-      fifth: Where do I find all available information about WeHelp?
+      first: Was ist die Organisationsstruktur?
+      second: Wie kann ich mein Team treffen?
+      third: Wie kann ich ein Meeting planen?
+      fourth: Wo bekomme ich WeHelp Markenvermögen?
+      fifth: Wo finde ich alle verfügbaren Informationen über WeHelp?
     list:
       one:
-        - Where can I find the full schedule? Subscribe to calendar -
-        - 'How to join a team meeting? Follow the Welcome Guide on Slack (channel #welcome).'
-        - How do I join Slack? Sign up as a volunteer at
-        - and you will get an invitation to our Slack.
+        - Wo finde ich den vollen Zeitplan? Abonniere den Kalender -
+        - 'Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).'
+        - Wie betrete ich Slack? Melde dich als Freiwilliger an bei
+        - und Sie erhalten eine Einladung zu unserem Slack.
       two:
-        - 'What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:'
-        - How to prepare for a meeting?
-        - Responsibilities of a meeting host
+        - 'Welche Art von Treffen haben wir? 1-1, um Themen zu besprechen, Retrospektive, Governance-Treffen, tägliches Standup, Planung und Überprüfung, Koordinationstreffen, lesen Sie mehr:'
+        - Wie bereiten Sie sich auf ein Meeting vor?
+        - Aufgaben eines Veranstalters
       three:
         - Logo
-        - Brand guidelines
+        - Markenrichtlinien
         - Presentation templates
-        - Instagram post templates
+        - Instagram-Beitragsvorlagen
     subtitle:
       one:
-        - All downloadable files you can find in our
+        - Alle herunterladbaren Dateien finden Sie in unseren
         - Google Drive
         - in
         - Design/Branding
-        - folder.
+        - ordner.
       two:
-        - Source files are in
+        - Quelldateien sind in
         - WeHelp Figma
-      three: 'What’s included:'
+      three: 'Was beinhaltet wird:'
       four:
-        - In our
+        - In unserer
         - Google Drive
 footer:
-  subtitle: We help to solve complex problems in the Ukrainian refugee crisis in Europe
+  subtitle: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
   hashtag: '#WEHELPUKRAINE'
-  copyright: 2022 WeHelp. All rights reserved.
+  copyright: 2022 WeHelp. Alle Rechte vorbehalten.
   list:
     solutions:
-      - Find Accomodation
-      - Offer Accomodation
-      - UAH Exchange
-      - Ask for Help
-      - Evacuation Planner
-      - Add review
-    support: Contact Us
+      - Unterkunft finden
+      - Angebot Unterkunft
+      - USD-Wechsel
+      - Bitte um Hilfe
+      - Evakuierungsplaner
+      - Bewertung hinzufügen
+    support: Kontaktiere uns
     company:
-      - About
+      - Über
       - Teams
-      - Calendar
-      - Get Involved
+      - Kalender
+      - Beteiligt werden
       - Jobs
     legal:
-      - Imprint
-      - Terms
+      - Impressum
+      - Begriffe
