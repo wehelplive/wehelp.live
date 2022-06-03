@@ -44,14 +44,12 @@
 </template>
 <script>
 import { PhoneIcon, LinkIcon } from '@heroicons/vue/solid'
-import RatingItem from '../rating/item.vue'
 
 export default {
   name: 'ServiceItem',
   components: {
     PhoneIcon,
     LinkIcon,
-    RatingItem,
   },
   props: {
     fieldId: {
