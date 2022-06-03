@@ -25,7 +25,7 @@
             >
               <NuxtLink
                 to="/guest"
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body1 sm:rounded-xl"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
               >
                 {{ t('home.start.findAccomodation') }}
               </NuxtLink>
@@ -35,7 +35,7 @@
             >
               <NuxtLink
                 to="/host"
-                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body1 sm:rounded-xl"
+                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
               >
                 {{ t('home.start.offerAccomodation') }}
               </NuxtLink>
@@ -63,14 +63,12 @@
 </template>
 <script>
 import { useI18n } from 'vue-i18n'
-import RatingItem from '../rating/item.vue'
 
 export default {
   setup() {
     const { t } = useI18n()
     return {
       t,
-      RatingItem,
     }
   },
 }

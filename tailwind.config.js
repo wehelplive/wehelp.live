@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: 'jit',
   content: {
@@ -160,7 +162,7 @@ module.exports = {
             letterSpacing: '0px',
           },
         ],
-        body1: [
+        body: [
           '16px',
           {
             lineHeight: '20px',
@@ -222,5 +224,21 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+
+          /* Firefox */
+          'scrollbar-width': 'none',
+
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      })
+    }),
   ],
 }

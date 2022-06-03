@@ -48,10 +48,10 @@ export default {
   },
   computed: {
     unrated() {
-      return this.stars - parseInt(Math.round(`${this.rating}`))
+      return this.stars - Math.round(`${this.rating}`)
     },
     rated() {
-      return parseInt(Math.round(this.rating))
+      return Math.round(this.rating)
     },
   },
 }
