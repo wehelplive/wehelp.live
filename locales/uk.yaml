@@ -1,110 +1,110 @@
 ---
 informations:
-  services: Services
-  support: Support
-  company: Company
-  legal: Legal
+  services: Послуги
+  support: Підтримка
+  company: Організація
+  legal: Юридичні
 header:
   menu:
-    open: Open menu
-    close: Close menu
+    open: Відкрити меню
+    close: Закрити меню
   solutions:
-    guest: Find Accomodation
-    host: Offer Accomodation
+    guest: Знайти акомотивацію
+    host: Знайти акомотивацію
     exchange: Обмін гривні
-    request: Ask for Help
-    services: Evacuation Planner
-    add: Add review
-  support: Contact Us
+    request: Допомога
+    services: Планувальник евакуації
+    add: Додати відгук
+  support: Зв’язатись з нами
   company:
-    about: About
-    teams: Teams
-    calendar: Calendar
-    involved: Get Involved
-    jobs: Jobs
+    about: Про програму
+    teams: Команди
+    calendar: Календар
+    involved: Долучитися
+    jobs: Джобс
   legal:
-    imprint: Imprint
-    terms: Terms
-  description: We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
+    imprint: Відомості
+    terms: Умови
+  description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
 home:
   start:
-    title: Evacuation to EU
-    description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-    findAccomodation: Find Accomodation
-    offerAccomodation: Offer Accomodation
+    title: Евакуація в ЄС
+    description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
+    findAccomodation: Знайти акомотивацію
+    offerAccomodation: Знайти акомотивацію
   mission:
-    title: Our mission
-    subtitle: Effective organization of volunteer activities
-    description: There are many people who are <strong>ready to help</strong> and who <strong>need help</strong>. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
+    title: Наша мета
+    subtitle: Ефективна організація діяльності добровольців
+    description: Є багато людей, які <strong>готові допомогти</strong> і котрі <strong>потребують допомоги</strong>. Існуючі організації не справляються з координацією та хаосом розробляються, і багато проблем залишаються невирішеними. Необхідно знайти та усунути штрихи в організаціях, щоб поєднати їх разом, щоб встановити координацію для ефективного подолання існуючої ситуації.
   values:
-    title: Our core values
-    subtitle: We aim to be a <span class="font-bold text-green-500">trustful</span> source that give people <span class="font-bold text-orange-500">hope</span> and help them through <span class="font-bold text-blue-500">effective</span> actions
+    title: Наші основні значення
+    subtitle: Ми прагнемо бути <span class="font-bold text-green-500">надійним</span> джерелом, яке дає людям <span class="font-bold text-orange-500">надію</span> і допоможіть їм за допомогою <span class="font-bold text-blue-500">ефективних</span> дій
   team:
-    title: Our Team
-    button: Join Our Team
+    title: Наша команда
+    button: Приєднайтеся до нашої команди
     roles:
-      partnerships: Partnerships
-      communications: Communications
-      mission: Mission
-      coordination: Coordination
+      partnerships: Партнерство
+      communications: Зв’язок
+      mission: Місія
+      coordination: Координація
   faq:
     item:
-      empty: no content
+      empty: немає вмісту
     title:
-      main: FAQ
-      first: What is the organisation structure?
-      second: How can I meet my team?
-      third: How to schedule a Meeting?
-      fourth: Where do I get WeHelp brand assets?
-      fifth: Where do I find all available information about WeHelp?
+      main: ЧАП
+      first: Яка структура організації?
+      second: Як я можу зустрітися зі своєю командою?
+      third: Як запланувати зустріч?
+      fourth: Де я отримую активи бренду WeHelp?
+      fifth: Де я знаходжу всю наявну інформацію про WeHelp?
     list:
       one:
-        - Where can I find the full schedule? Subscribe to calendar -
-        - 'How to join a team meeting? Follow the Welcome Guide on Slack (channel #welcome).'
-        - How do I join Slack? Sign up as a volunteer at
-        - and you will get an invitation to our Slack.
+        - Де я можу знайти повний розклад? Підписатися на календар -
+        - 'Як приєднатися до командної зустрічі? Дотримуйтесь "Ласкаво просимо" на Slack (канал #Ласкаво просимо).'
+        - Як мені приєднатися до Slack? Зареєструйтеся як волонтер у
+        - і ви отримаєте запрошення до нашого Слека.
       two:
-        - 'What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:'
-        - How to prepare for a meeting?
-        - Responsibilities of a meeting host
+        - 'Які зустрічі у нас є? 1-1 для обговорення тем, Retrospective, Зустрічі управління, Daily Standup, Planning та Review Mees, координація читайте більше:'
+        - Як підготуватися до зустрічі?
+        - Відповідальність господаря-зустрічей
       three:
-        - Logo
-        - Brand guidelines
+        - Логотип
+        - Правила бренду
         - Presentation templates
-        - Instagram post templates
+        - Шаблони повідомлень Instagram
     subtitle:
       one:
-        - All downloadable files you can find in our
-        - Google Drive
-        - in
-        - Design/Branding
-        - folder.
+        - Усі завантажувані файли, які ви можете знайти в наших
+        - Диск Google
+        - за
+        - Дизайн/брендінг
+        - папки.
       two:
-        - Source files are in
+        - Вихідні файли в
         - WeHelp Figma
-      three: 'What’s included:'
+      three: 'Що включено:'
       four:
-        - In our
-        - Google Drive
+        - В нашому
+        - Диск Google
 footer:
-  subtitle: We help to solve complex problems in the Ukrainian refugee crisis in Europe
+  subtitle: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
   hashtag: '#WEHELPUKRAINE'
-  copyright: 2022 WeHelp. All rights reserved.
+  copyright: 2022 WeHelp. Всі права захищені.
   list:
     solutions:
-      - Find Accomodation
-      - Offer Accomodation
-      - UAH Exchange
-      - Ask for Help
-      - Evacuation Planner
-      - Add review
-    support: Contact Us
+      - Знайти акомотивацію
+      - Знайти акомотивацію
+      - Обмін гривні
+      - Допомога
+      - Планувальник евакуації
+      - Додати відгук
+    support: Зв’язатись з нами
     company:
-      - About
-      - Teams
-      - Calendar
-      - Get Involved
-      - Jobs
+      - Про програму
+      - Команди
+      - Календар
+      - Долучитися
+      - Джобс
     legal:
-      - Imprint
-      - Terms
+      - Відомості
+      - Умови
