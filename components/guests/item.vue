@@ -3,10 +3,10 @@
     class="col-span-1 flex flex-col p-5 bg-white-500 box-border rounded-lg border-2 border-solid border-[#0000001a]"
   >
     <div class="flex flex-col pr-3 mb-4">
-      <div v-if="typeof photo[0] !== 'undefined'" class="aspect-w-3 aspect-h-2">
+      <div v-if="photo.length !== 0" class="aspect-w-3 aspect-h-2">
         <img
           class="object-cover shadow-lg rounded-lg"
-          :src="photo.url"
+          :src="photo[0].url"
           alt=""
         />
       </div>

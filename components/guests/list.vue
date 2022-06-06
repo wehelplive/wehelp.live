@@ -5,7 +5,7 @@
         :field-id="guest.id"
         :name="guest.fields.Name"
         :story="guest.fields.Story"
-        :url="guest.fields.Photo[0].url"
+        :photo="guest.fields.Photo"
       />
     </ul>
   </div>
