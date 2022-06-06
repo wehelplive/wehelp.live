@@ -5,15 +5,20 @@
     <div class="flex flex-col pr-3 mb-4">
       <div v-if="photo.length !== 0" class="aspect-w-3 aspect-h-2">
         <img
-          class="object-cover shadow-lg rounded-lg"
+          class="object-cover w-auto h-96 shadow-lg rounded-lg"
           :src="photo[0].url"
           alt=""
         />
       </div>
-      <div class="font-nunito text-subtitle mb-2">
+      <div v-else>
+        <div class="object-cover h-96 w-auto shadow-lg rounded-lg">
+          <BrandLogo class="h-24 w-24 m-auto" />
+        </div>
+      </div>
+      <div class="font-nunito text-subtitle mb-2 mt-8">
         {{ name }}
       </div>
-      <div class="font-nunito text-subtitle mb-2">
+      <div class="font-nunito text-subtitle mb-2 mt-8">
         {{ story }}
       </div>
     </div>

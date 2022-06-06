@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-auto-fit gap-6 p-1">
+  <div class="grid grid-cols-auto-fit gap-6 p-2">
     <ul v-for="guest in guests" :key="guest.id" role="list">
       <GuestsItem
         v-if="guest.fields.Status === 'Validated' || 'Published'"
