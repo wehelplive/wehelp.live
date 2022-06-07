@@ -143,6 +143,13 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        '128': '32rem',
+        '192': '48rem',
+        '212': '53rem',
+        '232': '58rem',
+        '256': '64rem',
+      },
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
         'favicon-transp': "url( './icon-without-top-border.png')",
@@ -240,5 +247,6 @@ module.exports = {
         },
       })
     }),
+    require('@neojp/tailwindcss-line-clamp-utilities'),
   ],
 }
