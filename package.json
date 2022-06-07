@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@intlify/nuxt3": "^0.1.10",
+    "@neojp/tailwindcss-line-clamp-utilities": "^1.0.1",
     "@nuxt/postcss8": "^1.1.3",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
