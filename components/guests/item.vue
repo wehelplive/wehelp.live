@@ -28,6 +28,7 @@
   </div>
 </template>
 <script>
+
 export default {
   name: 'GuestsItem',
   props: {
