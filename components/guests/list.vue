@@ -3,6 +3,7 @@
     <ul v-for="guest in guests" :key="guest.id" role="list">
       <GuestsItem
         v-if="guest.fields.Status === 'Validated' || 'Published'"
+        :id="guest.fields.ID"
         :field-id="guest.id"
         :name="guest.fields.Name"
         :story="guest.fields.Story"

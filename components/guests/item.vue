@@ -15,6 +15,7 @@
           <BrandLogo class="h-24 w-24 m-auto" />
         </div>
       </div>
+      <div class="font-nunito text-subtitle mb-2 mt-8">Id: {{ id }}</div>
       <div class="font-nunito text-subtitle mb-2 mt-8">
         {{ name }}
       </div>
@@ -25,9 +26,14 @@
   </div>
 </template>
 <script>
+
 export default {
   name: 'GuestsItem',
   props: {
+    id: {
+      type: String,
+      default: '',
+    },
     fieldId: {
       type: String,
       default: '',
