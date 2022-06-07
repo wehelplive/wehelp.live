@@ -533,6 +533,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@neojp/tailwindcss-line-clamp-utilities@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@neojp/tailwindcss-line-clamp-utilities/-/tailwindcss-line-clamp-utilities-1.0.1.tgz#7ef12172e5f51e5fba5dd707ec5b36a48f338d77"
+  integrity sha512-DAzEbTSM7NLxTeWUdbipB3MNt/MesveqXRAnbLX/yNnzpqxRhakzFls/kY4r5LWFGSNl+AHe9khOd27wcp6Ylw==
+
 "@netlify/functions@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-1.0.0.tgz#5b6c02fafc567033c93b15a080cc021e5f10f254"
