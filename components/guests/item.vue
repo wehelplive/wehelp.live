@@ -32,8 +32,8 @@ export default {
   name: 'GuestsItem',
   props: {
     id: {
-      type: String,
-      default: Number,
+      type: Number,
+      default: 0,
     },
     fieldId: {
       type: String,

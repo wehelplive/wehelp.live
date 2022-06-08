@@ -38,7 +38,6 @@ export const fetchCities = async (offset = null) => {
     if (response?.offset) {
       return [...response.records, ...fetchServices(response.offset)]
     }
-
     return response.records
   } catch (error) {
     console.log(error)
@@ -66,10 +65,7 @@ export const fetchGuests = async (offset = null) => {
     if (response?.offset) {
       const nextResponse = await fetchGuests(response.offset)
       return [...response.records, ...nextResponse]
-      //   return [...response.records, ...fetchGuests(response.offset)]
-      // }
     }
-    console.log('guests', response.records)
     return response.records
   } catch (error) {
     console.log(error)
