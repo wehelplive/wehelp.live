@@ -10,7 +10,9 @@ export default {
     guests: [],
   }),
   async mounted() {
-    this.guests = (await fetchGuests()).filter(item => ['Validated', 'Published'].includes(item.fields.Status))
+    this.guests = (await fetchGuests()).filter((item) =>
+      ['Validated', 'Published'].includes(item.fields.Status)
+    )
   },
 }
 </script>
