@@ -2,6 +2,7 @@
   <div>
     <BlockHero />
     <BlockPartners />
+    <BlockServices />
     <BlockMission />
     <BlockValues />
     <BlockTeam />
