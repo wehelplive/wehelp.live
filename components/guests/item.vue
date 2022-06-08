@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-1 flex flex-col h-212 p-5 bg-white-500 box-border rounded-lg border-2 border-slate-200"
+    class="col-span-1 flex flex-col h-200 p-5 bg-white-500 box-border rounded-lg border-2 border-slate-200"
   >
     <div class="flex flex-col pr-3 mb-4">
       <div v-if="photo.length" class="aspect-w-3 aspect-h-2">
