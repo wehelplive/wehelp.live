@@ -33,7 +33,7 @@ export default {
   props: {
     id: {
       type: String,
-      default: '',
+      default: Number,
     },
     fieldId: {
       type: String,

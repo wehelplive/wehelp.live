@@ -136,6 +136,10 @@ export default {
           href: '/services',
         },
         { name: computed(() => t('footer.list.solutions[5]')), href: '/add' },
+        {
+          name: computed(() => t('footer.list.solutions[6]')),
+          href: '/guests',
+        },
       ],
       support: [
         {
