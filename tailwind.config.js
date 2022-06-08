@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: 'jit',
   content: {
@@ -150,7 +152,7 @@ module.exports = {
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
-        openSans: ['Open Sans', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
       },
       fontSize: {
         caption: [
@@ -161,7 +163,7 @@ module.exports = {
           },
         ],
         body: [
-          '14px',
+          '16px',
           {
             lineHeight: '20px',
             letterSpacing: '0em',
@@ -222,5 +224,21 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.no-scrollbar': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+
+          /* Firefox */
+          'scrollbar-width': 'none',
+
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      })
+    }),
   ],
 }

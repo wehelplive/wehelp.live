@@ -45,13 +45,17 @@ export default defineNuxtConfig({
         href:
           'https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap',
+      },
     ],
   },
   publicRuntimeConfig: {
     BASE_ID: process.env.BASE_ID,
     API_KEY: process.env.API_KEY,
   },
-  buildModules: ['@nuxtjs/google-fonts'],
   googleFonts: {
     display: 'swap',
     families: {
@@ -68,5 +72,12 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  buildModules: ['@intlify/nuxt3', '@nuxtjs/google-fonts'],
+  intlify: {
+    locale: 'en',
+    fallbackLocale: 'en',
+    localeDir: 'locales',
+    vueI18n: {},
   },
 })

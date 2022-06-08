@@ -1,0 +1,110 @@
+---
+informations:
+  services: Dienste
+  support: Unterstützung
+  company: Firma
+  legal: Rechtlich
+header:
+  menu:
+    open: Menü öffnen
+    close: Menü schließen
+  solutions:
+    guest: Unterkunft finden
+    host: Angebot Unterkunft
+    exchange: USD-Wechsel
+    request: Bitte um Hilfe
+    services: Evakuierungsplaner
+    add: Bewertung hinzufügen
+  support: Kontaktiere uns
+  company:
+    about: Über
+    teams: Teams
+    calendar: Kalender
+    involved: Beteiligt werden
+    jobs: Jobs
+  legal:
+    imprint: Impressum
+    terms: Begriffe
+  description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
+home:
+  start:
+    title: Evakuierung in die EU
+    description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
+    findAccomodation: Unterkunft finden
+    offerAccomodation: Angebot Unterkunft
+  mission:
+    title: Unsere Mission
+    subtitle: Effektive Organisation von Freiwilligentätigkeiten
+    description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen verkraften nicht die Koordinierung, und es entsteht Chaos und viele Fragen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
+  values:
+    title: Unsere Kernwerte
+    subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
+  team:
+    title: Unser Team
+    button: Trete unserem Team bei
+    roles:
+      partnerships: Partnerschaften
+      communications: Kommunikation
+      mission: Mission
+      coordination: Koordination
+  faq:
+    item:
+      empty: kein Inhalt
+    title:
+      main: FAQ
+      first: Was ist die Organisationsstruktur?
+      second: Wie kann ich mein Team treffen?
+      third: Wie kann ich ein Meeting planen?
+      fourth: Wo bekomme ich WeHelp Markenvermögen?
+      fifth: Wo finde ich alle verfügbaren Informationen über WeHelp?
+    list:
+      one:
+        - Wo finde ich den vollen Zeitplan? Abonniere den Kalender -
+        - 'Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).'
+        - Wie betrete ich Slack? Melde dich als Freiwilliger an bei
+        - und Sie erhalten eine Einladung zu unserem Slack.
+      two:
+        - 'Welche Art von Treffen haben wir? 1-1, um Themen zu besprechen, Retrospektive, Governance-Treffen, tägliches Standup, Planung und Überprüfung, Koordinationstreffen, lesen Sie mehr:'
+        - Wie bereiten Sie sich auf ein Meeting vor?
+        - Aufgaben eines Veranstalters
+      three:
+        - Logo
+        - Markenrichtlinien
+        - Presentation templates
+        - Instagram-Beitragsvorlagen
+    subtitle:
+      one:
+        - Alle herunterladbaren Dateien finden Sie in unseren
+        - Google Drive
+        - in
+        - Design/Branding
+        - ordner.
+      two:
+        - Quelldateien sind in
+        - WeHelp Figma
+      three: 'Was beinhaltet wird:'
+      four:
+        - In unserer
+        - Google Drive
+footer:
+  subtitle: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
+  hashtag: '#WEHELPUKRAINE'
+  copyright: 2022 WeHelp. Alle Rechte vorbehalten.
+  list:
+    solutions:
+      - Unterkunft finden
+      - Angebot Unterkunft
+      - USD-Wechsel
+      - Bitte um Hilfe
+      - Evakuierungsplaner
+      - Bewertung hinzufügen
+    support: Kontaktiere uns
+    company:
+      - Über
+      - Teams
+      - Kalender
+      - Beteiligt werden
+      - Jobs
+    legal:
+      - Impressum
+      - Begriffe

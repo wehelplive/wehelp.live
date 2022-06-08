@@ -41,7 +41,7 @@
         class="mt-2 pr-12"
         :class="`${collapse ? 'hidden' : ''}`"
       >
-        <slot>no content</slot>
+        <slot>{{ $t('faq.item.empty') }}</slot>
       </dd>
     </div>
   </dl>
