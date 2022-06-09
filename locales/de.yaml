@@ -30,9 +30,8 @@ home:
   start:
     title: Evakuierung in die EU
     description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
-    findAccomodation: I Need Help
-    offerAccomodation: I Can Help
-    review: '{stars} stars - {reviews} reviews'
+    findAccomodation: Unterkunft finden
+    offerAccomodation: Angebot Unterkunft
   mission:
     title: Unsere Mission
     subtitle: Effektive Organisation von Freiwilligentätigkeiten

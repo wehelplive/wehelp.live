@@ -2,7 +2,6 @@
   <div>
     <BlockStart />
     <BlockPartners />
-    <BlockServices />
     <BlockMission />
     <BlockValues />
     <BlockTeam />

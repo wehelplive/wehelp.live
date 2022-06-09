@@ -30,9 +30,8 @@ home:
   start:
     title: Евакуація в ЄС
     description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
-    findAccomodation: I Need Help
-    offerAccomodation: I Can Help
-    review: '{stars} stars - {reviews} reviews'
+    findAccomodation: Знайти акомотивацію
+    offerAccomodation: Знайти акомотивацію
   mission:
     title: Наша мета
     subtitle: Ефективна організація діяльності добровольців
