@@ -346,10 +346,6 @@ export default {
       solutions: [
         { name: computed(() => t('header.solutions.guest')), to: '/guest' },
         { name: computed(() => t('header.solutions.host')), to: '/host' },
-        {
-          name: computed(() => t('header.solutions.exchange')),
-          to: '/exchange',
-        },
         { name: computed(() => t('header.solutions.request')), to: '/request' },
         {
           name: computed(() => t('header.solutions.services')),

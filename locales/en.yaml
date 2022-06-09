@@ -31,8 +31,8 @@ home:
   start:
     title: Evacuation to EU
     description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-    findAccomodation: I Need Help
-    offerAccomodation: I Can Help
+    findAccomodation: Find Accomodation
+    offerAccomodation: Offer Accomodation
     review: '{stars} stars - {reviews} reviews'
   mission:
     title: Our mission

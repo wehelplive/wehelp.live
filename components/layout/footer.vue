@@ -124,10 +124,6 @@ export default {
         { name: computed(() => t('footer.list.solutions[0]')), href: '/guest' },
         { name: computed(() => t('footer.list.solutions[1]')), href: '/host' },
         {
-          name: computed(() => t('footer.list.solutions[2]')),
-          href: '/exchange',
-        },
-        {
           name: computed(() => t('footer.list.solutions[3]')),
           href: '/request',
         },
