@@ -1,9 +1,9 @@
 <template>
   <footer class="bg-white-500" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 xl:col-span-1">
+    <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8 bg-green-500">
+        <div class="space-y-8 xl:col-span-1 py-8 bg-red-500">
           <div class="flex justify-center xl:justify-start">
             <BrandLogo class="h-24 w-24" />
           </div>
@@ -25,66 +25,92 @@
             </div>
           </div>
         </div>
+
         <div
-          class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 justify-items-center xl:justify-items-start"
+          class=" bg-orange-500 grid grid-cols-2 md:flex md:justify-around flex-row xl:justify-between items-start col-span-2"
         >
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3
-                class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
-              >
-                {{ t('services.title') }}
-              </h3>
-              <ul role="list" class="mt-4 space-y-4">
-                <li v-for="item in navigation.services" :key="item.name">
-                  <NuxtLink
-                    :to="item.to"
-                    class="text-body font-normal text-zinc-700 hover:text-zinc-800"
-                  >
-                    {{ t(item.name) }}
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
+          <div
+            class="bg-blue-500 flex flex-col items-stretch p-6 min-w-fit h-full"
+          >
+            <h3
+              class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
+            >
+              {{ t('informations.services') }}
+            </h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li v-for="item in navigation.solutions" :key="item.name">
+                <a
+                  :href="item.href"
+                  class="text-body font-normal text-zinc-700 hover:text-zinc-800"
+                >
+                  {{ item.name?.value }}
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3
-                class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
-              >
-                {{ t('company.title') }}
-              </h3>
-              <ul role="list" class="mt-4 space-y-4">
-                <li v-for="item in navigation.company" :key="item.name">
-                  <a
-                    :href="item.href"
-                    class="text-body font-normal text-zinc-700 hover:text-zinc-800"
-                  >
-                    {{ t(item.name) }}
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-12 md:mt-0">
-              <h3
-                class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
-              >
-                {{ t('company.legal') }}
-              </h3>
-              <ul role="list" class="mt-4 space-y-4">
-                <li v-for="item in navigation.legal" :key="item.name">
-                  <a
-                    :href="item.href"
-                    class="text-body font-normal text-zinc-700 hover:text-zinc-800"
-                  >
-                    {{ t(item.name) }}
-                  </a>
-                </li>
-              </ul>
-            </div>
+
+          <div
+            class="bg-red-500 flex flex-col items-stretch p-6 min-w-fit h-full"
+          >
+            <h3
+              class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
+            >
+              {{ t('informations.company') }}
+            </h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li v-for="item in navigation.company" :key="item.name">
+                <a
+                  :href="item.href"
+                  class="text-body font-normal text-zinc-700 hover:text-zinc-800"
+                >
+                  {{ item.name?.value }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-green-500 flex flex-col items-stretch p-6 min-w-fit h-full"
+          >
+            <h3
+              class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
+            >
+              {{ t('informations.legal') }}
+            </h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li v-for="item in navigation.legal" :key="item.name">
+                <a
+                  :href="item.href"
+                  class="text-body font-normal text-zinc-700 hover:text-zinc-800"
+                >
+                  {{ item.name?.value }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class=" bg-royal-blue-800 flex flex-col items-stretch p-6 min-w-fit h-full"
+          >
+            <h3
+              class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
+            >
+              {{ t('informations.support') }}
+            </h3>
+            <ul role="list" class="mt-4 space-y-4">
+              <li v-for="item in navigation.support" :key="item.name">
+                <a
+                  :href="item.href"
+                  class="text-body font-normal text-zinc-700 hover:text-zinc-800"
+                >
+                  {{ item.name?.value }}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
       <div class="mt-12 border-t border-grey-200 pt-8">
         <p class="text-base text-grey-600 xl:text-center flex justify-center">
           &copy; {{ t('company.copyright') }}

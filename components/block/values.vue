@@ -7,12 +7,12 @@
         <span class="block">{{ t('values.title') }}</span>
       </h2>
       <p
-        class="mt-[10%]   lg:text-headline-5 leading-6 font-nunito text-lg  text-zinc-700"
+        class="mt-5 leading-6 font-nunito text-subtitle sm:mt-14 sm:text-headline-5 text-zinc-700"
       >
         <span v-html="t('values.subtitle')"></span>
       </p>
       <img
-        class="mt-[15%] inline-flex items-center justify-center object-cove"
+        class="mt-12 inline-flex items-center justify-center object-cove"
         src="/values.svg"
         alt="WeHelp Values"
       />
