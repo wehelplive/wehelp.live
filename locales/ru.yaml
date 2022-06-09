@@ -30,8 +30,9 @@ home:
   start:
     title: Эвакуация в ЕС
     description: Мы помогаем решать проблемы в кризисе украинских беженцев в Европе
-    findAccomodation: Найти жилье
-    offerAccomodation: Предложить жилье
+    findAccomodation: Find Accomodation
+    offerAccomodation: Offer Accomodation
+    review: '{stars} stars - {reviews} reviews'
   mission:
     title: Наша миссия
     subtitle: Эффективная организация добровольческой деятельности
@@ -55,7 +56,7 @@ home:
       first: Что такое структура организации?
       second: Как я могу познакомиться с моей командой?
       third: Как запланировать встречу?
-      fourth: Где я могу получить товары бренда WeHelp?
+      fourth: Где я могу получить товары бренда WeHel?
       fifth: Где найти всю доступную информацию о WeHelp?
     list:
       one:
