@@ -1,7 +1,6 @@
 company:
   title: Company
-  descriptor:
-    We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
+  descriptor: We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
   copyright: 2022 WeHelp. All rights reserved.
 hero:
   title: Evacuation to EU
@@ -37,7 +36,7 @@ domains:
 support: Support
 contact: Contact Us
 about: About
-team: 
+team:
   title: Our Team
   join: Get Involved
 calendar: Calendar
@@ -58,30 +57,35 @@ terms: Terms
 privacy: Privacy
 menu:
   open: Open menu
-  close: Close menu  
+  close: Close menu
 faq:
   title: FAQ
-  items:  
+  items:
     - question: What is the organisation structure?
-      answer: ![](/structure.jpg)
-    - question: How can I meet my team?
-      answer: 
-        - We provide certificate after 6 months of Internship
-        - See open positions - [https://angel.co/company/wehelplive/jobs](https://angel.co/company/wehelplive/jobs)
+      answer: >
+        ![](/structure.jpg)
+    - question: Why should I do volunteer for WeHelp?
+      answer: >
+        We provide certificate after 6 months of Internship. See [open positions](https://angel.co/company/wehelplive/jobs)
+    - question: How can I get involved?
+      answer: >
+        1. Where can I find the full schedule? Subscribe to [calendar](https://wehelp.live/calendar/)
+
+        2. How to join a team meeting? Follow the Welcome Guide on Slack (channel #welcome).
+
+        3. How do I join Slack? [Sign up as a volunteer](https://wehelp.live/get-involved/) and you will get an invitation to our Slack.
     - question: How to schedule a Meeting?
       answer: >
-        1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:[https://patterns.sociocracy30.org/meeting-formats.html](https://patterns.sociocracy30.org/meeting-formats.html)
-        2. How to prepare for a meeting? [https://patterns.sociocracy30.org/prepare-for-meetings.html](https://patterns.sociocracy30.org/prepare-for-meetings.html)
-        3. Responsibilities of a meeting host [https://patterns.sociocracy30.org/meeting-host.html](https://patterns.sociocracy30.org/meeting-host.html)
+        1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, [read more](https://patterns.sociocracy30.org/meeting-formats.html)
+
+        2. [How to prepare for a meeting?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
+
+        3. [Responsibilities of a meeting host](https://patterns.sociocracy30.org/meeting-host.html)
     - question: Where do I get WeHelp brand assets?
-      answer: > 
+      answer: >
         All downloadable files you can find in our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) in **Design/Branding** folder.
-        Source files are in [WeHelp Figma](https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631).
-        What’s included: 
-        - Logo
-        - Brand guidelines
-        - Presentation templates
-        - Instagram post templates
+
+        Source files are in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
     - question: Where do I find all available information about WeHelp?
-      answer:
-        In our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi).
+      answer: >
+        https://handbook.wehelp.live
