@@ -6,7 +6,7 @@
         <button
           type="button"
           class="text-left w-full flex justify-between items-start text-grey-400"
-          :aria-controls="`faq-${faqId}`"
+          :aria-controls="`faq-${slug}`"
           :aria-expanded="collapse"
           @click="switchCollapse"
         >
@@ -37,7 +37,7 @@
         </button>
       </dt>
       <dd
-        :id="`faq-${faqId}`"
+        :id="`faq-${slug}`"
         class="mt-2 pr-12"
         :class="`${collapse ? 'hidden' : ''}`"
       >
@@ -50,10 +50,6 @@
 export default {
   name: 'FaqItem',
   props: {
-    faqId: {
-      type: String,
-      default: '',
-    },
     title: {
       type: String,
       default: '',
@@ -62,6 +58,14 @@ export default {
   data: () => ({
     collapse: true,
   }),
+  computed: {
+    slug() {
+      return this.title
+        .toLowerCase()
+        .replace(/ /g, '-')
+        .replace(/[^\w-]+/g, '')
+    },
+  },
   methods: {
     switchCollapse() {
       this.collapse = !this.collapse

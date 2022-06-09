@@ -5,15 +5,15 @@
         <h2
           class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
         >
-          {{ t('home.mission.title') }}
+          {{ t('mission.title') }}
         </h2>
         <p
           class="mt-1 text-4xl font-extrabold text-grey-800 sm:text-5xl sm:tracking-tight lg:text-6xl"
         >
-          {{ t('home.mission.subtitle') }}
+          {{ t('mission.subtitle') }}
         </p>
         <p class="max-w-xl mt-5 mx-auto text-xl text-grey-500">
-          <span v-html="t('home.mission.description')"></span>
+          <span v-html="t('mission.description')"></span>
         </p>
       </div>
     </div>

@@ -8,7 +8,7 @@
           <h2
             class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
           >
-            {{ t('home.team.title') }}
+            {{ t('team.title') }}
           </h2>
         </div>
         <ul
@@ -37,7 +37,7 @@
           to="/get-involved"
           class="w-full flex font-sans items-center font-semibold font-body justify-center px-8 py-3 border border-transparent rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
         >
-          {{ t('home.team.button') }}
+          {{ t('team.join') }}
         </NuxtLink>
       </div>
     </div>

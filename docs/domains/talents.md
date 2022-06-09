@@ -17,7 +17,7 @@ Coordinator: [Abirami Vinoth Kumar](https://calendly.com/net-abirami)
    1. [AngelList](https://angel.co/company/wehelplive/jobs)
    2. [LinkedIn](https://www.linkedin.com/jobs/wehelp-jobs-worldwide?f_C=84277986&trk=top-card_top-card-primary-button-top-card-primary-cta&position=1&pageNum=0)
    3. ProductHunt
-3. Invite candidates from the job market to [Get Involved](https://wehelp.vip/get-involved).
+3. Invite candidates from the job market to [Get Involved](https://wehelp.live/get-involved).
    - Reply to every incoming request with
      Hi, thank you for your application. Please follow the Welcome Guide in our Slack. You can access our Slack by filling out wehelp.live/get-involved
 4. Help candidates with onboarding:
