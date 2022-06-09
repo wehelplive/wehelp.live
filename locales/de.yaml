@@ -10,7 +10,7 @@ header:
     close: Menü schließen
   solutions:
     guest: Unterkunft finden
-    host: Angebot Unterkunft
+    host: Unterkunft anbieten
     exchange: USD-Wechsel
     request: Bitte um Hilfe
     services: Evakuierungsplaner
@@ -31,7 +31,8 @@ home:
     title: Evakuierung in die EU
     description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
     findAccomodation: Unterkunft finden
-    offerAccomodation: Angebot Unterkunft
+    offerAccomodation: Unterkunft anbieten
+    review: '{stars} Sterne - {reviews} Bewertungen'
   mission:
     title: Unsere Mission
     subtitle: Effektive Organisation von Freiwilligentätigkeiten
@@ -93,7 +94,7 @@ footer:
   list:
     solutions:
       - Unterkunft finden
-      - Angebot Unterkunft
+      - Unterkunft anbieten
       - USD-Wechsel
       - Bitte um Hilfe
       - Evakuierungsplaner
