@@ -1,38 +1,45 @@
-informations:
-  services: Services
-  support: Support
-  company: Company
-  legal: Legal
-header:
-  menu:
-    open: Open menu
-    close: Close menu
-  solutions:
-    guest: Find Accomodation
-    host: Offer Accomodation
-    exchange: UAH Exchange
-    request: Ask for Help
-    services: Evacuation Planner
-    add: Add review
-  support: Contact Us
+pages:
+  support:
+    title: Support
+    contact: Contact Us
   company:
+    title: Company
     about: About
-    teams: Teams
+    team: Our Team
     calendar: Calendar
     involved: Get Involved
     jobs: Jobs
+  services:
+    title: Services
   legal:
+    title: Legal
     imprint: Imprint
     terms: Terms
-  description:
-    We're helping to solve comlex problems in Ukrainian refugee crisis
-    in Europe
+services:
+  accomodations:
+    add: Offer Accomodation
+    find: Find Accomodation
+  requests:
+    add: Ask for Help
+  evacuation:
+    find: Evacuation Planner
+    add: Add review
+menu:
+  open: Open menu
+  close: Close menu
+company:
+  descriptor:
+    We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
+  copyright: 2022 WeHelp. All rights reserved.
+domains:
+  partnerships: Partnerships
+  communications: Communications
+  mission: Mission
+  coordination: Coordination  
 home:
   start:
     title: Evacuation to EU
     description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-    findAccomodation: Find Accomodation
-    offerAccomodation: Offer Accomodation
     review: '{stars} stars - {reviews} reviews'
   mission:
     title: Our mission
@@ -53,74 +60,30 @@ home:
       actions
   team:
     title: Our Team
-    button: Join Our Team
-    roles:
-      partnerships: Partnerships
-      communications: Communications
-      mission: Mission
-      coordination: Coordination
+    join: Join Our Team
   faq:
-    item:
-      empty: no content
-    title:
-      main: FAQ
-      first: What is the organisation structure?
-      second: How can I meet my team?
-      third: How to schedule a Meeting?
-      fourth: Where do I get WeHelp brand assets?
-      fifth: Where do I find all available information about WeHelp?
-    list:
-      one:
-        - Where can I find the full schedule? Subscribe to calendar -
-        - 'How to join a team meeting? Follow the Welcome Guide on Slack
-          (channel #welcome).'
-        - How do I join Slack? Sign up as a volunteer at
-        - and you will get an invitation to our Slack.
-      two:
-        - 'What kind of meetings do we have? 1-1 to discuss topics,
-          Retrospective, Governance Meeting, Daily Standup, Planning And
-          Review Meetings, Coordination Meeting, read more:'
-        - How to prepare for a meeting?
-        - Responsibilities of a meeting host
-      three:
-        - Logo
-        - Brand guidelines
-        - Presentation templates
-        - Instagram post templates
-    subtitle:
-      one:
-        - All downloadable files you can find in our
-        - Google Drive
-        - in
-        - Design/Branding
-        - folder.
-      two:
-        - Source files are in
-        - WeHelp Figma
-      three: 'What’s included:'
-      four:
-        - In our
-        - Google Drive
-footer:
-  subtitle: We help to solve complex problems in the Ukrainian refugee crisis in
-    Europe
-  hashtag: '#WEHELPUKRAINE'
-  copyright: 2022 WeHelp. All rights reserved.
-  list:
-    solutions:
-      - Find Accomodation
-      - Offer Accomodation
-      - UAH Exchange
-      - Ask for Help
-      - Evacuation Planner
-      - Add review
-    support: Contact Us
-    company:
-      - About
-      - Teams
-      - Calendar
-      - Get Involved
-      - Jobs
-    legal:
-      - Imprint
-      - Terms
+    title: FAQ
+    items:  
+      - question: What is the organisation structure?
+        answer: ![](/structure.jpg)
+      - question: How can I meet my team?
+        answer: 
+          - We provide certificate after 6 months of Internship
+          - See open positions - [https://angel.co/company/wehelplive/jobs](https://angel.co/company/wehelplive/jobs)
+      - question: How to schedule a Meeting?
+        answer: >
+          1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:[https://patterns.sociocracy30.org/meeting-formats.html](https://patterns.sociocracy30.org/meeting-formats.html)
+          2. How to prepare for a meeting? [https://patterns.sociocracy30.org/prepare-for-meetings.html](https://patterns.sociocracy30.org/prepare-for-meetings.html)
+          3. Responsibilities of a meeting host [https://patterns.sociocracy30.org/meeting-host.html](https://patterns.sociocracy30.org/meeting-host.html)
+      - question: Where do I get WeHelp brand assets?
+        answer: > 
+          All downloadable files you can find in our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) in **Design/Branding** folder.
+          Source files are in [WeHelp Figma](https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631).
+          What’s included: 
+          - Logo
+          - Brand guidelines
+          - Presentation templates
+          - Instagram post templates
+      - question: Where do I find all available information about WeHelp?
+        answer:
+          In our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi).
