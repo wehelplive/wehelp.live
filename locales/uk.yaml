@@ -9,8 +9,8 @@ header:
     open: Відкрити меню
     close: Закрити меню
   solutions:
-    guest: Знайти акомотивацію
-    host: Знайти акомотивацію
+    guest: Знайти житло
+    host: Запропонувати житло
     exchange: Обмін гривні
     request: Допомога
     services: Планувальник евакуації
@@ -30,9 +30,9 @@ home:
   start:
     title: Евакуація в ЄС
     description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
-    findAccomodation: Find Accomodation
-    offerAccomodation: Offer Accomodation
-    review: '{stars} stars - {reviews} reviews'
+    findAccomodation: Знайти житло
+    offerAccomodation: Запропонувати житло
+    review: '{stars} зірки - {reviews} відгуків'
   mission:
     title: Наша мета
     subtitle: Ефективна організація діяльності добровольців
@@ -93,8 +93,8 @@ footer:
   copyright: 2022 WeHelp. Всі права захищені.
   list:
     solutions:
-      - Знайти акомотивацію
-      - Знайти акомотивацію
+      - Знайти житло
+      - Запропонувати житло
       - Обмін гривні
       - Допомога
       - Планувальник евакуації
