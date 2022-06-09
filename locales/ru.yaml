@@ -30,9 +30,9 @@ home:
   start:
     title: Эвакуация в ЕС
     description: Мы помогаем решать проблемы в кризисе украинских беженцев в Европе
-    findAccomodation: Find Accomodation
-    offerAccomodation: Offer Accomodation
-    review: '{stars} stars - {reviews} reviews'
+    findAccomodation: Найти жилье
+    offerAccomodation: Предложить жилье
+    review: '{stars} звезд - {reviews} отзывов'
   mission:
     title: Наша миссия
     subtitle: Эффективная организация добровольческой деятельности
@@ -71,7 +71,7 @@ home:
       three:
         - Логотип
         - Рекомендации по брендам
-        - Presentation templates
+        - Шаблоны презентаций
         - Шаблоны сообщений Instagram
     subtitle:
       one:
