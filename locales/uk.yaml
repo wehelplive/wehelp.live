@@ -1,111 +1,82 @@
 ---
-informations:
-  services: Послуги
-  support: Підтримка
-  company: Організація
-  legal: Юридичні
-header:
-  menu:
-    open: Відкрити меню
-    close: Закрити меню
-  solutions:
-    guest: Знайти житло
-    host: Запропонувати житло
-    exchange: Обмін гривні
-    request: Допомога
-    services: Планувальник евакуації
-    add: Додати відгук
-  support: Зв’язатись з нами
-  company:
-    about: Про програму
-    teams: Команди
-    calendar: Календар
-    involved: Долучитися
-    jobs: Джобс
-  legal:
-    imprint: Відомості
-    terms: Умови
+hero:
+  title: Евакуація в ЄС
   description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
-home:
-  start:
-    title: Евакуація в ЄС
-    description: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
-    findAccomodation: Знайти житло
-    offerAccomodation: Запропонувати житло
-    review: '{stars} зірки - {reviews} відгуків'
-  mission:
-    title: Наша мета
-    subtitle: Ефективна організація діяльності добровольців
-    description: Є багато людей, які <strong>готові допомогти</strong> і котрі <strong>потребують допомоги</strong>. Існуючі організації не справляються з координацією та хаосом розробляються, і багато проблем залишаються невирішеними. Необхідно знайти та усунути штрихи в організаціях, щоб поєднати їх разом, щоб встановити координацію для ефективного подолання існуючої ситуації.
-  values:
-    title: Наші основні значення
-    subtitle: Ми прагнемо бути <span class="font-bold text-green-500">надійним</span> джерелом, яке дає людям <span class="font-bold text-orange-500">надію</span> і допоможіть їм за допомогою <span class="font-bold text-blue-500">ефективних</span> дій
-  team:
-    title: Наша команда
-    button: Приєднайтеся до нашої команди
-    roles:
-      partnerships: Партнерство
-      communications: Зв’язок
-      mission: Місія
-      coordination: Координація
-  faq:
-    item:
-      empty: немає вмісту
-    title:
-      main: ЧАП
-      first: Яка структура організації?
-      second: Як я можу зустрітися зі своєю командою?
-      third: Як запланувати зустріч?
-      fourth: Де я отримую активи бренду WeHelp?
-      fifth: Де я знаходжу всю наявну інформацію про WeHelp?
-    list:
-      one:
-        - Де я можу знайти повний розклад? Підписатися на календар -
-        - 'Як приєднатися до командної зустрічі? Дотримуйтесь "Ласкаво просимо" на Slack (канал #Ласкаво просимо).'
-        - Як мені приєднатися до Slack? Зареєструйтеся як волонтер у
-        - і ви отримаєте запрошення до нашого Слека.
-      two:
-        - 'Які зустрічі у нас є? 1-1 для обговорення тем, Retrospective, Зустрічі управління, Daily Standup, Planning та Review Mees, координація читайте більше:'
-        - Як підготуватися до зустрічі?
-        - Відповідальність господаря-зустрічей
-      three:
-        - Логотип
-        - Правила бренду
-        - Presentation templates
-        - Шаблони повідомлень Instagram
-    subtitle:
-      one:
-        - Усі завантажувані файли, які ви можете знайти в наших
-        - Диск Google
-        - за
-        - Дизайн/брендінг
-        - папки.
-      two:
-        - Вихідні файли в
-        - WeHelp Figma
-      three: 'Що включено:'
-      four:
-        - В нашому
-        - Диск Google
-footer:
-  subtitle: Ми допомагаємо вирішити складні проблеми в кризі біженців України в Європі
-  hashtag: '#WEHELPUKRAINE'
+  reviews: '{stars} зірки - {reviews} відгуків'
+mission:
+  title: Наша мета
+  subtitle: Ефективна організація діяльності добровольців
+  description: Є багато людей, які <strong>готові допомогти</strong> і котрі <strong>потребують допомоги</strong>. Існуючі організації не справляються з координацією та хаосом розробляються, і багато проблем залишаються невирішеними. Необхідно знайти та усунути штрихи в організаціях, щоб поєднати їх разом, щоб встановити координацію для ефективного подолання існуючої ситуації.
+values:
+  title: Наші основні значення
+  subtitle: Ми прагнемо бути <span class="font-bold text-green-500">надійним</span> джерелом, яке дає людям <span class="font-bold text-orange-500">надію</span> і допоможіть їм за допомогою <span class="font-bold text-blue-500">ефективних</span> дій
+domains:
+  partnerships: Партнерство
+  communications: Зв’язок
+  mission: Місія
+  coordination: Координація
+  product: Продукт
+  code: Код
+  design: Дизайн
+  talents: Таланти
+  operations: Операції
+company:
+  title: Організація
+  home: Домашній екран
   copyright: 2022 WeHelp. Всі права захищені.
-  list:
-    solutions:
-      - Знайти житло
-      - Запропонувати житло
-      - Обмін гривні
-      - Допомога
-      - Планувальник евакуації
-      - Додати відгук
-    support: Зв’язатись з нами
-    company:
-      - Про програму
-      - Команди
-      - Календар
-      - Долучитися
-      - Джобс
-    legal:
-      - Відомості
-      - Умови
+  about: Про програму
+  contact: Зв’язатись з нами
+  support: Підтримка
+  legal: Юридичні
+  imprint: Відомості
+  terms: Умови
+  privacy: Конфіденційність
+team:
+  title: Наша команда
+  join: Долучитися
+  calendar: Календар
+  jobs: Джобс
+services:
+  title: Послуги
+  accomodations:
+    add: Запропонувати житло
+    find: Знайти житло
+  evacuation:
+    find: Планувальник евакуації
+    add: Додати відгук
+    request: Допомога
+menu:
+  open: Відкрити меню
+  close: Закрити меню
+faq:
+  title: ЧАП
+  items:
+    - 
+      question: Яка структура організації?
+      answer: >
+        ![](/structure.jpg)
+    - 
+      question: Чому я повинен бути волонтером для WeHelp?
+      answer: >
+        Ми надаємо сертифікат після 6 місяців взаємодії. Дивіться [відкриті позиції](https://angel.co/company/wehelplive/jobs)
+    - 
+      question: Як мені втрутитися?
+      answer: >
+        1. Де знайти повний розклад? Підпишіться на [calendar](https://wehelp.live/calendar/)
+        2. Як приєднатися до командної зустрічі? Дотримуйтесь "Ласкаво просимо" на Slack (канал #Ласкаво просимо).
+        3. Як мені приєднатися до Слека? [Зареєструйся як волонтер](https://wehelp.live/get-involved/) і отримаєш запрошення на наш Slack.
+    - 
+      question: Як запланувати зустріч?
+      answer: >
+        1. Які зустрічі ми маємо? 1-1 - для обговорення тем, Retrospective, керівництво Meeting, Daily Standing, Planning and Review Meeting, Coordination Meing, [прочитати більше](https://patterns.sociocracy30.org/meeting-formats. tml)
+        2. [Як підготуватися до зустрічі?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
+        3. [Responsibility нарада хосту](https://patterns.sociocracy30.org/meeting-host.html)
+    - 
+      question: Де я отримую активи бренду WeHelp?
+      answer: >
+        Усі завантажувані файли, які ви можете знайти в нашому [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) в папці **Design/Branding** .
+        Вихідні файли знаходяться в [WeHelp Figma](https://www.figma.com/file/2HRdICQFFhlwaUKwaUKWO9/WeHelp-2.0?node-id=2%3A8273).
+    - 
+      question: Де я знаходжу всю наявну інформацію про WeHelp?
+      answer: >
+        https://handbook.wehelp.live
