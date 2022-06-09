@@ -1,82 +1,82 @@
 ---
 hero:
-  title: Evacuation to EU
-  description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-  reviews: '{stars} stars - {reviews} reviews'
+  title: Эвакуация в ЕС
+  description: Мы помогаем решать проблемы в кризисе украинских беженцев в ЕС
+  reviews: '{stars} звезд - {reviews} отзывов'
 mission:
-  title: Our mission
-  subtitle: Effective organization of volunteer activities
-  description: There are many people who are <strong>ready to help</strong> and who <strong>need help</strong>. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
+  title: Наша миссия
+  subtitle: Эффективная организация добровольческой деятельности
+  description: Есть много людей, <strong>готовых помочь</strong> и <strong>нуждающихся в помощи</strong>. Существующие организации не справляются с координацией и хаосом и многие вопросы остаются нерешенными. Необходимо находить и устранять люки в организациях, связывать их вместе, наладить координацию для того, чтобы эффективно справляться с существующей ситуацией.
 values:
-  title: Our core values
-  subtitle: We aim to be a <span class="font-bold text-green-500">trustful</span> source that give people <span class="font-bold text-orange-500">hope</span> and help them through <span class="font-bold text-blue-500">effective</span> actions
+  title: Наши основные ценности
+  subtitle: Мы стремимся быть <span class="font-bold text-green-500">надежным</span> источником, дающим людям <span class="font-bold text-orange-500">надежды</span> и помогающим им <span class="font-bold text-blue-500">эффективными действиями</span>
 domains:
-  partnerships: Partnerships
-  communications: Communications
-  mission: Mission
-  coordination: Coordination
-  product: Product
-  code: Code
-  design: Design
-  talents: Talents
-  operations: Operations
+  partnerships: Партнерские отношения
+  communications: Коммуникации
+  mission: Миссия
+  coordination: Координация
+  product: Товар
+  code: Код
+  design: Дизайн
+  talents: Таланты
+  operations: Операции
 company:
-  title: Company
-  home: Home
-  copyright: 2022 WeHelp. All rights reserved.
-  about: About
-  contact: Contact Us
-  support: Support
-  legal: Legal
-  imprint: Imprint
-  terms: Terms
-  privacy: Privacy
+  title: Компания
+  home: Домашний
+  copyright: 2022 WeHelp. Все права защищены.
+  about: О программе
+  contact: Свяжитесь с нами
+  support: Поддержка
+  legal: Юридическая информация
+  imprint: Отпечаток
+  terms: Условия
+  privacy: Приватность
 team:
-  title: Our Team
-  join: Get Involved
-  calendar: Calendar
-  jobs: Jobs
+  title: Наша команда
+  join: Принять участие
+  calendar: Календарь
+  jobs: Задания
 services:
-  title: Services
+  title: Услуги
   accomodations:
-    add: Offer Accomodation
-    find: Find Accomodation
+    add: Предложить жилье
+    find: Найти жилье
   evacuation:
-    find: Evacuation Planner
-    add: Add review
-    request: Ask for Help
+    find: Планировщик эвакуации
+    add: Добавить отзыв
+    request: Запросить помощь
 menu:
-  open: Open menu
-  close: Close menu
+  open: Открыть меню
+  close: Закрыть меню
 faq:
-  title: FAQ
+  title: ЧАВО
   items:
     - 
-      question: What is the organisation structure?
+      question: Что такое структура организации?
       answer: >
         ![](/structure.jpg)
     - 
-      question: Why should I do volunteer for WeHelp?
+      question: Почему стоит волонтерить в WeHelp?
       answer: >
-        We provide certificate after 6 months of Internship. See [open positions](https://angel.co/company/wehelplive/jobs)
+        Мы предоставляем сертификат через 6 месяцев стажировки. Смотрите [открытые позиции](https://angel.co/company/wehelplive/jobs)
     - 
-      question: How can I get involved?
+      question: Как я могу вовлечься?
       answer: >
-        1. Where can I find the full schedule? Subscribe to [calendar](https://wehelp.live/calendar/)
-        2. How to join a team meeting? Follow the Welcome Guide on Slack (channel #welcome).
-        3. How do I join Slack? [Sign up as a volunteer](https://wehelp.live/get-involved/) and you will get an invitation to our Slack.
+        1. Где я могу найти полное расписание? Подпишитесь на [calendar](https://wehelp.live/calendar/)
+        2. Как присоединиться к командной встрече? Следуйте приветственному руководству по Slack (канал #welcome).
+        3. Как мне присоединиться к Slack? [Зарегистрируйтесь в качестве волонтера](https://wehelp.live/get-involved/) и вы получите приглашение в наш Slack.
     - 
-      question: How to schedule a Meeting?
+      question: Как запланировать встречу?
       answer: >
-        1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, [read more](https://patterns.sociocracy30.org/meeting-formats.html)
-        2. [How to prepare for a meeting?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
-        3. [Responsibilities of a meeting host](https://patterns.sociocracy30.org/meeting-host.html)
+        1. Какие заседания мы проводим? 1-1, чтобы обсудить темы, ретроспективные и управляющие встречи, ежедневный стандарт, планирование и обзор совещаний, Координационное совещание, [подробнее](https://patterns.sociocracy30.org/meeting-formats. tml)
+        2. [Как подготовиться к совещанию?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
+        3. [Ответственность host](https://patterns.sociocracy30.org/meeting-host.html)
     - 
-      question: Where do I get WeHelp brand assets?
+      question: Где я могу получить ассеты бренда WeHelp?
       answer: >
-        All downloadable files you can find in our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) in **Design/Branding** folder.
-        Source files are in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
+        Все загружаемые файлы вы можете найти в нашем [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) в папке **Design/Branding**.
+        Исходные файлы находятся в [Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
     - 
-      question: Where do I find all available information about WeHelp?
+      question: Где найти всю доступную информацию о WeHelp?
       answer: >
         https://handbook.wehelp.live
