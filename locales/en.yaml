@@ -1,45 +1,8 @@
-support: 
-  title: Support
-contact: 
-  title: Contact Us
-company: 
-  title: Company
-about: 
-  title: About
-team: 
-  title: Our Team
-  join: Get Involved
-calendar: 
-  title: Calendar
-jobs: 
-  title: Jobs
-services:
-  title: Services
-  accomodations:
-    add: Offer Accomodation
-    find: Find Accomodation
-  requests:
-    add: Ask for Help
-  evacuation:
-    find: Evacuation Planner
-    add: Add review
-legal:
-  title: Legal
-  imprint: Imprint
-  terms: Terms
-  privacy: Privacy
-menu:
-  open: Open menu
-  close: Close menu
 company:
+  title: Company
   descriptor:
     We're helping to solve comlex problems in Ukrainian refugee crisis in Europe
   copyright: 2022 WeHelp. All rights reserved.
-domains:
-  partnerships: Partnerships
-  communications: Communications
-  mission: Mission
-  coordination: Coordination  
 hero:
   title: Evacuation to EU
   description: We help to solve complex problems in the Ukrainian refugee crisis in EU
@@ -61,6 +24,41 @@ values:
     people <span class="font-bold text-orange-500">hope</span> and help them
     through <span class="font-bold text-blue-500">effective</span>
     actions
+domains:
+  partnerships: Partnerships
+  communications: Communications
+  mission: Mission
+  coordination: Coordination
+  product: Product
+  code: Code
+  design: Design
+  talents: Talents
+  operations: Operations
+support: Support
+contact: Contact Us
+about: About
+team: 
+  title: Our Team
+  join: Get Involved
+calendar: Calendar
+jobs: Jobs
+services:
+  title: Services
+  accomodations:
+    add: Offer Accomodation
+    find: Find Accomodation
+  requests:
+    add: Ask for Help
+  evacuation:
+    find: Evacuation Planner
+    add: Add review
+legal: Legal
+imprint: Imprint
+terms: Terms
+privacy: Privacy
+menu:
+  open: Open menu
+  close: Close menu  
 faq:
   title: FAQ
   items:  
