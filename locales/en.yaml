@@ -1,21 +1,20 @@
-pages:
-  support:
-    title: Support
-    contact: Contact Us
-  company:
-    title: Company
-    about: About
-    team: Our Team
-    calendar: Calendar
-    involved: Get Involved
-    jobs: Jobs
-  services:
-    title: Services
-  legal:
-    title: Legal
-    imprint: Imprint
-    terms: Terms
+support: 
+  title: Support
+contact: 
+  title: Contact Us
+company: 
+  title: Company
+about: 
+  title: About
+team: 
+  title: Our Team
+  join: Get Involved
+calendar: 
+  title: Calendar
+jobs: 
+  title: Jobs
 services:
+  title: Services
   accomodations:
     add: Offer Accomodation
     find: Find Accomodation
@@ -24,6 +23,11 @@ services:
   evacuation:
     find: Evacuation Planner
     add: Add review
+legal:
+  title: Legal
+  imprint: Imprint
+  terms: Terms
+  privacy: Privacy
 menu:
   open: Open menu
   close: Close menu
@@ -36,54 +40,50 @@ domains:
   communications: Communications
   mission: Mission
   coordination: Coordination  
-home:
-  start:
-    title: Evacuation to EU
-    description: We help to solve complex problems in the Ukrainian refugee crisis in EU
-    review: '{stars} stars - {reviews} reviews'
-  mission:
-    title: Our mission
-    subtitle: Effective organization of volunteer activities
-    description:
-      There are many people who are <strong>ready to help</strong> and who
-      <strong>need help</strong>. Existing organizations do not cope with
-      coordination and chaos is formed and many issues remain unresolved. It
-      is necessary to find and eliminate hatches in organizations, to link
-      them together, to establish coordination in order to effectively cope
-      with the existing situation.
-  values:
-    title: Our core values
-    subtitle: We aim to be a
-      <span class="font-bold text-green-500">trustful</span> source that give
-      people <span class="font-bold text-orange-500">hope</span> and help them
-      through <span class="font-bold text-blue-500">effective</span>
-      actions
-  team:
-    title: Our Team
-    join: Join Our Team
-  faq:
-    title: FAQ
-    items:  
-      - question: What is the organisation structure?
-        answer: ![](/structure.jpg)
-      - question: How can I meet my team?
-        answer: 
-          - We provide certificate after 6 months of Internship
-          - See open positions - [https://angel.co/company/wehelplive/jobs](https://angel.co/company/wehelplive/jobs)
-      - question: How to schedule a Meeting?
-        answer: >
-          1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:[https://patterns.sociocracy30.org/meeting-formats.html](https://patterns.sociocracy30.org/meeting-formats.html)
-          2. How to prepare for a meeting? [https://patterns.sociocracy30.org/prepare-for-meetings.html](https://patterns.sociocracy30.org/prepare-for-meetings.html)
-          3. Responsibilities of a meeting host [https://patterns.sociocracy30.org/meeting-host.html](https://patterns.sociocracy30.org/meeting-host.html)
-      - question: Where do I get WeHelp brand assets?
-        answer: > 
-          All downloadable files you can find in our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) in **Design/Branding** folder.
-          Source files are in [WeHelp Figma](https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631).
-          What’s included: 
-          - Logo
-          - Brand guidelines
-          - Presentation templates
-          - Instagram post templates
-      - question: Where do I find all available information about WeHelp?
-        answer:
-          In our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi).
+hero:
+  title: Evacuation to EU
+  description: We help to solve complex problems in the Ukrainian refugee crisis in EU
+  reviews: '{stars} stars - {reviews} reviews'
+mission:
+  title: Our mission
+  subtitle: Effective organization of volunteer activities
+  description:
+    There are many people who are <strong>ready to help</strong> and who
+    <strong>need help</strong>. Existing organizations do not cope with
+    coordination and chaos is formed and many issues remain unresolved. It
+    is necessary to find and eliminate hatches in organizations, to link
+    them together, to establish coordination in order to effectively cope
+    with the existing situation.
+values:
+  title: Our core values
+  subtitle: We aim to be a
+    <span class="font-bold text-green-500">trustful</span> source that give
+    people <span class="font-bold text-orange-500">hope</span> and help them
+    through <span class="font-bold text-blue-500">effective</span>
+    actions
+faq:
+  title: FAQ
+  items:  
+    - question: What is the organisation structure?
+      answer: ![](/structure.jpg)
+    - question: How can I meet my team?
+      answer: 
+        - We provide certificate after 6 months of Internship
+        - See open positions - [https://angel.co/company/wehelplive/jobs](https://angel.co/company/wehelplive/jobs)
+    - question: How to schedule a Meeting?
+      answer: >
+        1. What kind of meetings do we have? 1-1 to discuss topics, Retrospective, Governance Meeting, Daily Standup, Planning And Review Meetings, Coordination Meeting, read more:[https://patterns.sociocracy30.org/meeting-formats.html](https://patterns.sociocracy30.org/meeting-formats.html)
+        2. How to prepare for a meeting? [https://patterns.sociocracy30.org/prepare-for-meetings.html](https://patterns.sociocracy30.org/prepare-for-meetings.html)
+        3. Responsibilities of a meeting host [https://patterns.sociocracy30.org/meeting-host.html](https://patterns.sociocracy30.org/meeting-host.html)
+    - question: Where do I get WeHelp brand assets?
+      answer: > 
+        All downloadable files you can find in our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) in **Design/Branding** folder.
+        Source files are in [WeHelp Figma](https://www.figma.com/file/VCJKSEBUVXn5xyGShP9LHc/WeHelp-Design?node-id=4%3A631).
+        What’s included: 
+        - Logo
+        - Brand guidelines
+        - Presentation templates
+        - Instagram post templates
+    - question: Where do I find all available information about WeHelp?
+      answer:
+        In our [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi).
