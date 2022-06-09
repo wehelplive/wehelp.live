@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BlockStart />
+    <BlockHero />
     <BlockPartners />
     <BlockMission />
     <BlockValues />

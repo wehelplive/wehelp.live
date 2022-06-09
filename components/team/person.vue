@@ -12,7 +12,7 @@
         <h3>{{ person.name }}</h3>
         <div v-if="role">
           <p class="mt-2 text-caption lg:text-body text-zinc-600">
-            {{ t(`home.team.roles.${person.role.toLowerCase()}`) }}
+            {{ t(`domains.${person.role.toLowerCase()}`) }}
           </p>
         </div>
         <div v-else>

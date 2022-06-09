@@ -9,12 +9,12 @@
             <h1
               class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800  sm:text-headline-2"
             >
-              <span class="block xl:inline">{{ t('home.start.title') }}</span>
+              <span class="block xl:inline">{{ t('hero.title') }}</span>
             </h1>
             <p
               class="mt-5 max-w-[302px] mx-auto font-nunito text-subtitle text-zinc-700  sm:text-headline-5 sm:max-w-[652px]"
             >
-              {{ t('home.start.description') }}
+              {{ t('hero.description') }}
             </p>
           </div>
           <div
@@ -27,7 +27,7 @@
                 to="/guest"
                 class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
               >
-                {{ t('home.start.findAccomodation') }}
+                {{ t('services.accomodations.find') }}
               </NuxtLink>
             </div>
             <div
@@ -37,7 +37,7 @@
                 to="/host"
                 class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
               >
-                {{ t('home.start.offerAccomodation') }}
+                {{ t('services.accomodations.add') }}
               </NuxtLink>
             </div>
           </div>
@@ -53,7 +53,7 @@
             <div
               class="mb-2 font-nunito text-subtitle sm:text-headline-5 text-zinc-700"
             >
-              {{ t('home.start.review', { stars: 4.8, reviews: 5 }) }}
+              {{ t('hero.reviews', { stars: 4.8, reviews: 5 }) }}
             </div>
           </div>
         </div>
