@@ -1,14 +1,14 @@
 name = "wehelp"
-type = "javascript"
 account_id = "f95aa84daa9d32075ef113a4382fdfc2"
 workers_dev = true
-route = ""
-zone_id = ""
+main = ".output/index.js"
 
 [site]
 bucket = ".output/public"
-entry-point = ".output"
 
 [build]
 command = "true"
-upload.format = "service-worker"
+
+# [secrets]
+# BASE_ID
+# API_KEY
