@@ -8,6 +8,7 @@ bucket = ".output/public"
 
 [build]
 command = "true"
+upload.format = "service-worker"
 
 # [secrets]
 # BASE_ID
