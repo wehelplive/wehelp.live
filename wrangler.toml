@@ -1,4 +1,5 @@
 name = "wehelp"
+type = "javascript"
 account_id = "f95aa84daa9d32075ef113a4382fdfc2"
 workers_dev = true
 main = ".output/index.js"
