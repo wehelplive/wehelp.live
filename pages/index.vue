@@ -4,6 +4,7 @@
     <BlockPartners />
     <BlockServices />
     <BlockValues />
+    <BlockReviews />
     <BlockTeam />
     <BlockFaq />
   </div>

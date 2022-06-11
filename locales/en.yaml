@@ -2,16 +2,6 @@ hero:
   title: Evacuation to EU
   description: We help to solve complex problems in the Ukrainian refugee crisis in EU
   reviews: '{stars} stars - {reviews} reviews'
-mission:
-  title: Our mission
-  subtitle: Effective organization of volunteer activities
-  description:
-    There are many people who are <strong>ready to help</strong> and who
-    <strong>need help</strong>. Existing organizations do not cope with
-    coordination and chaos is formed and many issues remain unresolved. It
-    is necessary to find and eliminate hatches in organizations, to link
-    them together, to establish coordination in order to effectively cope
-    with the existing situation.
 values:
   title: Our core values
   subtitle: We aim to be a
@@ -29,6 +19,7 @@ domains:
   design: Design
   talents: Talents
   operations: Operations
+  customer: Customer
 company:
   title: Company
   home: Home
@@ -47,13 +38,33 @@ team:
   jobs: Jobs
 services:
   title: Services
+  question: What are we doing?
+  suggest: Suggest New
+  problems:
+    title: Big Problems
+    description: We bring experts to solve big problems. There are no unsolvable tasks.
+  exchange:
+    title: UAH Exchange in EU
+    description: We unite in order to solve this issue together.
   accomodations:
     add: Offer Accomodation
     find: Find Accomodation
+    title: Accomodation
+    description: Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.
   evacuation:
     find: Evacuation Planner
     add: Add review
     request: Ask for Help
+    description: Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.
+reviews:
+  title: What others say about us
+  ТатьянаОвчинникова: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
+  MariaDiaz: As a volunteer I find the team very talented and easy to work with. Our main leader it's really supportive and friendly. I've learned a lot from him!
+  ІринаВалігура: A team of volunteers helped me and my friends. Fast, on time. Very, very grateful to WeHelp! Strength to you and good people to help!
+  DipaliMankodi: I joined WeHelp as a volunteer UX designer. I am grateful to be a part of such a good, humanitarian cause. We have an incredibly supportive & friendly team here!
+  ArunRajeev: Currently volunteering as a UX Designer. We have a great team, people from different professions, backgrounds, age groups working together for the greater good and helping each other to learn, grow and contribute to the cause. Thank you WeHelp !
+  OlgaN: Amazing international team to work with.Thank you WeHelp!
+  OlgaIvanova: Thank you very much for your help in exchanging hryvnia for euro at a good rate. Friends, whom I changed, were very grateful!
 menu:
   open: Open menu
   close: Close menu

@@ -185,6 +185,13 @@ module.exports = {
             letterSpacing: '0em',
           },
         ],
+        'body-2': [
+          '14px',
+          {
+            lineHeight: '19px',
+            letterSpacing: '0em',
+          },
+        ],
         subtitle: [
           '16px',
           {

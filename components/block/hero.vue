@@ -12,30 +12,26 @@
               <span class="block xl:inline">{{ t('hero.title') }}</span>
             </h1>
             <p
-              class="mt-5 max-w-[302px] mx-auto font-nunito text-subtitle text-zinc-700  sm:text-headline-5 sm:max-w-[652px]"
+              class="mt-5 max-w-xs mx-auto font-nunito text-subtitle text-zinc-700  sm:text-headline-5 sm:max-w-2xl"
             >
               {{ t('hero.description') }}
             </p>
           </div>
           <div
-            class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:mt-12 sm:max-w-sm sm:h-16 sm:flex-row sm:gap-4"
+            class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:h-12 sm:mt-12 sm:max-w-sm sm:flex-row sm:gap-4"
           >
-            <div
-              class="w-full h-1/2 flex items-center justify-center sm:w-1/2 sm:h-16"
-            >
+            <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/guest"
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.accomodations.find') }}
               </NuxtLink>
             </div>
-            <div
-              class="w-full h-1/2 flex items-center justify-center sm:w-1/2 sm:h-16"
-            >
+            <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/host"
-                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
+                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.accomodations.add') }}
               </NuxtLink>
@@ -44,16 +40,16 @@
           <div
             class="mt-12 flex items-end flex-row justify-center gap-2 w-xs h-28"
           >
-            <div class="sm:hidden">
-              <RatingItem :rating="4.8" />
+            <div class="sm:hidden mb-2">
+              <rating-item :rating="4.8" />
             </div>
-            <div class="hidden sm:flex">
-              <RatingItem :rating="4.8" :size="10" />
+            <div class="hidden sm:flex mb-2">
+              <rating-item :rating="4.8" :size="8" />
             </div>
             <div
-              class="mb-2 font-nunito text-subtitle sm:text-headline-5 text-zinc-700"
+              class="mb-2 font-nunito text-body sm:text-headline-5 text-zinc-700"
             >
-              {{ t('hero.reviews', { stars: 4.8, reviews: 5 }) }}
+              {{ t('hero.reviews', { stars: 4.8, reviews: 7 }) }}
             </div>
           </div>
         </div>

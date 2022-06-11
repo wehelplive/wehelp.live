@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-1 flex flex-col p-5  bg-white-500 box-border rounded-lg border-2 border-solid border-[#0000001a]"
+    class="col-span-1 flex flex-col p-5  bg-white-500 box-border rounded-lg border-2 border-solid border-black-400"
   >
     <div class="flex flex-col pr-3 mb-4">
       <div class="font-nunito text-subtitle mb-2">
@@ -11,20 +11,20 @@
 
       <div
         v-if="services.length > 0"
-        class="font-openSans font-semibold w-fit text-[#5F6267] text-[16px] leading-6"
+        class="font-openSans font-semibold w-fit text-zinc-500 text-body"
       >
         {{ services[0] }}
       </div>
     </div>
 
-    <p class="flex-1 font-sans text-body text-[#202020] mb-4 line-clamp-2">
+    <p class="flex-1 font-sans text-body text-zinc-800 mb-4 line-clamp-2">
       {{ description }}
     </p>
 
     <div v-if="url" class="flex flex-row mb-4 items-center">
       <LinkIcon class="h-5 w-5 mr-2 text-grey-500" />
       <a
-        class="text-[#5F6267] flex-1 font-sans truncate"
+        class="text-grey-500 flex-1 font-sans truncate"
         :href="url"
         target="_blank"
       >
@@ -34,7 +34,7 @@
 
     <div v-if="phone" class="flex flex-row mb-4 items-center">
       <PhoneIcon class="h-5 w-5 mr-2 text-grey-500" />
-      <div class="text-[#5F6267] flex-1 font-sans">
+      <div class="text-grey-500 flex-1 font-sans">
         {{ phone }}
       </div>
     </div>

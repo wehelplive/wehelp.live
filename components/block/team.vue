@@ -50,7 +50,6 @@ import { useI18n } from 'vue-i18n'
 export default {
   setup() {
     const { t } = useI18n()
-    // eslint-disable-next-line no-unused-vars
     const people = [
       {
         name: 'Gulnara Mustafaeva',
@@ -87,6 +86,7 @@ export default {
         },
       },
     ]
+
     return {
       t,
       people,

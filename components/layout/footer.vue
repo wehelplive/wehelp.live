@@ -1,9 +1,9 @@
 <template>
   <footer class="bg-white-500" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-18 px-4 sm:px-6 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8 bg-green-500">
-        <div class="space-y-8 xl:col-span-1 py-8 bg-red-500">
+    <div class="max-w-5xl mx-auto py-18 px-4 sm:px-6 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="space-y-8 xl:col-span-1 py-8">
           <div class="flex justify-center xl:justify-start">
             <BrandLogo class="h-24 w-24" />
           </div>
@@ -27,35 +27,31 @@
         </div>
 
         <div
-          class=" bg-orange-500 grid grid-cols-2 md:flex md:justify-around flex-row xl:justify-between items-start col-span-2"
+          class="grid grid-cols-2 md:flex md:justify-around xl:justify-between flex-row items-start col-span-2"
         >
-          <div
-            class="bg-blue-500 flex flex-col items-stretch p-6 min-w-fit h-full"
-          >
+          <div class="flex flex-col items-start p-4 min-w-fit">
             <h3
               class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
             >
-              {{ t('informations.services') }}
+              {{ t('services.title') }}
             </h3>
             <ul role="list" class="mt-4 space-y-4">
-              <li v-for="item in navigation.solutions" :key="item.name">
+              <li v-for="item in navigation.services" :key="item.name">
                 <a
-                  :href="item.href"
+                  :href="item.to"
                   class="text-body font-normal text-zinc-700 hover:text-zinc-800"
                 >
-                  {{ item.name?.value }}
+                  {{ t(item.name) }}
                 </a>
               </li>
             </ul>
           </div>
 
-          <div
-            class="bg-red-500 flex flex-col items-stretch p-6 min-w-fit h-full"
-          >
+          <div class="flex flex-col items-start p-4 min-w-fit">
             <h3
               class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
             >
-              {{ t('informations.company') }}
+              {{ t('company.title') }}
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li v-for="item in navigation.company" :key="item.name">
@@ -63,19 +59,17 @@
                   :href="item.href"
                   class="text-body font-normal text-zinc-700 hover:text-zinc-800"
                 >
-                  {{ item.name?.value }}
+                  {{ t(item.name) }}
                 </a>
               </li>
             </ul>
           </div>
 
-          <div
-            class="bg-green-500 flex flex-col items-stretch p-6 min-w-fit h-full"
-          >
+          <div class="flex flex-col items-start p-4 min-w-fit">
             <h3
               class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
             >
-              {{ t('informations.legal') }}
+              {{ t('company.legal') }}
             </h3>
             <ul role="list" class="mt-4 space-y-4">
               <li v-for="item in navigation.legal" :key="item.name">
@@ -83,27 +77,7 @@
                   :href="item.href"
                   class="text-body font-normal text-zinc-700 hover:text-zinc-800"
                 >
-                  {{ item.name?.value }}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class=" bg-royal-blue-800 flex flex-col items-stretch p-6 min-w-fit h-full"
-          >
-            <h3
-              class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
-            >
-              {{ t('informations.support') }}
-            </h3>
-            <ul role="list" class="mt-4 space-y-4">
-              <li v-for="item in navigation.support" :key="item.name">
-                <a
-                  :href="item.href"
-                  class="text-body font-normal text-zinc-700 hover:text-zinc-800"
-                >
-                  {{ item.name?.value }}
+                  {{ t(item.name) }}
                 </a>
               </li>
             </ul>

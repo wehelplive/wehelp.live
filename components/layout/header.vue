@@ -1,7 +1,7 @@
 <template>
   <Popover class="relative bg-white">
     <div class="max-w-full z-50 shadow-md sm:px-6 md:px-0">
-      <div class="flex justify-between items-center md:justify-start">
+      <div class="flex justify-between items-center">
         <div class="flex justify-start min-w-fit mt-2 mx-1 lg:w-0 lg:flex-1 ">
           <NuxtLink to="/">
             <BrandLogo class="w-24 h-24" />
@@ -18,7 +18,7 @@
         </div>
         <PopoverGroup
           as="nav"
-          class="hidden md:flex items-center py-2 mx-4 md:space-x-5  lg:space-x-10"
+          class="hidden md:flex items-center py-1 mx-4 space-x-10"
         >
           <NuxtLink
             v-for="item in navigation.main"
@@ -79,15 +79,15 @@
                   <h3
                     class="text-sm font-semibold text-zinc-700 tracking-wider uppercase"
                   >
-                    {{ t('informations.services') }}
+                    {{ t('services.title') }}
                   </h3>
                   <ul role="list" class="mt-4 space-y-4">
-                    <li v-for="item in navigation.solutions" :key="item.name">
+                    <li v-for="item in navigation.services" :key="item.name">
                       <a
                         :href="item.href"
                         class="text-base w-max text-grey-600 hover:text-grey-800"
                       >
-                        {{ item.name?.value }}
+                        {{ t(item.name) }}
                       </a>
                     </li>
                   </ul>
@@ -96,7 +96,7 @@
                   <h3
                     class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
                   >
-                    {{ t('informations.legal') }}
+                    {{ t('company.legal') }}
                   </h3>
                   <ul role="list" class="mt-4 space-y-4">
                     <li v-for="item in navigation.legal" :key="item.name">
@@ -104,7 +104,7 @@
                         :href="item.href"
                         class="text-base text-grey-600 hover:text-grey-800"
                       >
-                        {{ item.name?.value }}
+                        {{ t(item.name) }}
                       </a>
                     </li>
                   </ul>
@@ -115,7 +115,7 @@
                   <h3
                     class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
                   >
-                    {{ t('informations.company') }}
+                    {{ t('company.title') }}
                   </h3>
                   <ul role="list" class="mt-4 space-y-4">
                     <li v-for="item in navigation.company" :key="item.name">
@@ -123,7 +123,7 @@
                         :href="item.href"
                         class="text-base text-grey-600 hover:text-grey-800"
                       >
-                        {{ item.name?.value }}
+                        {{ t(item.name) }}
                       </a>
                     </li>
                   </ul>
@@ -136,7 +136,7 @@
         <div class="flex flex-col h-36 mt-4 justify-center">
           <div class="mx-8">
             <div class="text-subtitle text-center text-zinc-700 font-nunito">
-              {{ t('header.description') }}
+              {{ t('hero.description') }}
             </div>
           </div>
           <div class="flex mt-4 items-center justify-center space-x-1 mx-8">
@@ -147,13 +147,13 @@
               class="text-zinc-400 hover:text-zinc-400"
             >
               <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              <img :src="item.icon" class="h-6 w-6" aria-hidden="true" />
             </a>
           </div>
         </div>
         <div class="mt-8 mb-8">
           <p class="text-body font-sans text-zinc-700 text-center">
-            &copy; {{ t('footer.copyright') }}
+            &copy; {{ t('company.copyright') }}
           </p>
         </div>
       </PopoverPanel>
@@ -171,8 +171,6 @@ import {
 
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
-import { ChevronDownIcon } from '@heroicons/vue/solid'
-
 import { useI18n } from 'vue-i18n'
 
 import { navigation } from '~/utils/navigation'
@@ -184,7 +182,6 @@ export default {
     PopoverButton,
     PopoverGroup,
     PopoverPanel,
-    ChevronDownIcon,
     MenuIcon,
     XIcon,
   },

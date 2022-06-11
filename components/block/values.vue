@@ -10,6 +10,7 @@
         class="mt-5 leading-6 font-nunito text-subtitle sm:mt-14 sm:text-headline-5 text-zinc-700"
       >
         <span v-html="t('values.subtitle')"></span>
+        <span class="hidden text-blue-500"></span>
       </p>
       <img
         class="mt-12 inline-flex items-center justify-center object-cove"
