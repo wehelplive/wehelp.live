@@ -1,9 +1,9 @@
 <template>
   <div>
     <div
-      class="flex flex-row items-center justify-center gap-8 px-6 md:px-12 md:pt-14"
+      class="flex flex-row items-center justify-center gap-8 px-6 sm:px-12 sm:pt-14"
     >
-      <div class="text-headline-6 md:text-headline-4 font-nunito font-semibold">
+      <div class="text-headline-6 sm:text-headline-4 font-nunito font-semibold">
         {{ t('reviews.title') }}
       </div>
     </div>
@@ -51,7 +51,8 @@ export default {
         imageUrl: 'reviews/ТатьянаОвчинникова.jpg',
         rating: 5,
         content: 'reviews.ТатьянаОвчинникова',
-        date: new Date(),
+        date: new Date('5/13/22'),
+        source: 'https://goo.gl/maps/iUeFK42jy9XTdDz47',
       },
       {
         name: 'Maria Diaz',
@@ -59,7 +60,8 @@ export default {
         imageUrl: 'reviews/MariaDiaz.jpg',
         rating: 5,
         content: 'reviews.MariaDiaz',
-        date: new Date(),
+        date: new Date('4/13/22'),
+        source: 'https://goo.gl/maps/i3rGPjcaG7QyepWG6',
       },
       {
         name: 'Ірина Валігура',
@@ -67,7 +69,8 @@ export default {
         imageUrl: 'reviews/ІринаВалігура.jpg',
         rating: 5,
         content: 'reviews.ІринаВалігура',
-        date: new Date(),
+        date: new Date('5/13/22'),
+        source: 'https://goo.gl/maps/sc6vgeTxo24eyQuQ8',
       },
       {
         name: 'Dipali Mankodi',
@@ -75,7 +78,8 @@ export default {
         imageUrl: 'reviews/DipaliMankodi.jpg',
         rating: 5,
         content: 'reviews.DipaliMankodi',
-        date: new Date(),
+        date: new Date('6/6/22'),
+        source: 'https://goo.gl/maps/FaeHWcHAvm86HjNJ6',
       },
       {
         name: 'Arun Rajeev',
@@ -83,7 +87,8 @@ export default {
         imageUrl: 'reviews/ArunRajeev.jpg',
         rating: 5,
         content: 'reviews.ArunRajeev',
-        date: new Date(),
+        date: new Date('4/13/22'),
+        source: 'https://goo.gl/maps/mLhrbkYYisATnDVm8',
       },
       {
         name: 'Olga N',
@@ -91,7 +96,8 @@ export default {
         imageUrl: 'reviews/OlgaN.jpg',
         rating: 5,
         content: 'reviews.OlgaN',
-        date: new Date(),
+        date: new Date('5/13/22'),
+        source: 'https://goo.gl/maps/rrV3Ww5zVoUqyB597',
       },
       {
         name: 'Olga Ivanova',
@@ -99,7 +105,8 @@ export default {
         imageUrl: 'reviews/OlgaIvanova.jpg',
         rating: 5,
         content: 'reviews.OlgaIvanova',
-        date: new Date(),
+        date: new Date('5/13/22'),
+        source: 'https://goo.gl/maps/9LbjPQvc7bfUW4mQ7',
       },
     ]
     return { t, reviews, breakpoints, modules: [Pagination] }

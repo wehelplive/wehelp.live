@@ -39,13 +39,9 @@ team:
 services:
   title: Services
   question: What are we doing?
-  suggest: Suggest New
   problems:
     title: Big Problems
     description: We bring experts to solve big problems. There are no unsolvable tasks.
-  exchange:
-    title: UAH Exchange in EU
-    description: We unite in order to solve this issue together.
   accomodations:
     add: Offer Accomodation
     find: Find Accomodation

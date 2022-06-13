@@ -22,7 +22,11 @@
     </div>
     <div class="flex flex-row items-center px-2 justify-between w-full h-fit">
       <rating-item :rating="review.rating" />
-      <div class=" font-sans text-caption text-zinc-600">{{ formatDate }}</div>
+      <a :href="review.source" class="text-slate-500 hover:text-slate-400">
+        <div class=" font-sans text-caption text-zinc-600">
+          {{ formatDate }}
+        </div>
+      </a>
     </div>
     <div
       v-if="te(review.content)"
@@ -47,6 +51,7 @@ export default {
           rating: 5,
           content: '',
           date: new Date(),
+          source: '',
         }
       },
     },

@@ -193,7 +193,7 @@ module.exports = {
           },
         ],
         subtitle: [
-          '16px',
+          '18px',
           {
             lineHeight: '22px',
             letterSpacing: '0em',
