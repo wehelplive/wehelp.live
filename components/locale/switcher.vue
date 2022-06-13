@@ -10,7 +10,7 @@
           :key="`Lang${i}`"
           :value="locale"
         >
-          {{ locale.toLocaleUpperCase() }}
+          {{ locale }}
         </option>
       </select>
     </div>
