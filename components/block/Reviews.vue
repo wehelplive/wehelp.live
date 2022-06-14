@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="py-8">
     <div
-      class="flex flex-row items-center justify-center gap-8 px-6 sm:px-12 sm:pt-14"
+      class="flex flex-row items-center justify-center gap-8 px-6 sm:px-12 sm:pt-2"
     >
       <div class="text-headline-6 sm:text-headline-4 font-nunito font-semibold">
         {{ t('reviews.title') }}
@@ -48,9 +48,9 @@ export default {
       {
         name: 'Татьяна Овчинникова',
         role: 'domains.customer',
-        imageUrl: 'reviews/ТатьянаОвчинникова.jpg',
+        imageUrl: 'reviews/TatyanaOvchinnikova.jpg',
         rating: 5,
-        content: 'reviews.ТатьянаОвчинникова',
+        content: 'reviews.tatyanaOvchinnikova',
         date: new Date('5/13/22'),
         source: 'https://goo.gl/maps/iUeFK42jy9XTdDz47',
       },
@@ -59,16 +59,16 @@ export default {
         role: 'domains.design',
         imageUrl: 'reviews/MariaDiaz.jpg',
         rating: 5,
-        content: 'reviews.MariaDiaz',
+        content: 'reviews.mariaDiaz',
         date: new Date('4/13/22'),
         source: 'https://goo.gl/maps/i3rGPjcaG7QyepWG6',
       },
       {
         name: 'Ірина Валігура',
         role: 'domains.customer',
-        imageUrl: 'reviews/ІринаВалігура.jpg',
+        imageUrl: 'reviews/IrinaValigura.jpg',
         rating: 5,
-        content: 'reviews.ІринаВалігура',
+        content: 'reviews.irinaValigura',
         date: new Date('5/13/22'),
         source: 'https://goo.gl/maps/sc6vgeTxo24eyQuQ8',
       },
@@ -77,7 +77,7 @@ export default {
         role: 'domains.design',
         imageUrl: 'reviews/DipaliMankodi.jpg',
         rating: 5,
-        content: 'reviews.DipaliMankodi',
+        content: 'reviews.dipaliMankodi',
         date: new Date('6/6/22'),
         source: 'https://goo.gl/maps/FaeHWcHAvm86HjNJ6',
       },
@@ -86,7 +86,7 @@ export default {
         role: 'domains.design',
         imageUrl: 'reviews/ArunRajeev.jpg',
         rating: 5,
-        content: 'reviews.ArunRajeev',
+        content: 'reviews.arunRajeev',
         date: new Date('4/13/22'),
         source: 'https://goo.gl/maps/mLhrbkYYisATnDVm8',
       },
@@ -95,7 +95,7 @@ export default {
         role: 'domains.customer',
         imageUrl: 'reviews/OlgaN.jpg',
         rating: 5,
-        content: 'reviews.OlgaN',
+        content: 'reviews.olgaN',
         date: new Date('5/13/22'),
         source: 'https://goo.gl/maps/rrV3Ww5zVoUqyB597',
       },
@@ -104,7 +104,7 @@ export default {
         role: 'domains.design',
         imageUrl: 'reviews/OlgaIvanova.jpg',
         rating: 5,
-        content: 'reviews.OlgaIvanova',
+        content: 'reviews.olgaIvanova',
         date: new Date('5/13/22'),
         source: 'https://goo.gl/maps/9LbjPQvc7bfUW4mQ7',
       },

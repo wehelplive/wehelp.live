@@ -51,32 +51,26 @@ menu:
 faq:
   title: FAQ
   items:
-    - 
-      question: Wie ist die Organisationsstruktur?
+    - question: Wie ist die Organisationsstruktur?
       answer: >
         ![](/structure.jpg)
-    - 
-      question: Warum sollte ich Freiwillige/r bei WeHelp werden?
+    - question: Warum sollte ich Freiwillige/r bei WeHelp werden?
       answer: >
         Wir stellen nach 6 Monaten Praktikum ein Zertifikat aus. Siehe [offene Positionen](https://angel.co/company/wehelplive/jobs)
-    - 
-      question: Wie kann ich mich einbringen?
+    - question: Wie kann ich mich einbringen?
       answer: >
         1. Wo finde ich den ganzen Zeitplan? Abonniere [calendar](https://wehelp.live/calendar/)
         2. Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).
         3. Wie betrete ich Slack? [Als Freiwillige/r anmelden](https://wehelp.live/get-involved/) und Sie bekommen eine Einladung zu unserem Slack.
-    - 
-      question: Wie kann ich ein Meeting planen?
+    - question: Wie kann ich ein Meeting planen?
       answer: >
         1. Welche Art von Treffen haben wir? 1-1, Themen besprechen, Retrospektive, Governance-Treffen, Daily Standup, Planning and Review Meetings, Koordinationsmeeting, [lesen Sie mehr](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Wie bereitet man sich auf ein Meeting vor?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Verantwortungen eines Meeting-Hosts](https://patterns.sociocracy30.org/meeting-host.html)
-    - 
-      question: Wo bekomme ich WeHelp Markensymbole?
+    - question: Wo bekomme ich WeHelp Markensymbole?
       answer: >
         Alle herunterladbaren Dateien finden Sie in unserem [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) im **Design/Branding** Ordner.
         Quelldateien sind in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
-    - 
-      question: Wo finde ich alle verfügbaren Informationen über WeHelp?
+    - question: Wo finde ich alle verfügbaren Informationen über WeHelp?
       answer: >
         https://handbook.wehelp.live

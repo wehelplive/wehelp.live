@@ -3,6 +3,7 @@
     <BlockHero />
     <BlockPartners />
     <BlockServices />
+    <BlockMission />
     <BlockValues />
     <BlockReviews />
     <BlockTeam />

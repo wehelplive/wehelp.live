@@ -41,7 +41,7 @@ export const navigation = {
       href: 'https://handbook.wehelp.live/about/',
     },
     {
-      name: 'team.title',
+      name: 'team.name',
       href: '/teams',
     },
     {

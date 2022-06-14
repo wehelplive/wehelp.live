@@ -10,7 +10,7 @@
       </h2>
     </div>
     <div class="bg-white-500">
-      <div class="max-w-7xl mx-auto px-4 sm:py-2 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-4 py-8">
         <dl
           class="space-y-10 md:space-y-0 md:grid md:grid-cols-3  md:gap-x-8 md:gap-y-12"
         >

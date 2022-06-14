@@ -51,32 +51,26 @@ menu:
 faq:
   title: ЧАП
   items:
-    - 
-      question: Яка структура організації?
+    - question: Яка структура організації?
       answer: >
         ![](/structure.jpg)
-    - 
-      question: Чому я повинен бути волонтером для WeHelp?
+    - question: Чому я повинен бути волонтером для WeHelp?
       answer: >
         Ми надаємо сертифікат після 6 місяців взаємодії. Дивіться [відкриті позиції](https://angel.co/company/wehelplive/jobs)
-    - 
-      question: Як мені втрутитися?
+    - question: Як мені втрутитися?
       answer: >
         1. Де знайти повний розклад? Підпишіться на [calendar](https://wehelp.live/calendar/)
         2. Як приєднатися до командної зустрічі? Дотримуйтесь "Ласкаво просимо" на Slack (канал #Ласкаво просимо).
         3. Як мені приєднатися до Слека? [Зареєструйся як волонтер](https://wehelp.live/get-involved/) і отримаєш запрошення на наш Slack.
-    - 
-      question: Як запланувати зустріч?
+    - question: Як запланувати зустріч?
       answer: >
         1. Які зустрічі ми маємо? 1-1 - для обговорення тем, Retrospective, керівництво Meeting, Daily Standing, Planning and Review Meeting, Coordination Meing, [прочитати більше](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Як підготуватися до зустрічі?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Responsibility нарада хосту](https://patterns.sociocracy30.org/meeting-host.html)
-    - 
-      question: Де я отримую активи бренду WeHelp?
+    - question: Де я отримую активи бренду WeHelp?
       answer: >
         Усі завантажувані файли, які ви можете знайти в нашому [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) в папці **Design/Branding** .
         Вихідні файли знаходяться в [WeHelp Figma](https://www.figma.com/file/2HRdICQFFhlwaUKwaUKWO9/WeHelp-2.0?node-id=2%3A8273).
-    - 
-      question: Де я знаходжу всю наявну інформацію про WeHelp?
+    - question: Де я знаходжу всю наявну інформацію про WeHelp?
       answer: >
         https://handbook.wehelp.live

@@ -1,8 +1,6 @@
 <template>
-  <div class="bg-white-500">
-    <div
-      class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
-    >
+  <div>
+    <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 sm:py-14">
       <div class="space-y-22 sm:space-y-22">
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
           <h2
@@ -21,9 +19,7 @@
         </ul>
       </div>
     </div>
-    <div
-      class="mt-4 mb-6 pl-10 pr-10 max-w-3xl mx-auto sm:flex sm:justify-center md:justify-center lg:justify-center md:mt-16"
-    >
+    <div class="my-4 px-10 max-w-3xl mx-auto flex justify-center items-center">
       <div class="mt-2 ">
         <!-- <NuxtLink
           to="/"
@@ -32,10 +28,12 @@
           Meet everyone from our team
         </NuxtLink> -->
       </div>
-      <div class="rounded-3xl mt-2 sm:ml-4 shadow">
+      <div
+        class="flex flex-row justify-center items-center gap-2 rounded-3xl my-4 mx-10 shadow w-72 h-12 sm:w-48 bg-green-500"
+      >
         <NuxtLink
           to="/get-involved"
-          class="w-full flex font-sans items-center font-semibold font-body justify-center px-8 py-3 border border-transparent rounded-3xl text-white-500 bg-green-500 hover:bg-zinc-500 md:py-4 md:text-lg md:px-10"
+          class=" hover:bg-zinc-500 text-white-500 flex items-center justify-center w-full h-full capitalize rounded-3xl text-body font-sans"
         >
           {{ t('team.join') }}
         </NuxtLink>

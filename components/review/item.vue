@@ -39,6 +39,8 @@
 <script>
 import { useI18n } from 'vue-i18n'
 import { formatDistance } from 'date-fns'
+import { enGB, ru, uk, de } from 'date-fns/locale'
+
 export default {
   props: {
     review: {
@@ -65,8 +67,10 @@ export default {
   },
   computed: {
     formatDate() {
+      const locales = { en: enGB, ru, uk, de }
       return formatDistance(this.review.date, new Date(), {
         addSuffix: true,
+        locale: locales[this.$i18n.locale],
       })
     },
   },
