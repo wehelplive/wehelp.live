@@ -13,6 +13,6 @@ entry-point = ".output"
 command = "true"
 upload.format = "service-worker"
 
-# [secrets]
-# BASE_ID
-# API_KEY
+[vars]
+BASE_ID = "appBBi7Uoylg0ILTk"
+API_KEY = "keydEXl97LFVx03hM"
