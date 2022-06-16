@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="flex flex-row justify-center items-center gap-2 px-6 sm:px-12 sm:pt-14"
+      class="flex flex-row justify-center items-center gap-2 px-6 sm:px-12 py-4 sm:py-8"
     >
       <h2
-        class=" font-nunito font-semibold text-headline-6 flex items-centertext-black-500 sm:text-headline-4"
+        class="font-nunito font-semibold text-headline-6 flex items-center text-black-500 sm:text-headline-4"
       >
         {{ t('services.question') }}
       </h2>

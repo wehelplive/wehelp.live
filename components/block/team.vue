@@ -1,17 +1,19 @@
 <template>
   <div>
-    <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 sm:py-14">
+    <div class="max-w-7xl mx-auto px-4  sm:px-6 items-start text-center">
       <div class="space-y-22 sm:space-y-22">
-        <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+        <div
+          class="space-y-5 sm:mx-auto sm:space-y-4 gap-2 py-4 sm:py-8 px-6 sm:px-12"
+        >
           <h2
-            class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
+            class="font-nunito font-semibold text-headline-6 tracking-tight sm:text-headline-4"
           >
             {{ t('team.title') }}
           </h2>
         </div>
         <ul
           role="list"
-          class="mx-auto grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
+          class="mx-auto grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4 py-14"
         >
           <li v-for="person in people" :key="person.name">
             <TeamPerson :person="person" />

@@ -1,7 +1,7 @@
 <template>
   <div class="py-8">
     <div
-      class="flex flex-row items-center justify-center gap-8 px-6 sm:px-12 sm:pt-2"
+      class="flex flex-row items-center justify-center gap-2 py-4 sm:py-8 px-6 sm:px-12"
     >
       <div class="text-headline-6 sm:text-headline-4 font-nunito font-semibold">
         {{ t('reviews.title') }}
