@@ -1,19 +1,19 @@
 ---
 hero:
   title: Evakuierung in die EU
-  description: Wir helfen bei der Lösung von Comlex-Problemen in der Flüchtlingskrise in der Ukraine in Europa
+  description: Wir helfen bei der Lösung komplexer Probleme der ukrainischen Flüchtlingskrise in der EU
   reviews: '{stars} Sterne - {reviews} Bewertungen'
 mission:
-  title: Unsere Mission
+  title: Unsere Aufgabe
   subtitle: Effektive Organisation von Freiwilligentätigkeiten
-  description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen verkraften nicht die Koordinierung, und es entsteht Chaos und viele Fragen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
+  description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen schaffen die Koordinierung nicht, und es entsteht Chaos und viele Problemstellungen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
 values:
   title: Unsere Kernwerte
   subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
 domains:
   partnerships: Partnerschaften
   communications: Kommunikation
-  mission: Mission
+  mission: Aufgabe
   coordination: Koordination
   product: Produkt
   code: Code
@@ -25,7 +25,7 @@ company:
   home: Zuhause
   copyright: 2022 WeHelp. Alle Rechte vorbehalten.
   about: Über
-  contact: Kontaktiere uns
+  contact: Kontaktieren Sie uns
   support: Unterstützung
   legal: Rechtlich
   imprint: Impressum
@@ -33,7 +33,7 @@ company:
   privacy: Privatsphäre
 team:
   title: Unser Team
-  join: Beteiligt werden
+  join: Sich beteiligen
   calendar: Kalender
   jobs: Jobs
 services:
@@ -52,29 +52,29 @@ faq:
   title: FAQ
   items:
     - 
-      question: Was ist die Organisationsstruktur?
+      question: Wie ist die Organisationsstruktur?
       answer: >
         ![](/structure.jpg)
     - 
-      question: Warum sollte ich Freiwillige für WeHelp machen?
+      question: Warum sollte ich Freiwillige/r bei WeHelp werden?
       answer: >
-        Wir liefern ein Zertifikat nach 6 Monaten Praktikum. Siehe [offene Positionen](https://angel.co/company/wehelplive/jobs)
+        Wir stellen nach 6 Monaten Praktikum ein Zertifikat aus. Siehe [offene Positionen](https://angel.co/company/wehelplive/jobs)
     - 
       question: Wie kann ich mich einbringen?
       answer: >
-        1. Wo finde ich den vollen Zeitplan? Abonniere [calendar](https://wehelp.live/calendar/)
+        1. Wo finde ich den ganzen Zeitplan? Abonniere [calendar](https://wehelp.live/calendar/)
         2. Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).
-        3. Wie betrete ich Slack? [Als Freiwilliger anmelden](https://wehelp.live/get-involved/) und du bekommst eine Einladung zu unserem Slack.
+        3. Wie betrete ich Slack? [Als Freiwillige/r anmelden](https://wehelp.live/get-involved/) und Sie bekommen eine Einladung zu unserem Slack.
     - 
       question: Wie kann ich ein Meeting planen?
       answer: >
-        1. Welche Art von Treffen haben wir? 1-1, um Themen zu besprechen, Retrospektive, Governance-Treffen, Daily Standup, Planning and Review Meetings, Coordination Meeting, [lesen Sie mehr](https://patterns.sociocracy30.org/meeting-formats. tml)
+        1. Welche Art von Treffen haben wir? 1-1, Themen besprechen, Retrospektive, Governance-Treffen, Daily Standup, Planning and Review Meetings, Koordinationsmeeting, [lesen Sie mehr](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Wie bereitet man sich auf ein Meeting vor?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
-        3. [Verantwortungen eines Meeting-Host](https://patterns.sociocracy30.org/meeting-host.html)
+        3. [Verantwortungen eines Meeting-Hosts](https://patterns.sociocracy30.org/meeting-host.html)
     - 
-      question: Wo bekomme ich WeHelp Markenvermögen?
+      question: Wo bekomme ich WeHelp Markensymbole?
       answer: >
-        Alle herunterladbaren Dateien findest du in unserem [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) im **Design/Branding** Ordner.
+        Alle herunterladbaren Dateien finden Sie in unserem [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) im **Design/Branding** Ordner.
         Quelldateien sind in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
     - 
       question: Wo finde ich alle verfügbaren Informationen über WeHelp?
