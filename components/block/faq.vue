@@ -11,8 +11,8 @@
           :title="t(`faq.items[${index}].question`)"
         >
           <div
-            v-html="md.render(t(`faq.items[${index}].answer`))"
             class="prose"
+            v-html="md.render(t(`faq.items[${index}].answer`))"
           ></div>
         </FaqItem>
       </div>

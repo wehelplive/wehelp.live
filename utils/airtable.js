@@ -36,7 +36,8 @@ export const fetchCities = async (offset = null) => {
     const url = `https://api.airtable.com/v0/${config.BASE_ID}/Cities?view=Grid%20view&${offSet}`
     const response = await $fetch(url, options)
     if (response?.offset) {
-      return [...response.records, ...fetchServices(response.offset)]
+      const nextResponse = await fetchServices(response.offset)
+      return [...response.records, ...nextResponse]
     }
     return response.records
   } catch (error) {

@@ -1,8 +1,8 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-8xl z-50 m-0 p-0 shadow-md sm:px-6">
-      <div class="flex justify-between items-center md:justify-start">
-        <div class="flex justify-start mt-2 ml-2 lg:w-0 lg:flex-1">
+    <div class="max-w-full z-50 shadow-md sm:px-6 md:px-0">
+      <div class="flex justify-between items-center">
+        <div class="flex justify-start min-w-fit mt-2 mx-1 lg:w-0 lg:flex-1 ">
           <NuxtLink to="/">
             <BrandLogo class="w-24 h-24" />
           </NuxtLink>
@@ -16,31 +16,19 @@
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+        <PopoverGroup
+          as="nav"
+          class="hidden md:flex items-center py-1 mx-4 space-x-10"
+        >
           <NuxtLink
             v-for="item in navigation.main"
             :key="item.name"
             :to="item.to"
-            class="text-base font-nunito text-xl text-black-500 hover:text-black-500"
+            class="text-base font-nunito text-black-500 hover:text-black-500"
           >
             {{ t(item.name) }}
           </NuxtLink>
-          <div id="locale-switcher">
-            <div>
-              <select
-                v-model="$i18n.locale"
-                class="form-select uppercase w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
-              >
-                <option
-                  v-for="(locale, i) in $i18n.availableLocales"
-                  :key="`Lang${i}`"
-                  :value="locale"
-                >
-                  {{ locale }}
-                </option>
-              </select>
-            </div>
-          </div>
+          <locale-switcher />
         </PopoverGroup>
       </div>
     </div>
@@ -55,9 +43,9 @@
     >
       <PopoverPanel
         focus
-        class="bg-white-500 fixed h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
+        class="bg-white-500 h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
       >
-        <div class="bg-white-500 bg-white-500">
+        <div class="bg-white-500 ">
           <div class="">
             <div class="flex m-0 p-0 items-center justify-between">
               <div class="mt-2 ml-2">
@@ -73,140 +61,101 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="flex flex-col">
-            <div class="flex w-full justify-end pr-6">
-              <div class="flex">
-                <div id="locale-switcher">
-                  <div>
-                    <select
-                      v-model="$i18n.locale"
-                      class="form-select uppercase w-13 h-12 rounded-lg block w-full px-3 py-1.5 text-base font-normal text-slate-500 bg-white-500 bg-clip-padding bg-no-repeat border border-solid border-slate-200 transition ease-in-out m-0 focus:text-slate-500 focus:bg-white-500 focus:border-royal-blue-600 focus:outline-none"
-                    >
-                      <option
-                        v-for="(locale, i) in $i18n.availableLocales"
-                        :key="`Lang${i}`"
-                        :value="locale"
+        <div class="flex flex-col">
+          <div class="flex justify-end w-full py-1 mb-1">
+            <div class="w-fit pr-6">
+              <locale-switcher />
+            </div>
+          </div>
+
+          <div class="max-w-7xl flex flex-row justify-center">
+            <div
+              class="pt-2 px-6 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 w-full"
+            >
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-zinc-700 tracking-wider uppercase"
+                  >
+                    {{ t('services.title') }}
+                  </h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li v-for="item in navigation.services" :key="item.name">
+                      <a
+                        :href="item.href"
+                        class="text-base w-max text-grey-600 hover:text-grey-800"
                       >
-                        {{ locale }}
-                      </option>
-                    </select>
-                  </div>
+                        {{ t(item.name) }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4 md:mt-0">
+                  <h3
+                    class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
+                  >
+                    {{ t('company.legal') }}
+                  </h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li v-for="item in navigation.legal" :key="item.name">
+                      <a
+                        :href="item.href"
+                        class="text-base text-grey-600 hover:text-grey-800"
+                      >
+                        {{ t(item.name) }}
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-
-            <div class="max-w-7xl mt-1-">
-              <div
-                class="mt-6 ml-[20px] grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2"
-              >
-                <div class="md:grid md:grid-cols-2 md:gap-8">
-                  <div>
-                    <h3
-                      class="text-sm font-semibold text-zinc-700  tracking-wider uppercase"
-                    >
-                      {{ t('services.title') }}
-                    </h3>
-                    <ul role="list" class="mt-4 space-y-4">
-                      <li v-for="item in navigation.solutions" :key="item.name">
-                        <a
-                          :href="item.href"
-                          class="text-base w-max text-grey-600 hover:text-grey-800"
-                        >
-                          {{ t(item.name) }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="mt-12 md:mt-0">
-                    <h3
-                      class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
-                    >
-                      {{ t('company.support') }}
-                    </h3>
-                    <ul role="list" class="mt-4 space-y-4">
-                      <li v-for="item in navigation.support" :key="item.name">
-                        <a
-                          :href="item.href"
-                          class="text-base text-grey-600 hover:text-grey-800"
-                        >
-                          {{ t(item.name) }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="md:grid md:grid-cols-2 md:gap-8">
-                  <div>
-                    <h3
-                      class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
-                    >
-                      {{ t('company.title') }}
-                    </h3>
-                    <ul role="list" class="mt-4 space-y-4">
-                      <li v-for="item in navigation.company" :key="item.name">
-                        <a
-                          :href="item.href"
-                          class="text-base text-grey-600 hover:text-grey-800"
-                        >
-                          {{ t(item.name) }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="mt-12 md:mt-0">
-                    <h3
-                      class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
-                    >
-                      {{ t('informations.legal') }}
-                    </h3>
-                    <ul role="list" class="mt-4 space-y-4">
-                      <li v-for="item in navigation.legal" :key="item.name">
-                        <a
-                          :href="item.href"
-                          class="text-base text-grey-600 hover:text-grey-800"
-                        >
-                          {{ item.name?.value }}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-grey-600 tracking-wider uppercase"
+                  >
+                    {{ t('company.title') }}
+                  </h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li v-for="item in navigation.company" :key="item.name">
+                      <a
+                        :href="item.href"
+                        class="text-base text-grey-600 hover:text-grey-800"
+                      >
+                        {{ t(item.name) }}
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="h-52">
-            <div
-              class="text-base text-center mt-[42px] mx-2 text-zinc-700 font-nunito"
-            >
+        <div class="flex flex-col h-36 mt-4 justify-center">
+          <div class="mx-8">
+            <div class="text-subtitle text-center text-zinc-700 font-nunito">
               {{ t('hero.description') }}
             </div>
-            <div class="flex mt-[8px] items-center justify-center space-x-1">
-              <a
-                v-for="item in navigation.social"
-                :key="item.name"
-                :href="item.href"
-                class="text-zinc-400 hover:text-zinc-400"
-              >
-                <span class="sr-only">{{ item.name }}</span>
-                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-              </a>
-            </div>
           </div>
-
-          <div class="h-20"></div>
-          <br />
-
-          <br />
+          <div class="flex mt-4 items-center justify-center space-x-1 mx-8">
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="text-zinc-400 hover:text-zinc-400"
+            >
+              <span class="sr-only">{{ item.name }}</span>
+              <img :src="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
+          </div>
         </div>
-        <div class="h-10"></div>
-        <br />
-
-        <div class="h-20"></div>
-        <br />
-
-        <br />
+        <div class="mt-8 mb-8">
+          <p class="text-body font-sans text-zinc-700 text-center">
+            &copy; {{ t('company.copyright') }}
+          </p>
+        </div>
       </PopoverPanel>
     </transition>
   </Popover>
@@ -222,8 +171,6 @@ import {
 
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 
-import { ChevronDownIcon } from '@heroicons/vue/solid'
-
 import { useI18n } from 'vue-i18n'
 
 import { navigation } from '~/utils/navigation'
@@ -235,7 +182,6 @@ export default {
     PopoverButton,
     PopoverGroup,
     PopoverPanel,
-    ChevronDownIcon,
     MenuIcon,
     XIcon,
   },

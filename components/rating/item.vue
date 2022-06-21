@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-row mb-2">
+  <div class="flex flex-row ">
     <div class="flex items-center mr-3">
       <div v-for="n in rated" :key="n">
         <svg
-          :class="`w-${size} h-${size} text-orange-500`"
+          :class="`${ratio} text-orange-500`"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@
       </div>
       <div v-for="n in unrated" :key="n">
         <svg
-          :class="`w-${size} h-${size} text-[#D9D9D9]`"
+          :class="`${ratio} text-white-500`"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +52,9 @@ export default {
     },
     rated() {
       return Math.round(this.rating)
+    },
+    ratio() {
+      return `h-${this.size} w-${this.size}`
     },
   },
 }

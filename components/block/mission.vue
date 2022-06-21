@@ -1,18 +1,22 @@
 <template>
-  <div class="bg-white-500">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <div class="text-center">
-        <h2
-          class="font-nunito font-semibold text-headline-6 mb-10 tracking-tight sm:text-headline-4"
-        >
-          {{ t('mission.title') }}
-        </h2>
+  <div>
+    <div
+      class="flex flex-row items-center justify-center gap-2 py-4 sm:py-6 px-6 sm:px-12"
+    >
+      <h2
+        class="font-nunito font-semibold text-headline-6 text-black-500 sm:text-headline-4"
+      >
+        {{ t('mission.title') }}
+      </h2>
+    </div>
+    <div class="flex flex-row items-center justify-center gap-2 sm:px-24 py-16">
+      <div class="flex flex-col items-center p-5 gap-3 max-w-5xl">
         <p
-          class="mt-1 text-4xl font-extrabold text-grey-800 sm:text-5xl sm:tracking-tight lg:text-6xl"
+          class="font-nunito text-subtitle font-semibold text-black-500 text-center"
         >
           {{ t('mission.subtitle') }}
         </p>
-        <p class="max-w-xl mt-5 mx-auto text-xl text-grey-500">
+        <p class="font-nunito text-subtitle text-black-500 text-center">
           <span v-html="t('mission.description')"></span>
         </p>
       </div>

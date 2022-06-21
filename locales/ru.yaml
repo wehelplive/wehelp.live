@@ -51,32 +51,26 @@ menu:
 faq:
   title: ЧАВО
   items:
-    - 
-      question: Что такое структура организации?
+    - question: Что такое структура организации?
       answer: >
         ![](/structure.jpg)
-    - 
-      question: Почему стоит волонтерить в WeHelp?
+    - question: Почему стоит волонтерить в WeHelp?
       answer: >
         Мы предоставляем сертификат через 6 месяцев стажировки. Смотрите [открытые позиции](https://angel.co/company/wehelplive/jobs)
-    - 
-      question: Как я могу вовлечься?
+    - question: Как я могу вовлечься?
       answer: >
         1. Где я могу найти полное расписание? Подпишитесь на [calendar](https://wehelp.live/calendar/)
         2. Как присоединиться к командной встрече? Следуйте приветственному руководству по Slack (канал #welcome).
         3. Как мне присоединиться к Slack? [Зарегистрируйтесь в качестве волонтера](https://wehelp.live/get-involved/) и вы получите приглашение в наш Slack.
-    - 
-      question: Как запланировать встречу?
+    - question: Как запланировать встречу?
       answer: >
         1. Какие заседания мы проводим? 1-1, чтобы обсудить темы, ретроспективные и управляющие встречи, ежедневный стандарт, планирование и обзор совещаний, Координационное совещание, [подробнее](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Как подготовиться к совещанию?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Ответственность host](https://patterns.sociocracy30.org/meeting-host.html)
-    - 
-      question: Где я могу получить ассеты бренда WeHelp?
+    - question: Где я могу получить ассеты бренда WeHelp?
       answer: >
         Все загружаемые файлы вы можете найти в нашем [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) в папке **Design/Branding**.
         Исходные файлы находятся в [Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
-    - 
-      question: Где найти всю доступную информацию о WeHelp?
+    - question: Где найти всю доступную информацию о WeHelp?
       answer: >
         https://handbook.wehelp.live

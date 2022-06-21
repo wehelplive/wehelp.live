@@ -58,7 +58,7 @@ export default {
   },
   computed: {
     role() {
-      const rolesKeys = useI18n().messages.value.en?.home?.team?.roles
+      const rolesKeys = useI18n().messages.value.en?.domains
       if (!rolesKeys) return false
 
       const roles = Object.keys(rolesKeys)
