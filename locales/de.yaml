@@ -6,7 +6,7 @@ hero:
 mission:
   title: Unsere Aufgabe
   subtitle: Effektive Organisation von Freiwilligentätigkeiten
-  description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen schaffen die Koordinierung nicht, und es entsteht Chaos und viele Problemstellungen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
+  description: There are many people who are eady to help and who need help. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
 values:
   title: Unsere Kernwerte
   subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
@@ -20,6 +20,7 @@ domains:
   design: Design
   talents: Talente
   operations: Operationen
+  customer: Customer
 company:
   title: Firma
   home: Zuhause
@@ -32,45 +33,68 @@ company:
   terms: Begriffe
   privacy: Privatsphäre
 team:
-  title: Unser Team
+  title: We are 27 volunteers from across the globe
+  name: Our Team
   join: Sich beteiligen
   calendar: Kalender
   jobs: Jobs
 services:
   title: Dienste
+  question: What are we doing?
+  problems:
+    title: Big Problems
+    description: We bring experts to solve big problems. There are no unsolvable tasks.
   accomodations:
     add: Unterkunft anbieten
     find: Unterkunft finden
+    title: Accomodation
+    description: Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.
   evacuation:
     find: Evakuierungsplaner
     add: Bewertung hinzufügen
     request: Bitte um Hilfe
+    description: Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.
+reviews:
+  title: What others say about us
+  tatyanaOvchinnikova: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
+  mariaDiaz: As a volunteer I find the team very talented and easy to work with. Our main leader it's really supportive and friendly. I've learned a lot from him!
+  irinaValigura: A team of volunteers helped me and my friends. Fast, on time. Very, very grateful to WeHelp! Strength to you and good people to help!
+  dipaliMankodi: I joined WeHelp as a volunteer UX designer. I am grateful to be a part of such a good, humanitarian cause. We have an incredibly supportive & friendly team here!
+  arunRajeev: Currently volunteering as a UX Designer. We have a great team, people from different professions, backgrounds, age groups working together for the greater good and helping each other to learn, grow and contribute to the cause. Thank you WeHelp !
+  olgaN: Amazing international team to work with.Thank you WeHelp!
+  olgaIvanova: Thank you very much for your help in exchanging hryvnia for euro at a good rate. Friends, whom I changed, were very grateful!
 menu:
   open: Menü öffnen
   close: Menü schließen
 faq:
   title: FAQ
   items:
-    - question: Wie ist die Organisationsstruktur?
+    - 
+      question: Wie ist die Organisationsstruktur?
       answer: >
         ![](/structure.jpg)
-    - question: Warum sollte ich Freiwillige/r bei WeHelp werden?
+    - 
+      question: Warum sollte ich Freiwillige/r bei WeHelp werden?
       answer: >
         Wir stellen nach 6 Monaten Praktikum ein Zertifikat aus. Siehe [offene Positionen](https://angel.co/company/wehelplive/jobs)
-    - question: Wie kann ich mich einbringen?
+    - 
+      question: Wie kann ich mich einbringen?
       answer: >
         1. Wo finde ich den ganzen Zeitplan? Abonniere [calendar](https://wehelp.live/calendar/)
         2. Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).
         3. Wie betrete ich Slack? [Als Freiwillige/r anmelden](https://wehelp.live/get-involved/) und Sie bekommen eine Einladung zu unserem Slack.
-    - question: Wie kann ich ein Meeting planen?
+    - 
+      question: Wie kann ich ein Meeting planen?
       answer: >
         1. Welche Art von Treffen haben wir? 1-1, Themen besprechen, Retrospektive, Governance-Treffen, Daily Standup, Planning and Review Meetings, Koordinationsmeeting, [lesen Sie mehr](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Wie bereitet man sich auf ein Meeting vor?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Verantwortungen eines Meeting-Hosts](https://patterns.sociocracy30.org/meeting-host.html)
-    - question: Wo bekomme ich WeHelp Markensymbole?
+    - 
+      question: Wo bekomme ich WeHelp Markensymbole?
       answer: >
         Alle herunterladbaren Dateien finden Sie in unserem [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) im **Design/Branding** Ordner.
         Quelldateien sind in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
-    - question: Wo finde ich alle verfügbaren Informationen über WeHelp?
+    - 
+      question: Wo finde ich alle verfügbaren Informationen über WeHelp?
       answer: >
         https://handbook.wehelp.live
