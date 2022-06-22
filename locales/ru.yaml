@@ -19,8 +19,8 @@ domains:
   code: Код
   design: Дизайн
   talents: Таланты
-  operations: Операции
-  customer: Customer
+  operations: Операциионная деятельность
+  customer: Клиент
 company:
   title: Компания
   home: Домашний
@@ -33,30 +33,30 @@ company:
   terms: Условия
   privacy: Приватность
 team:
-  title: We are 27 volunteers from across the globe
-  name: Our Team
+  title: Мы - 27 волонтеров со всего мира
+  name: Наша команда
   join: Принять участие
   calendar: Календарь
   jobs: Задания
 services:
   title: Услуги
-  question: What are we doing?
+  question: Что мы делаем?
   problems:
-    title: Big Problems
-    description: We bring experts to solve big problems. There are no unsolvable tasks.
+    title: Комплексные проблемы
+    description: Мы привлекаем экспертов для нахождения решений в сложных ситуациях. Нерешаемых задач не существует.
   accomodations:
     add: Предложить жилье
     find: Найти жилье
-    title: Accomodation
-    description: Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.
+    title: Жилье
+    description: Объединяем беженцев, хозяев жилья, координаторов центров приема беженцев и волонтеров.
   evacuation:
     find: Планировщик эвакуации
     add: Добавить отзыв
     request: Запросить помощь
-    description: Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.
+    description: Рекомендации, основаны на отзывах реальных людей об услугах, которые действительно помогли им решить их проблемы с помощью удобного поиска.
 reviews:
-  title: What others say about us
-  tatyanaOvchinnikova: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
+  title: Что о нас говорят
+  tatyanaOvchinnikova: Большое спасибо волонтерам и семье, которая согласилась нас принять, правительству Германии и всем остальным за помощь и доброту! Мы, наши друзья и вся наша семья очень благодарны правительству Германии и сердцам людей за их помощь и заботу!
   mariaDiaz: Как волонтер, я нахожу команду очень талантливой и с ней легко работать. Основатель компании очень дружелюбен и всегда поддерживает команду. Я многому у него научилась!
   irinaValigura: Команда волонтеров помогла мне и моим друзьям. Быстро и вовремя. Очень, очень благодарна WeHelp! Сил Вам и добрых людей в помощь!
   dipaliMankodi: Я присоединилась WeHelp в качестве волонтера, UX-дизайнера. Я благодарна, что являюсь частью такого доброго дела. У нас невероятно сплоченная и дружная команда!
