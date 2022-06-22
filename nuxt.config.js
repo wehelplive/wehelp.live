@@ -53,8 +53,8 @@ export default defineNuxtConfig({
     ],
   },
   publicRuntimeConfig: {
-    BASE_ID: process.env.BASE_ID,
-    API_KEY: process.env.API_KEY,
+    BASE_ID: 'appBBi7Uoylg0ILTk',
+    API_KEY: 'keydEXl97LFVx03hM',
   },
   googleFonts: {
     display: 'swap',
