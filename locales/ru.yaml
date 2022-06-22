@@ -6,7 +6,7 @@ hero:
 mission:
   title: Наша миссия
   subtitle: Эффективная организация добровольческой деятельности
-  description: There are many people who are eady to help and who need help. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
+  description: Есть много людей, готовых помочь и нуждающихся в помощи. Существующие организации не справляются с координацией и хаосом и многие вопросы остаются нерешенными. Необходимо находить и устранять пробелы в процессах, связывать организации вместе, наладить координацию для того, чтобы эффективно справляться с существующей ситуацией.
 values:
   title: Наши основные ценности
   subtitle: Мы стремимся быть <span class="font-bold text-green-500">надежным</span> источником, дающим людям <span class="font-bold text-orange-500">надежды</span> и помогающим им <span class="font-bold text-blue-500">эффективными действиями</span>
@@ -57,12 +57,12 @@ services:
 reviews:
   title: What others say about us
   tatyanaOvchinnikova: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
-  mariaDiaz: As a volunteer I find the team very talented and easy to work with. Our main leader it's really supportive and friendly. I've learned a lot from him!
-  irinaValigura: A team of volunteers helped me and my friends. Fast, on time. Very, very grateful to WeHelp! Strength to you and good people to help!
-  dipaliMankodi: I joined WeHelp as a volunteer UX designer. I am grateful to be a part of such a good, humanitarian cause. We have an incredibly supportive & friendly team here!
-  arunRajeev: Currently volunteering as a UX Designer. We have a great team, people from different professions, backgrounds, age groups working together for the greater good and helping each other to learn, grow and contribute to the cause. Thank you WeHelp !
-  olgaN: Amazing international team to work with.Thank you WeHelp!
-  olgaIvanova: Большое спасибо за вашу помощь в обмене гривны на евро по хорошей цене. Друзья, которым я обменял деньги, были благодарны!
+  mariaDiaz: Как волонтер, я нахожу команду очень талантливой и с ней легко работать. Основатель компании очень дружелюбен и всегда поддерживает команду. Я многому у него научилась!
+  irinaValigura: Команда волонтеров помогла мне и моим друзьям. Быстро и вовремя. Очень, очень благодарна WeHelp! Сил Вам и добрых людей в помощь!
+  dipaliMankodi: Я присоединилась WeHelp в качестве волонтера, UX-дизайнера. Я благодарна, что являюсь частью такого доброго дела. У нас невероятно сплоченная и дружная команда!
+  arunRajeev: В настоящее время работает волонтером в качестве UX-дизайнера. У нас отличная команда, люди разных профессий, происхождения, возрастных групп, которые работают вместе для общего блага и помогают друг другу учиться, расти и вносить свой вклад в общее дело. Спасибо WeHelp!
+  olgaN: Потрясающая международная команда. Спасибо WeHelp!
+  olgaIvanova: Большое спасибо за вашу помощь в обмене гривны на евро по хорошей цене. Друзья, которым я обменяла деньги, были благодарны!
 menu:
   open: Открыть меню
   close: Закрыть меню
