@@ -1,4 +1,7 @@
+import { resolve } from 'path'
 import { defineNuxtConfig } from 'nuxt3'
+import { createCommonJS } from 'mlly'
+const { __dirname } = createCommonJS(import.meta.url)
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -51,6 +54,15 @@ export default defineNuxtConfig({
           'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap',
       },
     ],
+  },
+  hooks: {
+    'pages:extend'(pages) {
+      pages.push({
+        name: 'Services',
+        path: '/services/:city?/:services?/',
+        file: resolve(__dirname, 'pages/services/index.vue'),
+      })
+    },
   },
   publicRuntimeConfig: {
     BASE_ID: 'appBBi7Uoylg0ILTk',
