@@ -12,6 +12,10 @@ export const navigation = {
       name: 'services.accomodations.add',
       to: '/host',
     },
+    {
+      name: '',
+      to: '/i-need-help',
+    },
   ],
   services: [
     {

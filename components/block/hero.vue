@@ -7,7 +7,7 @@
         <div class="text-center">
           <div class="flex-column gap-8">
             <h1
-              class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800  sm:text-headline-2"
+              class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800 sm:text-headline-2"
             >
               <span class="block xl:inline">{{ t('hero.title') }}</span>
             </h1>
@@ -26,6 +26,12 @@
                 class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.accomodations.find') }}
+              </NuxtLink>
+              <NuxtLink
+                to="/i-need-help"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
+              >
+                {{ t('hero.ineedhelp') }}
               </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">

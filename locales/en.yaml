@@ -2,6 +2,7 @@ hero:
   title: Evacuation to EU
   description: We help to solve complex problems in the Ukrainian refugee crisis in EU
   reviews: '{stars} stars - {reviews} reviews'
+  ineedhelp: 'I need help'
 mission:
   title: Our mission
   subtitle: Effective organization of volunteer activities
