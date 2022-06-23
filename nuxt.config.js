@@ -1,5 +1,7 @@
 import { resolve } from 'pathe'
 import { defineNuxtConfig } from 'nuxt3'
+import { createCommonJS } from 'mlly'
+const { __dirname } = createCommonJS(import.meta.url)
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({

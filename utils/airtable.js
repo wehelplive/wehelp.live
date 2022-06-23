@@ -1,7 +1,7 @@
 /* global useRuntimeConfig, $fetch */
 let cities = null
 
-export const fetchServices = async (offset = null) => {
+export const fetchServices = async (offset = null, filter = {}) => {
   try {
     const config = useRuntimeConfig()
     const options = {
