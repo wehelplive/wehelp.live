@@ -6,21 +6,21 @@ hero:
 mission:
   title: Unsere Aufgabe
   subtitle: Effektive Organisation von Freiwilligentätigkeiten
-  description: There are many people who are eady to help and who need help. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
+  description: Es gibt viele Leute, die bereit sind zu helfen und die Hilfe benötigen. Bestehende Organisationen schaffen die Koordinierung nicht, und es entsteht Chaos und viele Problemstellungen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
 values:
   title: Unsere Kernwerte
   subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
 domains:
   partnerships: Partnerschaften
   communications: Kommunikation
-  mission: Aufgabe
+  mission: Mission
   coordination: Koordination
   product: Produkt
   code: Code
   design: Design
   talents: Talente
   operations: Operationen
-  customer: Customer
+  customer: Kunde
 company:
   title: Firma
   home: Zuhause
@@ -33,36 +33,36 @@ company:
   terms: Begriffe
   privacy: Privatsphäre
 team:
-  title: We are 27 volunteers from across the globe
-  name: Our Team
+  title: Wir sind 27 Freiwillige aus der ganzen Welt
+  name: Unser Team
   join: Sich beteiligen
   calendar: Kalender
   jobs: Jobs
 services:
   title: Dienste
-  question: What are we doing?
+  question: Was tun wir?
   problems:
-    title: Big Problems
-    description: We bring experts to solve big problems. There are no unsolvable tasks.
+    title: Große Probleme
+    description: Wir bringen Experten für die Lösung großer Probleme und es gibt keine unlösbaren Aufgaben.
   accomodations:
     add: Unterkunft anbieten
     find: Unterkunft finden
-    title: Accomodation
-    description: Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.
+    title: Unterkunft
+    description: Verbessern den passenden Prozess und machen Flüchtlinger, Host, Shelter Operator und Freiwillige glücklich.
   evacuation:
     find: Evakuierungsplaner
     add: Bewertung hinzufügen
     request: Bitte um Hilfe
-    description: Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.
+    description: Empfehlungssystem basierend auf Reviews von echten Leuten über Dienstleistungen, die ihnen wirklich geholfen haben, ihre Probleme mit einfacher Suche zu lösen.
 reviews:
-  title: What others say about us
-  tatyanaOvchinnikova: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
-  mariaDiaz: As a volunteer I find the team very talented and easy to work with. Our main leader it's really supportive and friendly. I've learned a lot from him!
-  irinaValigura: A team of volunteers helped me and my friends. Fast, on time. Very, very grateful to WeHelp! Strength to you and good people to help!
-  dipaliMankodi: I joined WeHelp as a volunteer UX designer. I am grateful to be a part of such a good, humanitarian cause. We have an incredibly supportive & friendly team here!
-  arunRajeev: Currently volunteering as a UX Designer. We have a great team, people from different professions, backgrounds, age groups working together for the greater good and helping each other to learn, grow and contribute to the cause. Thank you WeHelp !
-  olgaN: Amazing international team to work with.Thank you WeHelp!
-  olgaIvanova: Thank you very much for your help in exchanging hryvnia for euro at a good rate. Friends, whom I changed, were very grateful!
+  title: Was andere über uns sagen
+  tatyanaOvchinnikova: Vielen Dank an die Freiwilligen, an die Familie, die sich bereit erklärt hat, uns, die Bundesregierung und alle anderen für ihre Hilfe und Freundlichkeit zu empfangen! Wir sind die Freunde, die Familie, die gut informiert und nicht überrascht sind. die deutsche Regierung und alle anderen Menschen für ihre Hilfe und Fürsorge sehr dankbar!
+  mariaDiaz: Als Freiwilliger finde ich das Team sehr begabt und leicht zu arbeiten. Unser Hauptführer ist wirklich unterstützend und freundlich. Ich habe viel von ihm gelernt!
+  irinaValigura: Ein Team von Freiwilligen half mir und meinen Freunden. Schnell, pünktlich und sehr dankbar für WeHelp! Stärke dir und gute Leute zu helfen!
+  dipaliMankodi: Ich bin als Freiwilliger UX-Designer bei WeHelp eingetreten und bin dankbar, ein Teil einer solch guten humanitären Sache zu sein. Wir haben hier ein unglaublich hilfsbereites und freundliches Team!
+  arunRajeev: Zurzeit freiwillig als UX Designer. Wir haben ein großartiges Team, Leute aus verschiedenen Berufen, Hintergründen, Altersgruppen, die zum Wohle der Menschen zusammenarbeiten und sich gegenseitig helfen, zu lernen, zu wachsen und zur Sache beizutragen. Vielen Dank WeHelp !
+  olgaN: Wunderschönes internationales Team zu arbeiten mit.Vielen Dank WeHelp!
+  olgaIvanova: Vielen Dank für Ihre Hilfe beim Austausch von Hrywnia gegen Euro zu einem guten Preis. Freunde, die ich geändert habe, waren sehr dankbar!
 menu:
   open: Menü öffnen
   close: Menü schließen
