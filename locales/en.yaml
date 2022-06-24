@@ -48,7 +48,11 @@ team:
   calendar: Calendar
   jobs: Jobs
 services:
-  title: Services
+  type:
+    accomodations: Accomodations
+    medical: Medical Assistance
+    mobile: Mobile
+    other: Something Else
   question: What are we doing?
   problems:
     title: Big Problems
@@ -106,3 +110,5 @@ faq:
     - question: Where do I find all available information about WeHelp?
       answer: >
         https://handbook.wehelp.live
+i-need-help:
+  title: What help do you need?
