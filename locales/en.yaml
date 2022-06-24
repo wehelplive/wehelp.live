@@ -111,4 +111,16 @@ faq:
       answer: >
         https://handbook.wehelp.live
 i-need-help:
-  title: What help do you need?
+  what-help:
+    title: What help do you need?
+  how-long:
+    title: How long can you wait?
+    duration:
+      1h: 1 Hour
+      24h: 24 Hours
+      7d: 7 Days
+      wait: I Can Wait
+  where:
+    title: Where are you now?
+    use-my-location: Use my location
+    next: Next

@@ -8,7 +8,7 @@
               class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800 sm:text-headline-2"
             >
               <span class="block xl:inline">
-                {{ t('i-need-help.what-help.title') }}</span
+                {{ t('i-need-help.how-long.title') }}</span
               >
             </h1>
           </div>
@@ -20,7 +20,7 @@
                 to="/"
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.type.accomodations') }}
+                {{ t('i-need-help.how-long.1h') }}
               </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">
@@ -28,7 +28,7 @@
                 to="/"
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.type.medical') }}
+                {{ t('i-need-help.how-long.24h') }}
               </NuxtLink>
             </div>
           </div>
@@ -40,7 +40,7 @@
                 to="/"
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.type.mobile') }}
+                {{ t('i-need-help.how-long.7d') }}
               </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">
@@ -48,7 +48,7 @@
                 to="/"
                 class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.type.other') }}
+                {{ t('i-need-help.how-long.wait') }}
               </NuxtLink>
             </div>
           </div>
