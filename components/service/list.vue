@@ -1,12 +1,17 @@
 <template>
   <div class="grid grid-cols-auto-fit gap-6 p-2">
-    <ul v-for="service in services" :key="service.id" role="list">
+    <ul
+      v-for="service in services"
+      :key="service.id"
+      role="list"
+      class="grid grid-cols-auto-fit auto-rows-fr"
+    >
       <ServiceItem
         :field-id="service.id"
         :name="service.fields.Name"
         :description="service.fields.Description"
         :url="service.fields.URL"
-        :location="service.fields.Location ? service.fields.Location[0] : null"
+        :location="service.fields.Location ? service.fields.Location : null"
         :type="service.fields.Type"
         :services="service.fields.Services"
         :phone="service.fields.Phone"

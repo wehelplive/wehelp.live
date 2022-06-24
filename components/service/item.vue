@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-1 flex flex-col p-5  bg-white-500 box-border rounded-lg border-2 border-solid border-black-400"
+    class="col-span-1 flex flex-col p-5 bg-white-500 box-border rounded-lg border-2 border-solid border-slate-200"
   >
     <div class="flex flex-col pr-3 mb-4">
       <div class="font-nunito text-subtitle mb-2">
@@ -39,17 +39,23 @@
       </div>
     </div>
 
-    <LocationItem :id="location" />
+    <div v-if="location" class="flex flex-row mb-4 items-center">
+      <LocationMarkerIcon class="h-5 w-5 mr-2 text-grey-500" />
+      <div class="text-zinc-500 flex-1 font-sans">
+        {{ location.fields.Name }}
+      </div>
+    </div>
   </div>
 </template>
 <script>
-import { PhoneIcon, LinkIcon } from '@heroicons/vue/solid'
+import { PhoneIcon, LinkIcon, LocationMarkerIcon } from '@heroicons/vue/solid'
 
 export default {
   name: 'ServiceItem',
   components: {
     PhoneIcon,
     LinkIcon,
+    LocationMarkerIcon,
   },
   props: {
     fieldId: {
@@ -69,8 +75,8 @@ export default {
       default: '',
     },
     location: {
-      type: String,
-      default: '',
+      type: Object,
+      default: null,
     },
     type: {
       type: String,
