@@ -2,8 +2,16 @@
   <div>
     <div v-if="services">
       <div class="flex flex-row">
-        <ListBoxItem :items="locations" @selected="onLocationSelected" />
-        <ListBoxItem :items="serviceTypes" @selected="onServiceTypeSelected" />
+        <ListBoxItem
+          :items="locations"
+          :default-value="location"
+          @selected="onLocationSelected"
+        />
+        <ListBoxItem
+          :items="serviceTypes"
+          :default-value="serviceType"
+          @selected="onServiceTypeSelected"
+        />
       </div>
       <ServiceList :services="filteredServices" />
     </div>
@@ -20,17 +28,22 @@ import { fetchServices } from '../../utils/airtable'
 
 export default {
   name: 'Services',
-  data: () => ({
-    services: null,
-    location: null,
-    serviceType: null,
-  }),
+  data() {
+    const params = this.$route.params
+    const loc = this.capitalizeFirstLetter(params.location)
+    const serv = this.capitalizeFirstLetter(params.service)
+    return {
+      services: null,
+      location: loc || 'Any-location',
+      serviceType: serv || 'Any-service',
+    }
+  },
   computed: {
     filteredServices() {
       const capLocation = this.location
       const capService = this.serviceType
 
-      if (capLocation === 'All' || capService === 'All') {
+      if (capLocation === 'Any-location' || capService === 'Any-service') {
         return this.services
       }
 
@@ -71,7 +84,7 @@ export default {
       const locations = this.services
         .filter((service) => service.fields.Location?.fields?.Name)
         .map((service) => service.fields.Location.fields.Name)
-        .concat('All')
+        .concat('Any-location')
         .sort()
       return [...new Set(locations)].map((location) => ({
         name: location,
@@ -82,7 +95,7 @@ export default {
         .filter((service) => service.fields?.Services)
         .map((service) => service.fields.Services)
         .flat(1)
-        .concat('All')
+        .concat('Any-service')
         .sort()
       return [...new Set(serviceTypes)].map((serviceType) => ({
         name: serviceType,
@@ -91,13 +104,24 @@ export default {
   },
   async mounted() {
     this.services = await fetchServices()
+    if (!this.$route.params.location && !this.$route.params.service) {
+      this.updateRoute(`/${this.location}/${this.serviceType}`)
+    }
   },
   methods: {
+    capitalizeFirstLetter(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1)
+    },
     onLocationSelected(location) {
       this.location = location
+      this.updateRoute(`/${location}/${this.serviceType}`)
     },
     onServiceTypeSelected(serviceType) {
       this.serviceType = serviceType
+      this.updateRoute(`/${this.location}/${serviceType}`)
+    },
+    updateRoute(path) {
+      history.pushState({}, null, this.$route.path.replace(/\/$/, '') + path)
     },
   },
 }

@@ -5,7 +5,9 @@
         <ListboxButton
           class="relative w-full cursor-default rounded-lg bg-white-500 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm"
         >
-          <span class="block truncate">{{ selectedItem || 'select' }}</span>
+          <span class="block truncate">{{
+            selectedItem ? selectedItem : defaultValue
+          }}</span>
           <span
             class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
           >
@@ -79,6 +81,10 @@ export default {
     items: {
       type: Array,
       default: () => [],
+    },
+    defaultValue: {
+      type: String,
+      default: '',
     },
   },
   data: () => ({
