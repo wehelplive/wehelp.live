@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-if="services.length">
+    <div v-if="services">
+      <div class="flex flex-row">
+        <ListBoxItem :items="locations" @selected="onLocationSelected" />
+        <ListBoxItem :items="serviceTypes" @selected="onServiceTypeSelected" />
+      </div>
       <ServiceList :services="filteredServices" />
     </div>
     <div
@@ -17,15 +21,18 @@ import { fetchServices } from '../../utils/airtable'
 export default {
   name: 'Services',
   data: () => ({
-    services: [],
+    services: null,
+    location: null,
+    serviceType: null,
   }),
   computed: {
     filteredServices() {
-      const params = this.$route.params
-      const capLocation =
-        params?.location && this.capitalizeFirstLetter(params.location)
-      const capService =
-        params?.service && this.capitalizeFirstLetter(params.service)
+      const capLocation = this.location
+      const capService = this.serviceType
+
+      if (capLocation === 'All' || capService === 'All') {
+        return this.services
+      }
 
       if (capLocation && capService) {
         return this.services.filter((service) => {
@@ -60,13 +67,37 @@ export default {
         return this.services
       }
     },
+    locations() {
+      const locations = this.services
+        .filter((service) => service.fields.Location?.fields?.Name)
+        .map((service) => service.fields.Location.fields.Name)
+        .concat('All')
+        .sort()
+      return [...new Set(locations)].map((location) => ({
+        name: location,
+      }))
+    },
+    serviceTypes() {
+      const serviceTypes = this.services
+        .filter((service) => service.fields?.Services)
+        .map((service) => service.fields.Services)
+        .flat(1)
+        .concat('All')
+        .sort()
+      return [...new Set(serviceTypes)].map((serviceType) => ({
+        name: serviceType,
+      }))
+    },
   },
   async mounted() {
     this.services = await fetchServices()
   },
   methods: {
-    capitalizeFirstLetter(str) {
-      return str.charAt(0).toUpperCase() + str.slice(1)
+    onLocationSelected(location) {
+      this.location = location
+    },
+    onServiceTypeSelected(serviceType) {
+      this.serviceType = serviceType
     },
   },
 }
