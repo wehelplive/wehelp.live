@@ -10,18 +10,42 @@ export const fetchServices = async (offset = null) => {
       },
     }
     const offSet = offset ? `offset=${offset}` : ''
-    const url = `https://api.airtable.com/v0/${config.BASE_ID}/Services?view=Grid%20view&${offSet}`
+    const url = `https://api.airtable.com/v0/${config.BASE_ID}/Services?view=Everything&${offSet}`
     const response = await $fetch(url, options)
 
     if (response?.offset) {
       const nextResponse = await fetchServices(response.offset)
-      return [...response.records, ...nextResponse]
+      return await getLocation([...response.records, ...nextResponse])
     }
-    return response.records
+    return await getLocation(response.records)
   } catch (error) {
     console.log(error)
     return []
   }
+}
+
+const getLocation = (data) => {
+  let records = data
+  records = Promise.all(
+    records.map(async (record) => {
+      if (
+        record.fields?.Location !== undefined &&
+        record.fields.Location.length > 0
+      ) {
+        const location = await getCities(record.fields?.Location[0])
+        return {
+          ...record,
+          fields: {
+            ...record.fields,
+            Location: location,
+          },
+        }
+      } else {
+        return record
+      }
+    })
+  )
+  return records
 }
 
 export const fetchCities = async (offset = null) => {

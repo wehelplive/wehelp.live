@@ -84,7 +84,7 @@
                   <ul role="list" class="mt-4 space-y-4">
                     <li v-for="item in navigation.services" :key="item.name">
                       <a
-                        :href="item.href"
+                        :href="item.to"
                         class="text-base w-max text-grey-600 hover:text-grey-800"
                       >
                         {{ t(item.name) }}
