@@ -1,19 +1,28 @@
 <template>
   <div>
     <div v-if="services">
-      <div class="flex flex-row">
-        <ListBoxItem
-          :items="locations"
-          :default-value="location"
-          @selected="onLocationSelected"
-        />
-        <ListBoxItem
-          :items="serviceTypes"
-          :default-value="serviceType"
-          @selected="onServiceTypeSelected"
-        />
+      <div class="flex flex-column justify-center sm:justify-start py-10">
+        <div class="flex flex-row gap-2 m-2">
+          <ListBoxItem
+            :items="serviceTypes"
+            :default-value="serviceType"
+            @selected="onServiceTypeSelected"
+          />
+          <ListBoxItem
+            :items="locations"
+            :default-value="location"
+            @selected="onLocationSelected"
+          />
+        </div>
       </div>
-      <ServiceList :services="filteredServices" />
+      <div v-if="filteredServices.length">
+        <ServiceList :services="filteredServices" />
+      </div>
+      <div v-else>
+        <div class="flex justify-center font-sans sm:justify-start p-10">
+          No service found.
+        </div>
+      </div>
     </div>
     <div
       v-else
@@ -30,8 +39,8 @@ export default {
   name: 'Services',
   data() {
     const params = this.$route.params
-    const loc = this.capitalizeFirstLetter(params.location)
     const serv = this.capitalizeFirstLetter(params.service)
+    const loc = this.capitalizeFirstLetter(params.location)
     return {
       services: null,
       location: loc || 'Any-location',
@@ -43,36 +52,23 @@ export default {
       const capLocation = this.location
       const capService = this.serviceType
 
-      if (capLocation === 'Any-location' || capService === 'Any-service') {
+      if (capLocation === 'Any-location' && capService === 'Any-service') {
         return this.services
       }
 
       if (capLocation && capService) {
         return this.services.filter((service) => {
-          if (
-            (service.fields?.Location !== undefined &&
-              service.fields.Location.fields.Name === capLocation) ||
-            (service.fields?.Services !== undefined &&
-              service.fields.Services.includes(capService))
-          ) {
-            return service
-          }
-        })
-      } else if (capLocation) {
-        return this.services.filter((service) => {
-          if (
-            service.fields?.Location !== undefined &&
-            service.fields.Location.fields.Name === capLocation
-          ) {
-            return service
-          }
-        })
-      } else if (capService) {
-        return this.services.filter((service) => {
-          if (
-            service.fields?.Services !== undefined &&
-            service.fields.Services.includes(capService)
-          ) {
+          const checkLocation =
+            capLocation === 'Any-location'
+              ? true
+              : service.fields?.Location?.fields?.Name === capLocation
+          const checkService =
+            capService === 'Any-service'
+              ? true
+              : service.fields?.Services
+              ? service.fields.Services.includes(capService)
+              : false
+          if (checkLocation && checkService) {
             return service
           }
         })
@@ -104,8 +100,8 @@ export default {
   },
   async mounted() {
     this.services = await fetchServices()
-    if (!this.$route.params.location && !this.$route.params.service) {
-      this.updateRoute(`/${this.location}/${this.serviceType}`)
+    if (!this.$route.params.location || !this.$route.params.service) {
+      this.updateRoute(`/${this.serviceType}/${this.location}`)
     }
   },
   methods: {
@@ -114,14 +110,15 @@ export default {
     },
     onLocationSelected(location) {
       this.location = location
-      this.updateRoute(`/${location}/${this.serviceType}`)
+      this.updateRoute(`/${this.serviceType}/${location}`)
     },
     onServiceTypeSelected(serviceType) {
       this.serviceType = serviceType
-      this.updateRoute(`/${this.location}/${serviceType}`)
+      this.updateRoute(`/${serviceType}/${this.location}`)
     },
     updateRoute(path) {
-      history.pushState({}, null, this.$route.path.replace(/\/$/, '') + path)
+      history.replaceState({}, null, '/services' + path)
+      console.log(this.filteredServices)
     },
   },
 }

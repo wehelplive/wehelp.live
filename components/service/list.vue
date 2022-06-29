@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-auto-fit gap-6 p-2">
+  <div class="grid grid-cols-auto-fit auto-rows-fr gap-4 p-2 pb-10">
     <ul
       v-for="service in services"
       :key="service.id"
       role="list"
-      class="grid grid-cols-auto-fit auto-rows-fr"
+      class="grid grid-cols-auto-fit"
     >
       <ServiceItem
         :field-id="service.id"

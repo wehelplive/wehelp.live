@@ -1,12 +1,12 @@
 <template>
-  <div class="relative m-2 w-60">
+  <div class="relative w-44 sm:w-60 p-1">
     <Listbox v-model="selectedItem">
-      <div class="relative mt-1">
+      <div class="relative">
         <ListboxButton
-          class="relative w-full cursor-default rounded-lg bg-white-500 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm"
+          class="relative w-full cursor-default rounded-lg bg-white-500 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-zinc-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm"
         >
           <span class="block truncate">{{
-            selectedItem ? selectedItem : defaultValue
+            selectedItem ? selectedItem : defaultItem
           }}</span>
           <span
             class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
@@ -90,6 +90,13 @@ export default {
   data: () => ({
     selectedItem: '',
   }),
+  computed: {
+    defaultItem() {
+      return this.items.map((item) => item.name).includes(this.defaultValue)
+        ? this.defaultValue
+        : 'select'
+    },
+  },
   watch: {
     selectedItem(newItem, _) {
       this.$emit('selected', newItem)
