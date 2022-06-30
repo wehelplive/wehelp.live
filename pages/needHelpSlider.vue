@@ -11,14 +11,17 @@
       <swiper-slide
         class="flex flex-row items-center justify-center overflow-hidden py-14 px-6"
       >
-        <I-need-helpWhat-help />
         slide 1
       </swiper-slide>
       <swiper-slide
         class="flex flex-row items-center justify-center overflow-hidden py-14 px-6"
       >
-        <!-- <I-need-helpWhat-help /> -->
         slide 2
+      </swiper-slide>
+      <swiper-slide
+        class="flex flex-row items-center justify-center overflow-hidden py-14 px-6"
+      >
+        slide 3
       </swiper-slide>
     </swiper>
   </div>

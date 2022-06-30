@@ -8,7 +8,7 @@
               class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800 sm:text-headline-2"
             >
               <span class="block xl:inline">
-                {{ t('i-need-help.how-long.title') }}</span
+                {{ t('needHelp.service.title') }}</span
               >
             </h1>
           </div>
@@ -16,40 +16,40 @@
             class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:max-w-sm sm:gap-4"
           >
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/"
+              <button
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="$router.push({ query: { service: 'accomodations' } })"
               >
-                {{ t('i-need-help.how-long.1h') }}
-              </NuxtLink>
+                {{ t('services.type.accomodations') }}
+              </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/"
+              <button
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="$router.push({ query: { service: 'medical' } })"
               >
-                {{ t('i-need-help.how-long.24h') }}
-              </NuxtLink>
+                {{ t('services.type.medical') }}
+              </button>
             </div>
           </div>
           <div
             class="mt-2 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:max-w-sm sm:gap-4 sm:mt-4"
           >
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/"
+              <button
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="$router.push({ query: { service: 'mobile' } })"
               >
-                {{ t('i-need-help.how-long.7d') }}
-              </NuxtLink>
+                {{ t('services.type.mobile') }}
+              </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/"
+              <button
                 class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="$router.push({ query: { service: 'other' } })"
               >
-                {{ t('i-need-help.how-long.wait') }}
-              </NuxtLink>
+                {{ t('services.type.other') }}
+              </button>
             </div>
           </div>
         </div>
@@ -61,6 +61,7 @@
 import { useI18n } from 'vue-i18n'
 
 export default {
+  name: 'NeedHelpService',
   setup() {
     const { t } = useI18n()
     return { t }

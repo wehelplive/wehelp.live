@@ -1,8 +1,9 @@
 hero:
   title: Evacuation to EU
+  need: Need
   description: We help to solve complex problems in the Ukrainian refugee crisis in EU
   reviews: '{stars} stars - {reviews} reviews'
-  ineedhelp: 'I need help'
+  needHelp: 'I need help'
 mission:
   title: Our mission
   subtitle: Effective organization of volunteer activities
@@ -48,6 +49,7 @@ team:
   calendar: Calendar
   jobs: Jobs
 services:
+  title: Evacuation
   type:
     accomodations: Accomodations
     medical: Medical Assistance
@@ -110,17 +112,22 @@ faq:
     - question: Where do I find all available information about WeHelp?
       answer: >
         https://handbook.wehelp.live
-i-need-help:
-  what-help:
+needHelp:
+  service:
     title: What help do you need?
-  how-long:
+  duration:
     title: How long can you wait?
-    duration:
+    time:
       1h: 1 Hour
       24h: 24 Hours
       7d: 7 Days
       wait: I Can Wait
-  where:
-    title: Where are you now?
+  location:
+    title: Where are you right now?
     use-my-location: Use my location
+    next: Next
+  contact:
+    title: How can we reach you?
+    mail: Enter you e-mail
+    privacy: I agree to the Terms & Conditions
     next: Next

@@ -13,8 +13,8 @@ export const navigation = {
       to: '/host',
     },
     {
-      name: '',
-      to: '/i-need-help',
+      name: 'hero.needHelp',
+      to: '/needHelp',
     },
   ],
   services: [
