@@ -165,6 +165,7 @@ module.exports = {
       }),
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(300px, 6fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(300px, 6fr))',
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],

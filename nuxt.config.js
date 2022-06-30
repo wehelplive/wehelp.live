@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     'pages:extend'(pages) {
       pages.push({
         name: 'Services',
-        path: '/services/:service?/:location?/',
+        path: '/services/:location?/:service?/',
         file: resolve(__dirname, 'pages/services/index.vue'),
       })
     },
