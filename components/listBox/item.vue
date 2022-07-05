@@ -63,9 +63,9 @@ import {
   ListboxButton,
   ListboxOptions,
   ListboxOption,
+  MenuItems,
 } from '@headlessui/vue'
 import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid'
-
 export default {
   name: 'ListBox',
   components: {
@@ -82,6 +82,7 @@ export default {
       type: Array,
       default: () => [],
     },
+
     defaultValue: {
       type: String,
       default: '',

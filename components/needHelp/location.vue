@@ -20,7 +20,7 @@
                 <select
                   id="place"
                   name="place"
-                  class="appearance-none block w-full h-16 bg-none bg-white-500 border border-zinc-500 rounded-xl text-body pl-5 pr-12 py-2 text-zinc-500 focus:outline-none focus:ring-zinc-50 focus:border-zinc-500"
+                  class="appearance-none block w-full h-16 bg-none bg-white-500 border border-zinc-50 hover:border-zinc-500 rounded-xl text-body pl-5 pr-12 py-2 text-zinc-500 focus:outline-none focus:ring-zinc-50 focus:border-zinc-500"
                 >
                   <option>Argentina</option>
                   <option>Australia</option>
@@ -37,10 +37,13 @@
                 </div>
               </div>
             </div>
+            <div class="flex flex-row justify-center gap-6 m-1 pb-14 ">
+              <ListBoxItem :items="locations" />
+            </div>
             <div class="w-full h-full flex items-right justify-right">
               <NuxtLink
                 to="/"
-                class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full pl-5 flex justify-right items-right capitalize rounded-3xl text-body"
+                class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full pl-5 flex justify-end capitalize rounded-3xl text-body"
               >
                 {{ t('needHelp.location.use-my-location') }}
               </NuxtLink>
@@ -74,12 +77,37 @@
 </template>
 <script>
 import { useI18n } from 'vue-i18n'
+import { fetchServices } from '../../utils/airtable'
 
 export default {
   name: 'NeedHelpLocation',
   setup() {
     const { t } = useI18n()
     return { t }
+  },
+  computed: {
+    locations() {
+      const locations = this.services
+        // .filter((service) => service.fields.Name)
+        .map((service) => service.fields.Location)
+        .sort()
+      console.log('locations', locations)
+      const locationsSet = [...new Set(locations)].map((location) => ({
+        name: location,
+      }))
+      console.log(locationsSet)
+      return locationsSet
+    },
+  },
+
+  data() {
+    return {
+      services: [],
+    }
+  },
+  async mounted() {
+    this.services = await fetchServices()
+    console.log('services', this.services)
   },
 }
 </script>

@@ -33,8 +33,8 @@
               <input
                 id="checkPrivacy"
                 type="checkbox"
-                class="form-check-input appearance-none h-6 w-6 border border-zinc-500 rounded-3xl bg-white-500 checked:bg-green-500 checked:border-green-600 focus:outline-none transition duration-200 align-center bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                value="1"
+                class="form-check-input font-sans-serif appearance-none h-6 w-6 border border-zinc-500 rounded-3xl bg-white-500 checked:bg-green-500 checked:border-green-600 focus:outline-none transition duration-200 align-center bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                value=""
               />
               <label
                 class="form-check-label mt inline-block text-zinc-800"
@@ -50,7 +50,7 @@
             <div class="w-full h-full flex items-center justify-center"></div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
+                class="disabled:opacity-50 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(

@@ -366,10 +366,10 @@
   dependencies:
     mime "^3.0.0"
 
-"@headlessui/vue@^1.4.2":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.5.0.tgz#8cd4877d3d344e482073a04ae8e3b7f987bb267c"
-  integrity sha512-jAp6XYpqdEv32xhszaj5ejvjaX5qhu20sCbxu7lplePEfZL+4ffabivJBBTZAiPWczqAXmnZWNWG5DOyqjRa4w==
+"@headlessui/vue@^1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.6.5.tgz#d34005e7a19cac5cc95df82420a20bee529b65a1"
+  integrity sha512-C/BeTVuowTDLkGgUd6UfiPZVDLdR7OTnd8o4wF37Ub9Js1uhQ3XSTfitdZvlJALUqeQ30j+5Hk3KyjVDLQ3GYQ==
 
 "@heroicons/vue@^1.0.5":
   version "1.0.6"
