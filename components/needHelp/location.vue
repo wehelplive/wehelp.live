@@ -38,7 +38,7 @@
               </div>
             </div>
             <div class="flex flex-row justify-center gap-6 m-1 pb-14 ">
-              <ListBoxItem :items="locations" />
+              <ListBoxItem :items="locations" @selected="onLocationSelected" />
             </div>
             <div class="w-full h-full flex items-right justify-right">
               <NuxtLink
@@ -85,29 +85,32 @@ export default {
     const { t } = useI18n()
     return { t }
   },
-  computed: {
-    locations() {
-      const locations = this.services
-        // .filter((service) => service.fields.Name)
-        .map((service) => service.fields.Location)
-        .sort()
-      console.log('locations', locations)
-      const locationsSet = [...new Set(locations)].map((location) => ({
-        name: location,
-      }))
-      console.log(locationsSet)
-      return locationsSet
-    },
-  },
 
   data() {
     return {
       services: [],
     }
   },
+  computed: {
+    locations() {
+      const locations = this.services
+        .filter((service) => service.fields.Location?.fields?.Name)
+        .map((service) => service.fields.Location.fields.Name)
+        .sort()
+      const locationsSet = [...new Set(locations)].map((location) => ({
+        name: location,
+      }))
+      return locationsSet
+    },
+  },
   async mounted() {
     this.services = await fetchServices()
-    console.log('services', this.services)
+  },
+
+  methods: {
+    onLocationSelected(location) {
+      this.location = location
+    },
   },
 }
 </script>
