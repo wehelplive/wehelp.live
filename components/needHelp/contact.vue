@@ -33,7 +33,7 @@
             <div class="form-group form-check mb-6">
               <input
                 id="checkPrivacy"
-                v-model="checked"
+                v-model="termsChecked"
                 type="checkbox"
                 class="form-check-input font-sans-serif appearance-none h-6 w-6 border border-zinc-500 rounded-3xl bg-white-500 checked:bg-green-500 checked:border-green-600 focus:outline-none transition duration-200 align-center bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                 value="false"
@@ -53,13 +53,13 @@
 
             <div class="w-full h-full flex items-center justify-center">
               <button
-                :disabled="!email.length || !checked"
-                class="disabled:opacity-50 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
+                :disabled="!email.length || !termsChecked"
+                class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
                       { ...this.$route.query },
-                      { contact: 'hsgdsf' }
+                      { contact: 'found' }
                     ),
                   })
                 "
@@ -85,7 +85,7 @@ export default {
   data() {
     return {
       email: '',
-      checked: false,
+      termsChecked: false,
     }
   },
 }

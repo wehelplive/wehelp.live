@@ -45,7 +45,7 @@
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="$router.push({ query: { service: 'other' } })"
               >
                 {{ t('services.type.other') }}

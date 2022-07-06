@@ -40,7 +40,7 @@
             <div class="w-full h-full flex items-center justify-center">
               <button
                 :disabled="!location"
-                class="disabled:opacity-50 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
