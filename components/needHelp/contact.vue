@@ -20,6 +20,7 @@
                 <label for="email-address" class="sr-only">Email address</label>
                 <input
                   id="email-address"
+                  v-model="email"
                   name="email-address"
                   type="email"
                   autocomplete="email"
@@ -32,9 +33,10 @@
             <div class="form-group form-check mb-6">
               <input
                 id="checkPrivacy"
+                v-model="checked"
                 type="checkbox"
                 class="form-check-input font-sans-serif appearance-none h-6 w-6 border border-zinc-500 rounded-3xl bg-white-500 checked:bg-green-500 checked:border-green-600 focus:outline-none transition duration-200 align-center bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                value=""
+                value="false"
               />
               <label
                 class="form-check-label mt inline-block text-zinc-800"
@@ -48,14 +50,16 @@
             class="mt-2 gap-2 mx-auto flex flex-col items-right justify-right h-24 sm:max-w-sm sm:gap-4 sm:mt-4"
           >
             <div class="w-full h-full flex items-center justify-center"></div>
+
             <div class="w-full h-full flex items-center justify-center">
               <button
+                :disabled="!email.length || !checked"
                 class="disabled:opacity-50 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
                       { ...this.$route.query },
-                      { contact: 'guest@mail.com' }
+                      { contact: 'hsgdsf' }
                     ),
                   })
                 "
@@ -77,6 +81,12 @@ export default {
   setup() {
     const { t } = useI18n()
     return { t }
+  },
+  data() {
+    return {
+      email: '',
+      checked: false,
+    }
   },
 }
 </script>

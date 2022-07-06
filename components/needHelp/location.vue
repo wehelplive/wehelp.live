@@ -12,41 +12,24 @@
               >
             </h1>
           </div>
+
           <div
             class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:max-w-sm sm:gap-4"
           >
-            <div class="w-full h-full">
-              <div class="mt-2 relative">
-                <select
-                  id="place"
-                  name="place"
-                  class="appearance-none block w-full h-16 bg-none bg-white-500 border border-zinc-50 hover:border-zinc-500 rounded-xl text-body pl-5 pr-12 py-2 text-zinc-500 focus:outline-none focus:ring-zinc-50 focus:border-zinc-500"
-                >
-                  <option>Argentina</option>
-                  <option>Australia</option>
-                  <option selected="">Location</option>
-                  <option>Canada</option>
-                </select>
-                <div
-                  class="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center"
-                >
-                  <!-- <ChevronDownIcon
-                    class="h-4 w-4 text-zinc-500"
-                    aria-hidden="true"
-                  /> -->
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-row justify-center gap-6 m-1 pb-14 ">
-              <ListBoxItem :items="locations" @selected="onLocationSelected" />
+            <div class="w-full h-full relative ">
+              <ListBoxItem
+                :items="locations"
+                :default-value="location"
+                @selected="onLocationSelected"
+              />
             </div>
             <div class="w-full h-full flex items-right justify-right">
-              <NuxtLink
+              <!-- <NuxtLink
                 to="/"
                 class="text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full pl-5 flex justify-end capitalize rounded-3xl text-body"
               >
                 {{ t('needHelp.location.use-my-location') }}
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
           </div>
 
@@ -56,12 +39,13 @@
             <div class="w-full h-full flex items-right justify-right"></div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                :disabled="!location"
+                class="disabled:opacity-50 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
                       { ...this.$route.query },
-                      { location: 'Germany' }
+                      { location: location }
                     ),
                   })
                 "
@@ -89,6 +73,8 @@ export default {
   data() {
     return {
       services: [],
+      location: '',
+      buttonEnabled: false,
     }
   },
   computed: {
@@ -109,7 +95,9 @@ export default {
 
   methods: {
     onLocationSelected(location) {
+      console.log('onLocationSelected')
       this.location = location
+      this.buttonEnabled = true
     },
   },
 }

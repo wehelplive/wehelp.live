@@ -1,9 +1,9 @@
 <template>
-  <div class="relative w-44 sm:w-60 p-1">
+  <div class="w-full h-full">
     <Listbox v-model="selectedItem">
       <div class="relative">
         <ListboxButton
-          class="relative w-full cursor-default rounded-lg bg-white-500 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-zinc-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm"
+          class="appearance-none block w-full h-16 bg-white-500 cursor-default rounded-xl border border-zinc-50 hover:border-zinc-500 py-2 text-body pl-5 pr-12 text-left text-zinc-500 focus:outline-none focus-visible:border-zinc-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-300"
         >
           <span class="block truncate">{{
             selectedItem ? selectedItem : defaultItem
@@ -21,7 +21,7 @@
           leave-to-class="opacity-0"
         >
           <ListboxOptions
-            class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white-500 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white-500 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-body"
           >
             <ListboxOption
               v-for="item in items"
@@ -32,7 +32,7 @@
             >
               <li
                 :class="[
-                  active ? 'bg-orange-100 text-orange-900' : 'text-grey-900',
+                  active ? 'bg-neutral-300 text-zinc-800' : 'text-grey-900',
                   'relative cursor-default select-none py-2 pl-10 pr-4',
                 ]"
               >
@@ -45,7 +45,7 @@
                 >
                 <span
                   v-if="selected"
-                  class="absolute inset-y-0 left-0 flex items-center pl-3 text-orange-600"
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 text-zinc-800"
                 >
                   <CheckIcon class="h-5 w-5" aria-hidden="true" />
                 </span>
@@ -95,7 +95,7 @@ export default {
     defaultItem() {
       return this.items.map((item) => item.name).includes(this.defaultValue)
         ? this.defaultValue
-        : 'select'
+        : 'Select'
     },
   },
   watch: {
