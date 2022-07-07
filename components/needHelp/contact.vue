@@ -30,17 +30,17 @@
                 />
               </form>
             </div>
-            <div class="form-group form-check mb-6">
+            <div class="form-group form-check form-check-inline mb-6">
               <input
-                id="checkPrivacy"
+                id="termsChecked"
                 v-model="termsChecked"
                 type="checkbox"
                 class="form-check-input font-sans-serif appearance-none h-6 w-6 border border-zinc-500 rounded-3xl bg-white-500 checked:bg-green-500 checked:border-green-600 focus:outline-none transition duration-200 align-center bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                 value="false"
               />
               <label
-                class="form-check-label mt inline-block text-zinc-800"
-                for="checkPrivac"
+                class="form-check-label inline-block text-zinc-800"
+                for="termsChecked"
                 >{{ t('needHelp.contact.privacy') }}</label
               >
             </div>
