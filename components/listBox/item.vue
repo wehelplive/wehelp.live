@@ -63,7 +63,6 @@ import {
   ListboxButton,
   ListboxOptions,
   ListboxOption,
-  MenuItems,
 } from '@headlessui/vue'
 import { CheckIcon, SelectorIcon } from '@heroicons/vue/solid'
 export default {
