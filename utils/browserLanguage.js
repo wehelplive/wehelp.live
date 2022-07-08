@@ -1,17 +1,17 @@
 export function getBrowserLocale() {
-  const countryCodeOnly = true
+  const currentLocale = localStorage.getItem('currentLocale')
   const navigatorLocale =
     navigator.languages !== undefined
       ? navigator.languages[0]
       : navigator.language
 
-  if (!navigatorLocale) {
+  if (!navigatorLocale && !currentLocale) {
     return undefined
   }
 
-  const trimmedLocale = countryCodeOnly
+  const trimmedLocale = navigatorLocale
     ? navigatorLocale.trim().split(/-|_/)[0]
     : navigatorLocale.trim()
 
-  return trimmedLocale
+  return currentLocale || trimmedLocale
 }
