@@ -32,7 +32,7 @@
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full outline outline-1 outline-zinc-500 text-zinc-500 hover:bg-zinc-50 flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
@@ -51,7 +51,7 @@
           >
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full outline outline-1 outline-zinc-500 text-zinc-500 hover:bg-zinc-50 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
@@ -71,7 +71,7 @@
                   this.$router.push({
                     query: Object.assign(
                       { ...this.$route.query },
-                      { duration: 'wait' }
+                      { duration: '3m' }
                     ),
                   })
                 "

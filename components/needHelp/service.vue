@@ -16,19 +16,19 @@
             class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:max-w-sm sm:gap-4"
           >
             <div class="w-full h-full flex items-center justify-center">
-              <button
-                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
-                @click="$router.push({ query: { service: 'accomodations' } })"
+              <NuxtLink
+                to="/guest"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.type.accomodations') }}
-              </button>
+                {{ t('services.accomodations.find') }}
+              </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
                 class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
-                @click="$router.push({ query: { service: 'medical' } })"
+                @click="$router.push({ query: { service: 'job' } })"
               >
-                {{ t('services.type.medical') }}
+                {{ t('services.type.job') }}
               </button>
             </div>
           </div>
@@ -37,19 +37,19 @@
           >
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full outline outline-1 outline-zinc-500 text-zinc-500 hover:bg-zinc-50 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="$router.push({ query: { service: 'mobile' } })"
               >
                 {{ t('services.type.mobile') }}
               </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">
-              <button
+              <NuxtLink
+                to="/request"
                 class="w-full h-full text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
-                @click="$router.push({ query: { service: 'other' } })"
               >
                 {{ t('services.type.other') }}
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>

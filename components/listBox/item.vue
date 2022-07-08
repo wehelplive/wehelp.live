@@ -21,7 +21,7 @@
           leave-to-class="opacity-0"
         >
           <ListboxOptions
-            class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white-500 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-body"
+            class="absolute text-left mt-1 max-h-60 w-full overflow-auto rounded-md bg-white-500 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-body"
           >
             <ListboxOption
               v-for="item in items"
@@ -32,7 +32,9 @@
             >
               <li
                 :class="[
-                  active ? 'bg-neutral-300 text-zinc-800' : 'text-grey-900',
+                  active
+                    ? 'text-left bg-neutral-300 text-zinc-800'
+                    : 'text-grey-900',
                   'relative cursor-default select-none py-2 pl-10 pr-4',
                 ]"
               >
