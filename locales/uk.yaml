@@ -6,7 +6,7 @@ hero:
 mission:
   title: Наша мета
   subtitle: Ефективна організація діяльності добровольців
-  description: Є багато людей, які <strong>готові допомогти</strong> і котрі <strong>потребують допомоги</strong>. Існуючі організації не справляються з координацією та хаосом розробляються, і багато проблем залишаються невирішеними. Необхідно знайти та усунути штрихи в організаціях, щоб поєднати їх разом, щоб встановити координацію для ефективного подолання існуючої ситуації.
+  description: There are many people who are eady to help and who need help. Existing organizations do not cope with coordination and chaos is formed and many issues remain unresolved. It is necessary to find and eliminate hatches in organizations, to link them together, to establish coordination in order to effectively cope with the existing situation.
 values:
   title: Наші основні значення
   subtitle: Ми прагнемо бути <span class="font-bold text-green-500">надійним</span> джерелом, яке дає людям <span class="font-bold text-orange-500">надію</span> і допоможіть їм за допомогою <span class="font-bold text-blue-500">ефективних</span> дій
@@ -20,9 +20,10 @@ domains:
   design: Дизайн
   talents: Таланти
   operations: Операції
+  customer: Customer
 company:
   title: Організація
-  home: Домашній екран
+  home: Головна
   copyright: 2022 WeHelp. Всі права захищені.
   about: Про програму
   contact: Зв’язатись з нами
@@ -32,45 +33,68 @@ company:
   terms: Умови
   privacy: Конфіденційність
 team:
-  title: Наша команда
+  title: We are 27 volunteers from across the globe
+  name: Our Team
   join: Долучитися
   calendar: Календар
   jobs: Джобс
 services:
   title: Послуги
+  question: What are we doing?
+  problems:
+    title: Big Problems
+    description: We bring experts to solve big problems. There are no unsolvable tasks.
   accomodations:
     add: Запропонувати житло
     find: Знайти житло
+    title: Accomodation
+    description: Improve the matching process and make Refugee, Host, Shelter Operator and Volunteer happy.
   evacuation:
     find: Планувальник евакуації
     add: Додати відгук
     request: Допомога
+    description: Recommendation system based on reviews from real people about services that really helped them to solve their issues with easy search.
+reviews:
+  title: What others say about us
+  tatyanaOvchinnikova: Many thanks to the volunteers, the family who agreed to receive us, the German government, and everyone else for their help and kindness! We are the friends, the family, who are well-informed, unsurprised, the German government and all the other people's hearts for their help and care very grateful!
+  mariaDiaz: As a volunteer I find the team very talented and easy to work with. Our main leader it's really supportive and friendly. I've learned a lot from him!
+  irinaValigura: A team of volunteers helped me and my friends. Fast, on time. Very, very grateful to WeHelp! Strength to you and good people to help!
+  dipaliMankodi: I joined WeHelp as a volunteer UX designer. I am grateful to be a part of such a good, humanitarian cause. We have an incredibly supportive & friendly team here!
+  arunRajeev: Currently volunteering as a UX Designer. We have a great team, people from different professions, backgrounds, age groups working together for the greater good and helping each other to learn, grow and contribute to the cause. Thank you WeHelp !
+  olgaN: Amazing international team to work with.Thank you WeHelp!
+  olgaIvanova: Thank you very much for your help in exchanging hryvnia for euro at a good rate. Friends, whom I changed, were very grateful!
 menu:
   open: Відкрити меню
   close: Закрити меню
 faq:
   title: ЧАП
   items:
-    - question: Яка структура організації?
+    - 
+      question: Яка структура організації?
       answer: >
         ![](/structure.jpg)
-    - question: Чому я повинен бути волонтером для WeHelp?
+    - 
+      question: Чому я повинен бути волонтером для WeHelp?
       answer: >
         Ми надаємо сертифікат після 6 місяців взаємодії. Дивіться [відкриті позиції](https://angel.co/company/wehelplive/jobs)
-    - question: Як мені втрутитися?
+    - 
+      question: Як мені втрутитися?
       answer: >
         1. Де знайти повний розклад? Підпишіться на [calendar](https://wehelp.live/calendar/)
         2. Як приєднатися до командної зустрічі? Дотримуйтесь "Ласкаво просимо" на Slack (канал #Ласкаво просимо).
         3. Як мені приєднатися до Слека? [Зареєструйся як волонтер](https://wehelp.live/get-involved/) і отримаєш запрошення на наш Slack.
-    - question: Як запланувати зустріч?
+    - 
+      question: Як запланувати зустріч?
       answer: >
         1. Які зустрічі ми маємо? 1-1 - для обговорення тем, Retrospective, керівництво Meeting, Daily Standing, Planning and Review Meeting, Coordination Meing, [прочитати більше](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Як підготуватися до зустрічі?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Responsibility нарада хосту](https://patterns.sociocracy30.org/meeting-host.html)
-    - question: Де я отримую активи бренду WeHelp?
+    - 
+      question: Де я отримую активи бренду WeHelp?
       answer: >
         Усі завантажувані файли, які ви можете знайти в нашому [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) в папці **Design/Branding** .
         Вихідні файли знаходяться в [WeHelp Figma](https://www.figma.com/file/2HRdICQFFhlwaUKwaUKWO9/WeHelp-2.0?node-id=2%3A8273).
-    - question: Де я знаходжу всю наявну інформацію про WeHelp?
+    - 
+      question: Де я знаходжу всю наявну інформацію про WeHelp?
       answer: >
         https://handbook.wehelp.live

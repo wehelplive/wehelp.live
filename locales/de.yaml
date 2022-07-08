@@ -6,20 +6,21 @@ hero:
 mission:
   title: Unsere Aufgabe
   subtitle: Effektive Organisation von Freiwilligentätigkeiten
-  description: Es gibt viele Leute, die <strong>bereit sind zu helfen</strong> und die <strong>Hilfe</strong>benötigen. Bestehende Organisationen schaffen die Koordinierung nicht, und es entsteht Chaos und viele Problemstellungen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
+  description: Es gibt viele Leute, die bereit sind zu helfen und die Hilfe benötigen. Bestehende Organisationen schaffen die Koordinierung nicht, und es entsteht Chaos und viele Problemstellungen bleiben ungelöst. Es ist notwendig, die Schraffuren in Organisationen zu finden und zu beseitigen, sie miteinander zu verknüpfen die Schaffung einer Koordinierung, um die bestehende Situation effektiv zu bewältigen.
 values:
   title: Unsere Kernwerte
   subtitle: Wir wollen eine <span class="font-bold text-green-500">vertrauensvolle</span> Quelle sein, die Menschen <span class="font-bold text-orange-500">Hoffnung gibt</span> und ihnen durch <span class="font-bold text-blue-500">effektive</span> Aktionen helfen
 domains:
   partnerships: Partnerschaften
   communications: Kommunikation
-  mission: Aufgabe
+  mission: Mission
   coordination: Koordination
   product: Produkt
   code: Code
   design: Design
   talents: Talente
   operations: Operationen
+  customer: Kunde
 company:
   title: Firma
   home: Zuhause
@@ -32,45 +33,68 @@ company:
   terms: Begriffe
   privacy: Privatsphäre
 team:
-  title: Unser Team
+  title: Wir sind 27 Freiwillige aus der ganzen Welt
+  name: Unser Team
   join: Sich beteiligen
   calendar: Kalender
   jobs: Jobs
 services:
   title: Dienste
+  question: Was tun wir?
+  problems:
+    title: Große Probleme
+    description: Wir bringen Experten für die Lösung großer Probleme und es gibt keine unlösbaren Aufgaben.
   accomodations:
     add: Unterkunft anbieten
     find: Unterkunft finden
+    title: Unterkunft
+    description: Verbessern den passenden Prozess und machen Flüchtlinger, Host, Shelter Operator und Freiwillige glücklich.
   evacuation:
     find: Evakuierungsplaner
     add: Bewertung hinzufügen
     request: Bitte um Hilfe
+    description: Empfehlungssystem basierend auf Reviews von echten Leuten über Dienstleistungen, die ihnen wirklich geholfen haben, ihre Probleme mit einfacher Suche zu lösen.
+reviews:
+  title: Was andere über uns sagen
+  tatyanaOvchinnikova: Vielen Dank an die Freiwilligen, an die Familie, die sich bereit erklärt hat, uns, die Bundesregierung und alle anderen für ihre Hilfe und Freundlichkeit zu empfangen! Wir sind die Freunde, die Familie, die gut informiert und nicht überrascht sind. die deutsche Regierung und alle anderen Menschen für ihre Hilfe und Fürsorge sehr dankbar!
+  mariaDiaz: Als Freiwilliger finde ich das Team sehr begabt und leicht zu arbeiten. Unser Hauptführer ist wirklich unterstützend und freundlich. Ich habe viel von ihm gelernt!
+  irinaValigura: Ein Team von Freiwilligen half mir und meinen Freunden. Schnell, pünktlich und sehr dankbar für WeHelp! Stärke dir und gute Leute zu helfen!
+  dipaliMankodi: Ich bin als Freiwilliger UX-Designer bei WeHelp eingetreten und bin dankbar, ein Teil einer solch guten humanitären Sache zu sein. Wir haben hier ein unglaublich hilfsbereites und freundliches Team!
+  arunRajeev: Zurzeit freiwillig als UX Designer. Wir haben ein großartiges Team, Leute aus verschiedenen Berufen, Hintergründen, Altersgruppen, die zum Wohle der Menschen zusammenarbeiten und sich gegenseitig helfen, zu lernen, zu wachsen und zur Sache beizutragen. Vielen Dank WeHelp !
+  olgaN: Wunderschönes internationales Team zu arbeiten mit.Vielen Dank WeHelp!
+  olgaIvanova: Vielen Dank für Ihre Hilfe beim Austausch von Hrywnia gegen Euro zu einem guten Preis. Freunde, die ich geändert habe, waren sehr dankbar!
 menu:
   open: Menü öffnen
   close: Menü schließen
 faq:
   title: FAQ
   items:
-    - question: Wie ist die Organisationsstruktur?
+    - 
+      question: Wie ist die Organisationsstruktur?
       answer: >
         ![](/structure.jpg)
-    - question: Warum sollte ich Freiwillige/r bei WeHelp werden?
+    - 
+      question: Warum sollte ich Freiwillige/r bei WeHelp werden?
       answer: >
         Wir stellen nach 6 Monaten Praktikum ein Zertifikat aus. Siehe [offene Positionen](https://angel.co/company/wehelplive/jobs)
-    - question: Wie kann ich mich einbringen?
+    - 
+      question: Wie kann ich mich einbringen?
       answer: >
         1. Wo finde ich den ganzen Zeitplan? Abonniere [calendar](https://wehelp.live/calendar/)
         2. Wie nehmen Sie an einem Teammeeting teil? Folgen Sie dem Willkommensleitfaden auf Slack (Kanal #welcome).
         3. Wie betrete ich Slack? [Als Freiwillige/r anmelden](https://wehelp.live/get-involved/) und Sie bekommen eine Einladung zu unserem Slack.
-    - question: Wie kann ich ein Meeting planen?
+    - 
+      question: Wie kann ich ein Meeting planen?
       answer: >
         1. Welche Art von Treffen haben wir? 1-1, Themen besprechen, Retrospektive, Governance-Treffen, Daily Standup, Planning and Review Meetings, Koordinationsmeeting, [lesen Sie mehr](https://patterns.sociocracy30.org/meeting-formats. tml)
         2. [Wie bereitet man sich auf ein Meeting vor?](https://patterns.sociocracy30.org/prepare-for-meetings.html)
         3. [Verantwortungen eines Meeting-Hosts](https://patterns.sociocracy30.org/meeting-host.html)
-    - question: Wo bekomme ich WeHelp Markensymbole?
+    - 
+      question: Wo bekomme ich WeHelp Markensymbole?
       answer: >
         Alle herunterladbaren Dateien finden Sie in unserem [Google Drive](https://drive.google.com/drive/folders/1MwIxcYWOrFmLnq4zMPejsGFF1SRHU7Fi) im **Design/Branding** Ordner.
         Quelldateien sind in [WeHelp Figma](https://www.figma.com/file/2HRdICIRQFMhlwaUKWOzO9/WeHelp-2.0?node-id=2%3A8273).
-    - question: Wo finde ich alle verfügbaren Informationen über WeHelp?
+    - 
+      question: Wo finde ich alle verfügbaren Informationen über WeHelp?
       answer: >
         https://handbook.wehelp.live
