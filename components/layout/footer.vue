@@ -1,9 +1,12 @@
 <template>
-  <footer class="bg-white-500" aria-labelledby="footer-heading">
+  <footer
+    class="bg-white-500 border-t-2 border-white-600"
+    aria-labelledby="footer-heading"
+  >
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-5xl mx-auto py-18 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto py-14 px-6 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 xl:col-span-1 py-8">
+        <div class="space-y-8 xl:col-span-1 mx-auto xl:mx-0 px-4 py-4">
           <div class="flex justify-center xl:justify-start">
             <BrandLogo class="h-24 w-24" />
           </div>
@@ -27,7 +30,7 @@
         </div>
 
         <div
-          class="grid grid-cols-2 md:flex md:justify-around xl:justify-between flex-row items-start col-span-2"
+          class="grid grid-cols-2 md:flex md:justify-around xl:justify-between flex-row justify-around col-span-2 mt-12 xl:mt-0"
         >
           <div class="flex flex-col items-start p-4 min-w-fit">
             <h3
@@ -47,7 +50,7 @@
             </ul>
           </div>
 
-          <div class="flex flex-col items-start p-4 min-w-fit">
+          <div class="flex flex-col items-center p-4 min-w-fit">
             <h3
               class="text-subtitle font-semibold text-zinc-700 tracking-wider uppercase"
             >
@@ -91,7 +94,7 @@
         </p>
       </div>
     </div>
-    <div class="bg-no-repeat bg-top bg-favicon h-64 w-full"></div>
+    <div class="bg-no-repeat bg-top bg-favicon h-64 w-screen"></div>
   </footer>
 </template>
 
