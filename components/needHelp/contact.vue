@@ -60,11 +60,8 @@
                 :disabled="!email.length || !termsChecked"
                 class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
                 @click="
-                  this.$router.push({
-                    query: Object.assign(
-                      { ...this.$route.query },
-                      { contact: 'found' }
-                    ),
+                  $router.push({
+                    path: `/services/${$route.query.location}/${$route.query.service}`,
                   })
                 "
               >
@@ -83,6 +80,7 @@ import MarkdownIt from 'markdown-it'
 
 export default {
   name: 'NeedHelpContact',
+
   setup() {
     const { t, tm } = useI18n()
 
@@ -99,7 +97,14 @@ export default {
     }
   },
   data() {
+    // console.log('service in contact', service)
+    // console.log('duration in contact', duration)
+    // console.log('location in contact', location)
+    // console.log('contact in contact', contact)
     return {
+      service: '',
+      duration: '',
+      location: '',
       email: '',
       termsChecked: false,
     }

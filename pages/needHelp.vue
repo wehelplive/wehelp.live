@@ -2,10 +2,7 @@
   <div>
     <NeedHelpService
       v-if="
-        !$route.query.service &&
-          !$route.query.location &&
-          !$route.query.contact &&
-          !$route.query.cards
+        !$route.query.service && !$route.query.location && !$route.query.contact
       "
     />
     <NeedHelpDuration
@@ -13,8 +10,7 @@
         $route.query.service &&
           !$route.query.duration &&
           !$route.query.location &&
-          !$route.query.contact &&
-          !$route.query.cards
+          !$route.query.contact
       "
     />
     <NeedHelpLocation
@@ -22,8 +18,7 @@
         $route.query.service &&
           $route.query.duration &&
           !$route.query.location &&
-          !$route.query.contact &&
-          !$route.query.cards
+          !$route.query.contact
       "
     />
     <NeedHelpContact
@@ -31,8 +26,7 @@
         $route.query.service &&
           $route.query.duration &&
           $route.query.location &&
-          !$route.query.contact &&
-          !$route.query.cards
+          !$route.query.contact
       "
     />
     <NeedHelpCards
@@ -40,8 +34,7 @@
         $route.query.service &&
           $route.query.duration &&
           $route.query.location &&
-          $route.query.contact &&
-          !$route.query.cards
+          $route.query.contact
       "
     />
   </div>
