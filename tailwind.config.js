@@ -161,6 +161,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         favicon: "url( './favicon.png')",
+        loader: "url( './loader/loader.gif')",
         'favicon-transp': "url( './icon-without-top-border.png')",
       }),
       gridTemplateColumns: {
