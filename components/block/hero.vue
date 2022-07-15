@@ -23,7 +23,7 @@
             <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/needHelp"
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body sm:rounded-xl"
+                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('hero.needHelp') }}
               </NuxtLink>

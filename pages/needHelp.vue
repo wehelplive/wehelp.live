@@ -29,14 +29,6 @@
           !$route.query.contact
       "
     />
-    <NeedHelpCards
-      v-if="
-        $route.query.service &&
-          $route.query.duration &&
-          $route.query.location &&
-          $route.query.contact
-      "
-    />
   </div>
 </template>
 <script></script>

@@ -95,7 +95,6 @@ export default {
 
   methods: {
     onLocationSelected(location) {
-      console.log('onLocationSelected')
       this.location = location
       this.buttonEnabled = true
     },

@@ -59,11 +59,7 @@
               <button
                 :disabled="!email.length || !termsChecked"
                 class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
-                @click="
-                  $router.push({
-                    path: `/services/${$route.query.location}/${$route.query.service}`,
-                  })
-                "
+                @click="onClick()"
               >
                 {{ t('needHelp.contact.next') }}
               </button>
@@ -77,6 +73,7 @@
 <script>
 import { useI18n } from 'vue-i18n'
 import MarkdownIt from 'markdown-it'
+import { useStorage } from 'vue3-storage'
 
 export default {
   name: 'NeedHelpContact',
@@ -97,10 +94,6 @@ export default {
     }
   },
   data() {
-    // console.log('service in contact', service)
-    // console.log('duration in contact', duration)
-    // console.log('location in contact', location)
-    // console.log('contact in contact', contact)
     return {
       service: '',
       duration: '',
@@ -108,6 +101,33 @@ export default {
       email: '',
       termsChecked: false,
     }
+  },
+  methods: {
+    routeToServices() {
+      this.$router.push({
+        path: `/services/${this.$route.query.location}/${this.$route.query.service}`,
+      })
+    },
+    saveData() {
+      const storage = useStorage()
+
+      storage.setStorageSync('needHelpData', {
+        service: this.$route.query.service,
+        duration: this.$route.query.duration,
+        location: this.$route.query.location,
+        contact: this.email,
+        termsChecked: this.termsChecked,
+      })
+    },
+    getData() {
+      const storage = useStorage()
+      return storage.getStorageSync('needHelpData')
+    },
+    onClick() {
+      this.routeToServices()
+      this.saveData()
+      console.log('getData', this.getData())
+    },
   },
 }
 </script>
