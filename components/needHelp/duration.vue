@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center pt-40 items-center min-h-full">
+  <div
+    class="flex justify-center pt-40 items-center min-h-full xl:h-screen xl:pt-0"
+  >
     <main class="max-w-7xl sm:-mt-24">
       <div class="px-4">
         <div class="text-center">
@@ -10,11 +12,6 @@
               <span class="block xl:inline">
                 {{ t('needHelp.duration.title') }}</span
               >
-            </h1>
-            <h1
-              class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800 sm:text-headline-2"
-            >
-              <span class="block xl:inline"> Test {{ services }}</span>
             </h1>
           </div>
           <div

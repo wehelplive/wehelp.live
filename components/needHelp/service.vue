@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center pt-40 items-center min-h-full">
+  <div
+    class="flex justify-center pt-40 items-center min-h-full xl:h-screen xl:pt-0"
+  >
     <main class="max-w-7xl sm:-mt-24">
       <div class="px-4">
         <div class="text-center">
@@ -38,9 +40,9 @@
             <div class="w-full h-full flex items-center justify-center">
               <button
                 class="w-full h-full outline outline-1 outline-zinc-500 text-zinc-500 hover:bg-zinc-50 flex justify-center items-center capitalize rounded-3xl text-body"
-                @click="$router.push({ query: { service: 'mobile' } })"
+                @click="$router.push({ query: { service: 'Legal%20Aid' } })"
               >
-                {{ t('services.type.mobile') }}
+                {{ t('services.type.legal') }}
               </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">

@@ -53,7 +53,7 @@ services:
   type:
     accomodations: Accomodations
     job: Find Job
-    mobile: Mobile
+    legal: Legal Aid
     other: Something Else
   question: What are we doing?
   problems:

@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center pt-40 items-center min-h-full">
+  <div
+    class="flex justify-center pt-40 items-center min-h-full xl:h-screen xl:pt-0"
+  >
     <main class="max-w-7xl sm:-mt-24">
       <div class="px-4">
         <div class="text-center">
