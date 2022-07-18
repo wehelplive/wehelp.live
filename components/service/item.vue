@@ -17,9 +17,9 @@
       </div>
     </div>
 
-    <p class="flex-1 font-sans text-body text-zinc-800 mb-4 line-clamp-2">
+    <div class="font-sans text-body text-zinc-800 mb-4 line-clamp-2">
       {{ description }}
-    </p>
+    </div>
 
     <div v-if="url" class="flex flex-row mb-4 items-center">
       <LinkIcon class="h-5 w-5 mr-2 text-grey-500" />

@@ -43,7 +43,7 @@
     >
       <PopoverPanel
         focus
-        class="bg-white-500 h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
+        class="bg-white-500 z-10 h-auto absolute top-0 inset-x-0 transition transform origin-top-right md:hidden overflow-hidden"
       >
         <div class="bg-white-500 ">
           <div class="">
