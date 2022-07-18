@@ -60,7 +60,7 @@
             <div class="w-full h-full flex items-center justify-center">
               <button
                 :disabled="!email.length || !termsChecked"
-                class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center rounded-3xl text-body"
+                class="w-full h-full disabled:bg-red-100 bg-red-500 hover:bg-red-700 text-white-500 flex justify-center items-center rounded-3xl text-body"
                 @click="onClick()"
               >
                 {{ t('needHelp.contact.next') }}

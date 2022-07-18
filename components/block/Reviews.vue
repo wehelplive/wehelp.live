@@ -46,7 +46,7 @@ export default {
     })
     const reviews = [
       {
-        name: 'Татьяна Овчинникова',
+        name: 'Tatjana Ovchinnikova',
         role: 'domains.customer',
         imageUrl: 'reviews/TatyanaOvchinnikova.jpg',
         rating: 5,
@@ -64,7 +64,7 @@ export default {
         source: 'https://goo.gl/maps/i3rGPjcaG7QyepWG6',
       },
       {
-        name: 'Ірина Валігура',
+        name: 'Irina Valigura',
         role: 'domains.customer',
         imageUrl: 'reviews/IrinaValigura.jpg',
         rating: 5,

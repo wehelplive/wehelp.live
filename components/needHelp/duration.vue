@@ -19,7 +19,7 @@
           >
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full bg-red-500 hover:bg-red-700 text-white-500 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(
@@ -68,7 +68,7 @@
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full text-zinc-500 hover:text-slate-100 underline underline-offset-1 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(

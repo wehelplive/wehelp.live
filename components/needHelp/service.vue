@@ -20,14 +20,14 @@
             <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/guest"
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full bg-red-500 hover:bg-red-700 text-white-500 flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.accomodations.find') }}
               </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full outline outline-1 outline-red-500 text-red-500 hover:bg-red-50 hover:outline-red-700 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="$router.push({ query: { service: 'job' } })"
               >
                 {{ t('services.type.job') }}
@@ -48,7 +48,7 @@
             <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/request"
-                class="w-full h-full text-zinc-500 hover:text-zinc-800 underline underline-offset-1 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full text-zinc-500 hover:text-slate-100 underline underline-offset-1 flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.type.other') }}
               </NuxtLink>
