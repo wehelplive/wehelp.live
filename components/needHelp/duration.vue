@@ -68,7 +68,7 @@
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
-                class="w-full h-full text-zinc-500 hover:text-slate-100 underline underline-offset-1 flex justify-center items-center capitalize rounded-3xl text-body"
+                class="w-full h-full text-zinc-500 hover:bg-slate-100 underline underline-offset-1 flex justify-center items-center capitalize rounded-3xl text-body"
                 @click="
                   this.$router.push({
                     query: Object.assign(

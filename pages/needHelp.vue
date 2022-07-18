@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-20 mb-28">
     <NeedHelpService
       v-if="
         !$route.query.service && !$route.query.location && !$route.query.contact
