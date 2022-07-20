@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full pl-2 pr-2">
     <Listbox v-model="selectedItem">
-      <div class="relative">
+      <div class="relative lg:max-w-sm">
         <ListboxButton
           class="appearance-none block w-full h-16 bg-white-500 cursor-default rounded-xl border border-zinc-50 hover:border-zinc-500 py-2 text-body pl-5 pr-12 text-left text-zinc-500 focus:outline-none focus-visible:border-zinc-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-300"
         >

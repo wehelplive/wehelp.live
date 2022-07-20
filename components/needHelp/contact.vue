@@ -75,7 +75,6 @@
 <script>
 import { useI18n } from 'vue-i18n'
 import MarkdownIt from 'markdown-it'
-import { useStorage } from 'vue3-storage'
 
 export default {
   name: 'NeedHelpContact',
@@ -104,6 +103,7 @@ export default {
       termsChecked: false,
     }
   },
+
   methods: {
     routeToServices() {
       this.$router.push({
@@ -111,19 +111,20 @@ export default {
       })
     },
     saveData() {
-      const storage = useStorage()
-
-      storage.setStorageSync('needHelpData', {
-        service: this.$route.query.service,
-        duration: this.$route.query.duration,
-        location: this.$route.query.location,
-        contact: this.email,
-        termsChecked: this.termsChecked,
-      })
+      if (process.client) {
+        localStorage.setItem('needHelpData', {
+          service: this.$route.query.service,
+          duration: this.$route.query.duration,
+          location: this.$route.query.location,
+          contact: this.email,
+          termsChecked: this.termsChecked,
+        })
+      }
     },
     getData() {
-      const storage = useStorage()
-      return storage.getStorageSync('needHelpData')
+      if (process.client) {
+        return localStorage.getItem('needHelpData')
+      }
     },
     onClick() {
       this.routeToServices()
