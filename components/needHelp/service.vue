@@ -18,12 +18,16 @@
             class="mt-8 gap-2 mx-auto flex flex-col items-center justify-center h-24 sm:max-w-sm sm:gap-4"
           >
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/guest"
+              <button
                 class="w-full h-full bg-red-500 hover:bg-red-700 text-white-500 flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="
+                  this.$router.push({
+                    path: `/${this.$i18n.locale}/guest`,
+                  })
+                "
               >
                 {{ t('services.accomodations.find') }}
-              </NuxtLink>
+              </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <button
