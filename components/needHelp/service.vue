@@ -50,12 +50,16 @@
               </button>
             </div>
             <div class="w-full h-full flex items-center justify-center">
-              <NuxtLink
-                to="/request"
+              <button
                 class="w-full h-full text-zinc-500 hover:bg-slate-100 underline underline-offset-1 flex justify-center items-center capitalize rounded-3xl text-body"
+                @click="
+                  this.$router.push({
+                    path: `/${this.$i18n.locale}/request`,
+                  })
+                "
               >
                 {{ t('services.type.other') }}
-              </NuxtLink>
+              </button>
             </div>
           </div>
         </div>
