@@ -129,7 +129,6 @@ export default {
     onClick() {
       this.routeToServices()
       this.saveData()
-      console.log('getData', this.getData())
     },
   },
 }
