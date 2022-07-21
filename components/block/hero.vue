@@ -7,7 +7,7 @@
         <div class="text-center">
           <div class="flex-column gap-8">
             <h1
-              class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800  sm:text-headline-2"
+              class="mt-3 tracking-tight font-nunito text-headline-4 text-zinc-800 sm:text-headline-2"
             >
               <span class="block xl:inline">{{ t('hero.title') }}</span>
             </h1>
@@ -22,16 +22,16 @@
           >
             <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
-                to="/guest"
-                class="bg-red-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                to="/needHelp"
+                class="bg-red-500 hover:bg-red-700 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
-                {{ t('services.accomodations.find') }}
+                {{ t('hero.needHelp') }}
               </NuxtLink>
             </div>
             <div class="w-full h-full flex items-center justify-center">
               <NuxtLink
                 to="/host"
-                class="bg-green-500 hover:bg-zinc-500 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
+                class="bg-green-500 hover:bg-green-700 text-white-500 w-full h-full flex justify-center items-center capitalize rounded-3xl text-body"
               >
                 {{ t('services.accomodations.add') }}
               </NuxtLink>

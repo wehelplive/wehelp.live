@@ -12,6 +12,10 @@ export const navigation = {
       name: 'services.accomodations.add',
       to: '/host',
     },
+    {
+      name: 'hero.needHelp',
+      to: '/needHelp',
+    },
   ],
   services: [
     {

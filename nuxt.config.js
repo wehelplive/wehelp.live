@@ -31,15 +31,6 @@ export default defineNuxtConfig({
       },
       { rel: 'manifest', href: '/site.webmanifest' },
     ],
-    script: [
-      {
-        hid: 'hubspot',
-        id: 'hs-script-loader',
-        src: 'https://js-eu1.hs-scripts.com/25686834.js',
-        defer: true,
-        async: true,
-      },
-    ],
     link: [
       {
         rel: 'stylesheet',

@@ -1,5 +1,15 @@
 <template>
-  <GuestsList :guests="guests" />
+  <div>
+    <div v-if="guests.length">
+      <GuestsList :guests="guests" />
+    </div>
+    <div
+      v-else
+      class="flex w-full h-full min-h-screen items-center justify-center"
+    >
+      <loader-item />
+    </div>
+  </div>
 </template>
 <script>
 import { fetchGuests } from '../utils/airtable'

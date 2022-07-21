@@ -35,7 +35,7 @@
       >
         <NuxtLink
           to="/get-involved"
-          class=" hover:bg-zinc-500 text-white-500 flex items-center justify-center w-full h-full capitalize rounded-3xl text-body font-sans"
+          class=" hover:bg-green-700 text-white-500 flex items-center justify-center w-full h-full capitalize rounded-3xl text-body font-sans"
         >
           {{ t('team.join') }}
         </NuxtLink>
