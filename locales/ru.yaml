@@ -4,7 +4,7 @@ hero:
   need: Need
   description: Мы помогаем решать проблемы в кризисе украинских беженцев в ЕС
   reviews: '{stars} звезд - {reviews} отзывов'
-  needHelp: 'I need help'
+  needHelp: 'Мне нужна помощь'
 mission:
   title: Наша миссия
   subtitle: Эффективная организация добровольческой деятельности
@@ -43,10 +43,10 @@ team:
 services:
   title: Evacuation
   type:
-    accomodations: Accomodations
-    job: Find Job
-    legal: Legal Aid
-    other: Something Else
+    accomodations: Жилье
+    job: Найти Работу
+    legal: Юридическая Помощь
+    other: Другое
   question: Что мы делаем?
   problems:
     title: Комплексные проблемы
@@ -107,22 +107,22 @@ faq:
         https://handbook.wehelp.live
 needHelp:
   service:
-    title: What help do you need?
+    title: Какая помощь вам нужна?
   duration:
-    title: How long can you wait?
+    title: Как долго вы можете ждать?
     time:
-      1h: 1 Hour
-      24h: 24 Hours
-      7d: 7 Days
-      wait: I Can Wait
+      1h: 1 Час
+      24h: 24 часа
+      7d: 7 Дней
+      wait: Я могу подождать
   location:
-    title: Where are you right now?
-    use-my-location: Use my location
-    next: Next
+    title: Где вы сейчас находитесь?
+    use-my-location: Использовать моё местоположение
+    next: Далее
   contact:
-    title: How can we reach you?
-    mail: Enter you e-mail
-    privacy: I agree to the <span class="font-bold text-green-500"> [Terms & Conditions](https://handbook.wehelp.live/terms.html)</span> and <span class="font-bold text-green-500">[Privacy Policy](https://handbook.wehelp.live/privacy.html)</span>.
-    next: Next
+    title: Как мы можем связаться с вами?
+    mail: Введите ваш e-mail
+    privacy: Я согласен с <span class="font-bold text-green-500"> [Правилами и условиями](https://handbook.wehelp.live/terms.html)</span> и <span class="font-bold text-green-500">[Политикой конфиденциальности](https://handbook.wehelp.live/privacy.html)</span>.
+    next: Далее
   cards:
     title: Cards to display
