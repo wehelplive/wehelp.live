@@ -1,8 +1,10 @@
 ---
 hero:
   title: Эвакуация в ЕС
+  need: Need
   description: Мы помогаем решать проблемы в кризисе украинских беженцев в ЕС
   reviews: '{stars} звезд - {reviews} отзывов'
+  needHelp: 'Мне нужна помощь'
 mission:
   title: Наша миссия
   subtitle: Эффективная организация добровольческой деятельности
@@ -39,7 +41,12 @@ team:
   calendar: Календарь
   jobs: Задания
 services:
-  title: Услуги
+  title: Evacuation
+  type:
+    accomodations: Жилье
+    job: Найти Работу
+    legal: Юридическая Помощь
+    other: Другое
   question: Что мы делаем?
   problems:
     title: Комплексные проблемы
@@ -98,3 +105,24 @@ faq:
       question: Где найти всю доступную информацию о WeHelp?
       answer: >
         https://handbook.wehelp.live
+needHelp:
+  service:
+    title: Какая помощь вам нужна?
+  duration:
+    title: Как долго вы можете ждать?
+    time:
+      1h: 1 Час
+      24h: 24 часа
+      7d: 7 Дней
+      wait: Я могу подождать
+  location:
+    title: Где вы сейчас находитесь?
+    use-my-location: Использовать моё местоположение
+    next: Далее
+  contact:
+    title: Как мы можем связаться с вами?
+    mail: Введите ваш e-mail
+    privacy: Я согласен с <span class="font-bold text-green-500"> [Правилами и условиями](https://handbook.wehelp.live/terms.html)</span> и <span class="font-bold text-green-500">[Политикой конфиденциальности](https://handbook.wehelp.live/privacy.html)</span>.
+    next: Далее
+  cards:
+    title: Cards to display
